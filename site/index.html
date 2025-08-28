@@ -71,15 +71,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 align="center"><a href="https://github.com/webysther/jellyfin-sdk-python">jellyfin-sdk-python</a></h1>
+                <h1 align="center">jellyfin-sdk-python</h1>
 
 <hr />
-<h2 id="documentation">Documentation</h2>
-<ul>
-<li><a href="./api_10_11/">Jellyfin API 10.11</a></li>
-<li><a href="./api_10_10/">Jellyfin API 10.10</a></li>
-</ul>
-<p>A Python SDK for Jellyfin.</p>
+<p>A <a href="https://jellyfin.org/docs/general/contributing/branding">Possible Official</a> Python SDK for Jellyfin.</p>
 <blockquote>
 <p>Warning: This project is under active development, so API changes may occur.</p>
 </blockquote>
@@ -90,7 +85,8 @@
 <pre><code class="language-sh">uv add jellyfin-sdk
 </code></pre>
 <h2 id="usage">Usage</h2>
-<h3 id="drop-in-replacement-for-jellyfin-apiclient-python">Drop in replacement for jellyfin-apiclient-python</h3>
+<h3 id="drop-in-replacement-for-jellyfin-apiclient-python">Drop-in replacement for <a href="https://github.com/jellyfin/jellyfin-apiclient-python">jellyfin-apiclient-python</a></h3>
+<p>This library inject the old legacy (almost not maintained) for help migration:</p>
 <pre><code class="language-python"># from
 from jellyfin_apiclient_python import JellyfinClient
 from jellyfin_apiclient_python.api import API
@@ -100,14 +96,14 @@ from jellyfin.legacy import JellyfinClient
 from jellyfin.legacy.api import API
 </code></pre>
 <h3 id="login">Login</h3>
+<p>Let's start with login, most cases you only need do something simple:</p>
 <pre><code class="language-python">import os
 
 os.environ[&quot;JELLYFIN_URL&quot;] = &quot;https://jellyfin.example.com&quot;
 os.environ[&quot;JELLYFIN_API_KEY&quot;] = &quot;MY_TOKEN&quot;
-
-
-# legacy (jellyfin-apiclient-python)
-from jellyfin.legacy import JellyfinClient
+</code></pre>
+<h4 id="legacy-jellyfin-apiclient-python">Legacy (<a href="https://github.com/jellyfin/jellyfin-apiclient-python">jellyfin-apiclient-python</a>)</h4>
+<pre><code class="language-python">from jellyfin.legacy import JellyfinClient
 client = JellyfinClient()
 client.authenticate(
     {&quot;Servers&quot;: [{
@@ -119,9 +115,9 @@ client.authenticate(
 system_info = client.jellyfin.get_system_info()
 
 print(system_info.get(&quot;Version&quot;), system_info.get(&quot;ServerName&quot;))
-
-# generated (bindings openapi spec)
-from jellyfin.generated.api_10_10 import Configuration, ApiClient, SystemApi
+</code></pre>
+<h4 id="generated-binding-with-openapi-specification">Generated Binding with OpenAPI Specification</h4>
+<pre><code class="language-python">from jellyfin.generated.api_10_10 import Configuration, ApiClient, SystemApi
 
 client = ApiClient(
     Configuration(host = os.getenv(&quot;JELLYFIN_URL&quot;)), 
@@ -131,9 +127,9 @@ client = ApiClient(
 system_info = SystemApi(client).get_system_info()
 
 print(system_info.version, system_info.server_name)
-
-# new
-import jellyfin
+</code></pre>
+<h4 id="new">New</h4>
+<pre><code class="language-python">import jellyfin
 
 api = jellyfin.api(os.getenv(&quot;JELLYFIN_URL&quot;), os.getenv(&quot;JELLYFIN_API_KEY&quot;))
 
@@ -197,5 +193,5 @@ print(api.system.info.version, api.system.info.server_name)
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-08-28 08:39:10.149800+00:00
+Build Date UTC : 2025-08-28 11:55:03.816514+00:00
 -->
