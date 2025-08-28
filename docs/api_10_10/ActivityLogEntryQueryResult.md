@@ -27,6 +27,6 @@ activity_log_entry_query_result_dict = activity_log_entry_query_result_instance.
 # create an instance of ActivityLogEntryQueryResult from a dict
 activity_log_entry_query_result_from_dict = ActivityLogEntryQueryResult.from_dict(activity_log_entry_query_result_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

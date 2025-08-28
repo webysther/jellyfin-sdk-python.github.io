@@ -26,6 +26,6 @@ message_command_dict = message_command_instance.to_dict()
 # create an instance of MessageCommand from a dict
 message_command_from_dict = MessageCommand.from_dict(message_command_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

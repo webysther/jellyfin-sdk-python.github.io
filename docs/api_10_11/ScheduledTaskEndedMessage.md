@@ -27,6 +27,6 @@ scheduled_task_ended_message_dict = scheduled_task_ended_message_instance.to_dic
 # create an instance of ScheduledTaskEndedMessage from a dict
 scheduled_task_ended_message_from_dict = ScheduledTaskEndedMessage.from_dict(scheduled_task_ended_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

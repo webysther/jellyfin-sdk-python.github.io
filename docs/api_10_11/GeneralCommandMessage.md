@@ -27,6 +27,6 @@ general_command_message_dict = general_command_message_instance.to_dict()
 # create an instance of GeneralCommandMessage from a dict
 general_command_message_from_dict = GeneralCommandMessage.from_dict(general_command_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

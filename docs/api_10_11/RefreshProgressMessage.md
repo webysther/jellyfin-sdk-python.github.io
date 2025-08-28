@@ -27,6 +27,6 @@ refresh_progress_message_dict = refresh_progress_message_instance.to_dict()
 # create an instance of RefreshProgressMessage from a dict
 refresh_progress_message_from_dict = RefreshProgressMessage.from_dict(refresh_progress_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

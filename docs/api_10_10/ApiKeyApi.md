@@ -68,7 +68,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -83,7 +83,7 @@ void (empty response body)
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_keys**
 > AuthenticationInfoQueryResult get_keys()
@@ -143,7 +143,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -158,7 +158,7 @@ This endpoint does not need any parameter.
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **revoke_key**
 > revoke_key(key)
@@ -219,7 +219,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -234,5 +234,5 @@ void (empty response body)
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

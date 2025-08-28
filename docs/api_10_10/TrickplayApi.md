@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -89,7 +89,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Not Found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_trickplay_tile_image**
 > bytearray get_trickplay_tile_image(item_id, width, index, media_source_id=media_source_id)
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -174,5 +174,5 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Not Found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

@@ -26,6 +26,6 @@ activity_log_entry_start_message_dict = activity_log_entry_start_message_instanc
 # create an instance of ActivityLogEntryStartMessage from a dict
 activity_log_entry_start_message_from_dict = ActivityLogEntryStartMessage.from_dict(activity_log_entry_start_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

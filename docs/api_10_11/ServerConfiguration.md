@@ -80,6 +80,6 @@ server_configuration_dict = server_configuration_instance.to_dict()
 # create an instance of ServerConfiguration from a dict
 server_configuration_from_dict = ServerConfiguration.from_dict(server_configuration_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -27,6 +27,6 @@ file_system_entry_info_dict = file_system_entry_info_instance.to_dict()
 # create an instance of FileSystemEntryInfo from a dict
 file_system_entry_info_from_dict = FileSystemEntryInfo.from_dict(file_system_entry_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

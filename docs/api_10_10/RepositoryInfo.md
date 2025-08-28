@@ -27,6 +27,6 @@ repository_info_dict = repository_info_instance.to_dict()
 # create an instance of RepositoryInfo from a dict
 repository_info_from_dict = RepositoryInfo.from_dict(repository_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

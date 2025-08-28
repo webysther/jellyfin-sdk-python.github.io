@@ -26,6 +26,6 @@ general_command_dict = general_command_instance.to_dict()
 # create an instance of GeneralCommand from a dict
 general_command_from_dict = GeneralCommand.from_dict(general_command_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

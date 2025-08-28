@@ -25,6 +25,6 @@ name_value_pair_dict = name_value_pair_instance.to_dict()
 # create an instance of NameValuePair from a dict
 name_value_pair_from_dict = NameValuePair.from_dict(name_value_pair_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

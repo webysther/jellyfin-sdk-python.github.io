@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Not Found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_next_up**
 > BaseItemDtoQueryResult get_next_up(user_id=user_id, start_index=start_index, limit=limit, fields=fields, series_id=series_id, parent_id=parent_id, enable_images=enable_images, image_type_limit=image_type_limit, enable_image_types=enable_image_types, enable_user_data=enable_user_data, next_up_date_cutoff=next_up_date_cutoff, enable_total_record_count=enable_total_record_count, disable_first_episode=disable_first_episode, enable_resumable=enable_resumable, enable_rewatching=enable_rewatching)
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -228,7 +228,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_seasons**
 > BaseItemDtoQueryResult get_seasons(series_id, user_id=user_id, fields=fields, is_special_season=is_special_season, is_missing=is_missing, adjacent_to=adjacent_to, enable_images=enable_images, image_type_limit=image_type_limit, enable_image_types=enable_image_types, enable_user_data=enable_user_data)
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -328,7 +328,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Not Found |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_upcoming_episodes**
 > BaseItemDtoQueryResult get_upcoming_episodes(user_id=user_id, start_index=start_index, limit=limit, fields=fields, parent_id=parent_id, enable_images=enable_images, image_type_limit=image_type_limit, enable_image_types=enable_image_types, enable_user_data=enable_user_data)
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -425,5 +425,5 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

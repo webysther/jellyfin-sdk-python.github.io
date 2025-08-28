@@ -88,6 +88,6 @@ media_stream_dict = media_stream_instance.to_dict()
 # create an instance of MediaStream from a dict
 media_stream_from_dict = MediaStream.from_dict(media_stream_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

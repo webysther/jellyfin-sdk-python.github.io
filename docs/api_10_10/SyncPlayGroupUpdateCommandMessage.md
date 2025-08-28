@@ -27,6 +27,6 @@ sync_play_group_update_command_message_dict = sync_play_group_update_command_mes
 # create an instance of SyncPlayGroupUpdateCommandMessage from a dict
 sync_play_group_update_command_message_from_dict = SyncPlayGroupUpdateCommandMessage.from_dict(sync_play_group_update_command_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

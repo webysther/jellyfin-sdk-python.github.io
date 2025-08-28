@@ -29,6 +29,6 @@ media_segment_dto_dict = media_segment_dto_instance.to_dict()
 # create an instance of MediaSegmentDto from a dict
 media_segment_dto_from_dict = MediaSegmentDto.from_dict(media_segment_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

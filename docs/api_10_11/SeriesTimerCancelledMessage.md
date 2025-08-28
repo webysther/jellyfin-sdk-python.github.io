@@ -27,6 +27,6 @@ series_timer_cancelled_message_dict = series_timer_cancelled_message_instance.to
 # create an instance of SeriesTimerCancelledMessage from a dict
 series_timer_cancelled_message_from_dict = SeriesTimerCancelledMessage.from_dict(series_timer_cancelled_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -91,7 +91,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_items**
 > BaseItemDtoQueryResult get_items(user_id=user_id, max_official_rating=max_official_rating, has_theme_song=has_theme_song, has_theme_video=has_theme_video, has_subtitles=has_subtitles, has_special_feature=has_special_feature, has_trailer=has_trailer, adjacent_to=adjacent_to, index_number=index_number, parent_index_number=parent_index_number, has_parental_rating=has_parental_rating, is_hd=is_hd, is4_k=is4_k, location_types=location_types, exclude_location_types=exclude_location_types, is_missing=is_missing, is_unaired=is_unaired, min_community_rating=min_community_rating, min_critic_rating=min_critic_rating, min_premiere_date=min_premiere_date, min_date_last_saved=min_date_last_saved, min_date_last_saved_for_user=min_date_last_saved_for_user, max_premiere_date=max_premiere_date, has_overview=has_overview, has_imdb_id=has_imdb_id, has_tmdb_id=has_tmdb_id, has_tvdb_id=has_tvdb_id, is_movie=is_movie, is_series=is_series, is_news=is_news, is_kids=is_kids, is_sports=is_sports, exclude_item_ids=exclude_item_ids, start_index=start_index, limit=limit, recursive=recursive, search_term=search_term, sort_order=sort_order, parent_id=parent_id, fields=fields, exclude_item_types=exclude_item_types, include_item_types=include_item_types, filters=filters, is_favorite=is_favorite, media_types=media_types, image_types=image_types, sort_by=sort_by, is_played=is_played, genres=genres, official_ratings=official_ratings, tags=tags, years=years, enable_user_data=enable_user_data, image_type_limit=image_type_limit, enable_image_types=enable_image_types, person=person, person_ids=person_ids, person_types=person_types, studios=studios, artists=artists, exclude_artist_ids=exclude_artist_ids, artist_ids=artist_ids, album_artist_ids=album_artist_ids, contributing_artist_ids=contributing_artist_ids, albums=albums, album_ids=album_ids, ids=ids, video_types=video_types, min_official_rating=min_official_rating, is_locked=is_locked, is_place_holder=is_place_holder, has_official_rating=has_official_rating, collapse_box_set_items=collapse_box_set_items, min_width=min_width, min_height=min_height, max_width=max_width, max_height=max_height, is3_d=is3_d, series_status=series_status, name_starts_with_or_greater=name_starts_with_or_greater, name_starts_with=name_starts_with, name_less_than=name_less_than, studio_ids=studio_ids, genre_ids=genre_ids, enable_total_record_count=enable_total_record_count, enable_images=enable_images)
@@ -335,7 +335,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -351,7 +351,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_resume_items**
 > BaseItemDtoQueryResult get_resume_items(user_id=user_id, start_index=start_index, limit=limit, search_term=search_term, parent_id=parent_id, fields=fields, media_types=media_types, enable_user_data=enable_user_data, image_type_limit=image_type_limit, enable_image_types=enable_image_types, exclude_item_types=exclude_item_types, include_item_types=include_item_types, enable_total_record_count=enable_total_record_count, enable_images=enable_images, exclude_active_sessions=exclude_active_sessions)
@@ -447,7 +447,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -463,7 +463,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **update_item_user_data**
 > UserItemDataDto update_item_user_data(item_id, update_user_item_data_dto, user_id=user_id)
@@ -532,7 +532,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -549,5 +549,5 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

@@ -27,6 +27,6 @@ playstate_message_dict = playstate_message_instance.to_dict()
 # create an instance of PlaystateMessage from a dict
 playstate_message_from_dict = PlaystateMessage.from_dict(playstate_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

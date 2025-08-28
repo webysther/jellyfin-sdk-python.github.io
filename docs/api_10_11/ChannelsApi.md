@@ -69,7 +69,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -85,7 +85,7 @@ This endpoint does not need any parameter.
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_channel_features**
 > ChannelFeatures get_channel_features(channel_id)
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_channel_items**
 > BaseItemDtoQueryResult get_channel_items(channel_id, folder_id=folder_id, user_id=user_id, start_index=start_index, limit=limit, sort_order=sort_order, filters=filters, sort_by=sort_by, fields=fields)
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -265,7 +265,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_channels**
 > BaseItemDtoQueryResult get_channels(user_id=user_id, start_index=start_index, limit=limit, supports_latest_items=supports_latest_items, supports_media_deletion=supports_media_deletion, is_favorite=is_favorite)
@@ -339,7 +339,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -355,7 +355,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_latest_channel_items**
 > BaseItemDtoQueryResult get_latest_channel_items(user_id=user_id, start_index=start_index, limit=limit, filters=filters, fields=fields, channel_ids=channel_ids)
@@ -431,7 +431,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -447,5 +447,5 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

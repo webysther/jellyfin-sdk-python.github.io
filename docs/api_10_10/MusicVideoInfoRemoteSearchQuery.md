@@ -27,6 +27,6 @@ music_video_info_remote_search_query_dict = music_video_info_remote_search_query
 # create an instance of MusicVideoInfoRemoteSearchQuery from a dict
 music_video_info_remote_search_query_from_dict = MusicVideoInfoRemoteSearchQuery.from_dict(music_video_info_remote_search_query_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -25,6 +25,6 @@ activity_log_entry_stop_message_dict = activity_log_entry_stop_message_instance.
 # create an instance of ActivityLogEntryStopMessage from a dict
 activity_log_entry_stop_message_from_dict = ActivityLogEntryStopMessage.from_dict(activity_log_entry_stop_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

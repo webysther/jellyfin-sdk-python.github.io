@@ -27,6 +27,6 @@ album_info_remote_search_query_dict = album_info_remote_search_query_instance.to
 # create an instance of AlbumInfoRemoteSearchQuery from a dict
 album_info_remote_search_query_from_dict = AlbumInfoRemoteSearchQuery.from_dict(album_info_remote_search_query_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

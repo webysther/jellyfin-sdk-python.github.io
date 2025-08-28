@@ -14,6 +14,6 @@ Delivery method to use during playback of a specific subtitle format.
 
 * `DROP` (value: `'Drop'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

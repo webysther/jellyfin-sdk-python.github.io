@@ -38,6 +38,6 @@ live_tv_options_dict = live_tv_options_instance.to_dict()
 # create an instance of LiveTvOptions from a dict
 live_tv_options_from_dict = LiveTvOptions.from_dict(live_tv_options_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

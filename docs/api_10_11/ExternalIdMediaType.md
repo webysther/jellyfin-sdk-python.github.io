@@ -32,6 +32,6 @@ The specific media type of an MediaBrowser.Model.Providers.ExternalIdInfo.
 
 * `RECORDING` (value: `'Recording'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -31,6 +31,6 @@ trickplay_info_dto_dict = trickplay_info_dto_instance.to_dict()
 # create an instance of TrickplayInfoDto from a dict
 trickplay_info_dto_from_dict = TrickplayInfoDto.from_dict(trickplay_info_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

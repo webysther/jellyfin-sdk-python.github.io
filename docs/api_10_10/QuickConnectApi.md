@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Unknown user id. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_quick_connect_enabled**
 > bool get_quick_connect_enabled()
@@ -149,7 +149,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | Quick connect state returned. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_quick_connect_state**
 > QuickConnectResult get_quick_connect_state(secret)
@@ -216,7 +216,7 @@ No authorization required
 **200** | Quick connect result returned. |  -  |
 **404** | Unknown quick connect secret. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **initiate_quick_connect**
 > QuickConnectResult initiate_quick_connect()
@@ -279,5 +279,5 @@ No authorization required
 **200** | Quick connect request successfully created. |  -  |
 **401** | Quick connect is not active on this server. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

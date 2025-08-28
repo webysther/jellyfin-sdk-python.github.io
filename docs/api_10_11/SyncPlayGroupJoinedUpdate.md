@@ -26,6 +26,6 @@ sync_play_group_joined_update_dict = sync_play_group_joined_update_instance.to_d
 # create an instance of SyncPlayGroupJoinedUpdate from a dict
 sync_play_group_joined_update_from_dict = SyncPlayGroupJoinedUpdate.from_dict(sync_play_group_joined_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -31,6 +31,6 @@ i_plugin_dict = i_plugin_instance.to_dict()
 # create an instance of IPlugin from a dict
 i_plugin_from_dict = IPlugin.from_dict(i_plugin_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

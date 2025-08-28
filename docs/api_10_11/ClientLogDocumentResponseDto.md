@@ -25,6 +25,6 @@ client_log_document_response_dto_dict = client_log_document_response_dto_instanc
 # create an instance of ClientLogDocumentResponseDto from a dict
 client_log_document_response_dto_from_dict = ClientLogDocumentResponseDto.from_dict(client_log_document_response_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

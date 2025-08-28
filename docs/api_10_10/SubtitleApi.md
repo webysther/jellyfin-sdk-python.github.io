@@ -77,7 +77,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -93,7 +93,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **download_remote_subtitles**
 > download_remote_subtitles(item_id, subtitle_id)
@@ -156,7 +156,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -172,7 +172,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_fallback_font**
 > bytearray get_fallback_font(name)
@@ -235,7 +235,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_fallback_font_list**
 > List[FontFile] get_fallback_font_list()
@@ -310,7 +310,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -325,7 +325,7 @@ This endpoint does not need any parameter.
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_remote_subtitles**
 > bytearray get_remote_subtitles(subtitle_id)
@@ -388,7 +388,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -403,7 +403,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_subtitle**
 > bytearray get_subtitle(route_item_id, route_media_source_id, route_index, route_format, item_id=item_id, media_source_id=media_source_id, index=index, format=format, end_position_ticks=end_position_ticks, copy_timestamps=copy_timestamps, add_vtt_time_map=add_vtt_time_map, start_position_ticks=start_position_ticks)
@@ -490,7 +490,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | File returned. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_subtitle_playlist**
 > bytearray get_subtitle_playlist(item_id, index, media_source_id, segment_length)
@@ -559,7 +559,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -575,7 +575,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_subtitle_with_ticks**
 > bytearray get_subtitle_with_ticks(route_item_id, route_media_source_id, route_index, route_start_position_ticks, route_format, item_id=item_id, media_source_id=media_source_id, index=index, start_position_ticks=start_position_ticks, format=format, end_position_ticks=end_position_ticks, copy_timestamps=copy_timestamps, add_vtt_time_map=add_vtt_time_map)
@@ -664,7 +664,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | File returned. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **search_remote_subtitles**
 > List[RemoteSubtitleInfo] search_remote_subtitles(item_id, language, is_perfect_match=is_perfect_match)
@@ -732,7 +732,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -748,7 +748,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **upload_subtitle**
 > upload_subtitle(item_id, upload_subtitle_dto)
@@ -812,7 +812,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -828,5 +828,5 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

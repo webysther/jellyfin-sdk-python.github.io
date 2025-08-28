@@ -25,6 +25,6 @@ queue_item_dict = queue_item_instance.to_dict()
 # create an instance of QueueItem from a dict
 queue_item_from_dict = QueueItem.from_dict(queue_item_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

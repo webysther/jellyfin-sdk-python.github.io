@@ -12,6 +12,6 @@ An enum representing the options to disable embedded subs.
 
 * `ALLOWNONE` (value: `'AllowNone'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

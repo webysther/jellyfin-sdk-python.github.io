@@ -27,6 +27,6 @@ plugin_installation_failed_message_dict = plugin_installation_failed_message_ins
 # create an instance of PluginInstallationFailedMessage from a dict
 plugin_installation_failed_message_from_dict = PluginInstallationFailedMessage.from_dict(plugin_installation_failed_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

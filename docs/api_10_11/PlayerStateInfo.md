@@ -35,6 +35,6 @@ player_state_info_dict = player_state_info_instance.to_dict()
 # create an instance of PlayerStateInfo from a dict
 player_state_info_from_dict = PlayerStateInfo.from_dict(player_state_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

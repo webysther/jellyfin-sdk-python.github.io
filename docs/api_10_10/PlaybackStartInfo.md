@@ -45,6 +45,6 @@ playback_start_info_dict = playback_start_info_instance.to_dict()
 # create an instance of PlaybackStartInfo from a dict
 playback_start_info_from_dict = PlaybackStartInfo.from_dict(playback_start_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

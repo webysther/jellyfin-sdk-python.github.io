@@ -27,6 +27,6 @@ person_lookup_info_remote_search_query_dict = person_lookup_info_remote_search_q
 # create an instance of PersonLookupInfoRemoteSearchQuery from a dict
 person_lookup_info_remote_search_query_from_dict = PersonLookupInfoRemoteSearchQuery.from_dict(person_lookup_info_remote_search_query_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

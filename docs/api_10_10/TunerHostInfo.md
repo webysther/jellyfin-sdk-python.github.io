@@ -38,6 +38,6 @@ tuner_host_info_dict = tuner_host_info_instance.to_dict()
 # create an instance of TunerHostInfo from a dict
 tuner_host_info_from_dict = TunerHostInfo.from_dict(tuner_host_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

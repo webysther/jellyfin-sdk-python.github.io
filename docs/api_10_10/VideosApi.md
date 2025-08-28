@@ -72,7 +72,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -88,7 +88,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Video not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_additional_part**
 > BaseItemDtoQueryResult get_additional_part(item_id, user_id=user_id)
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_video_stream**
 > bytearray get_video_stream(item_id, container=container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)
@@ -338,7 +338,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | Video stream returned. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_video_stream_by_container**
 > bytearray get_video_stream_by_container(item_id, container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)
@@ -507,7 +507,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | Video stream returned. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_video_stream**
 > bytearray head_video_stream(item_id, container=container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)
@@ -676,7 +676,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | Video stream returned. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_video_stream_by_container**
 > bytearray head_video_stream_by_container(item_id, container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)
@@ -845,7 +845,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | Video stream returned. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **merge_versions**
 > merge_versions(ids)
@@ -906,7 +906,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -922,5 +922,5 @@ void (empty response body)
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

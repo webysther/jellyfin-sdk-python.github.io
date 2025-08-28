@@ -29,6 +29,6 @@ culture_dto_dict = culture_dto_instance.to_dict()
 # create an instance of CultureDto from a dict
 culture_dto_from_dict = CultureDto.from_dict(culture_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

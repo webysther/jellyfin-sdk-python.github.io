@@ -28,6 +28,6 @@ update_user_password_dict = update_user_password_instance.to_dict()
 # create an instance of UpdateUserPassword from a dict
 update_user_password_from_dict = UpdateUserPassword.from_dict(update_user_password_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

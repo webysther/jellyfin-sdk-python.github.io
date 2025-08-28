@@ -27,6 +27,6 @@ series_timer_created_message_dict = series_timer_created_message_instance.to_dic
 # create an instance of SeriesTimerCreatedMessage from a dict
 series_timer_created_message_from_dict = SeriesTimerCreatedMessage.from_dict(series_timer_created_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

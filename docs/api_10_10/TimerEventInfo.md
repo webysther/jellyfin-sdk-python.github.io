@@ -25,6 +25,6 @@ timer_event_info_dict = timer_event_info_instance.to_dict()
 # create an instance of TimerEventInfo from a dict
 timer_event_info_from_dict = TimerEventInfo.from_dict(timer_event_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

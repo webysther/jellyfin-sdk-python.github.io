@@ -25,6 +25,6 @@ set_repeat_mode_request_dto_dict = set_repeat_mode_request_dto_instance.to_dict(
 # create an instance of SetRepeatModeRequestDto from a dict
 set_repeat_mode_request_dto_from_dict = SetRepeatModeRequestDto.from_dict(set_repeat_mode_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

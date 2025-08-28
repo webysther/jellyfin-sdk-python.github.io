@@ -26,6 +26,6 @@ startup_remote_access_dto_dict = startup_remote_access_dto_instance.to_dict()
 # create an instance of StartupRemoteAccessDto from a dict
 startup_remote_access_dto_from_dict = StartupRemoteAccessDto.from_dict(startup_remote_access_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

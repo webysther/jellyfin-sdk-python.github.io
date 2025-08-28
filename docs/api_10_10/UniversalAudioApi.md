@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_universal_audio_stream**
 > bytearray head_universal_audio_stream(item_id, container=container, media_source_id=media_source_id, device_id=device_id, user_id=user_id, audio_codec=audio_codec, max_audio_channels=max_audio_channels, transcoding_audio_channels=transcoding_audio_channels, max_streaming_bitrate=max_streaming_bitrate, audio_bit_rate=audio_bit_rate, start_time_ticks=start_time_ticks, transcoding_container=transcoding_container, transcoding_protocol=transcoding_protocol, max_audio_sample_rate=max_audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, enable_remote_media=enable_remote_media, enable_audio_vbr_encoding=enable_audio_vbr_encoding, break_on_non_key_frames=break_on_non_key_frames, enable_redirection=enable_redirection)
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -240,5 +240,5 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

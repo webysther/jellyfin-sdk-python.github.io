@@ -16,6 +16,6 @@ Defines the types of content an individual Jellyfin.Data.Entities.MediaSegment r
 
 * `INTRO` (value: `'Intro'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

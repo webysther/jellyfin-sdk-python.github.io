@@ -27,6 +27,6 @@ play_queue_update_group_update_dict = play_queue_update_group_update_instance.to
 # create an instance of PlayQueueUpdateGroupUpdate from a dict
 play_queue_update_group_update_from_dict = PlayQueueUpdateGroupUpdate.from_dict(play_queue_update_group_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

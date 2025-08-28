@@ -27,6 +27,6 @@ query_filters_legacy_dict = query_filters_legacy_instance.to_dict()
 # create an instance of QueryFiltersLegacy from a dict
 query_filters_legacy_from_dict = QueryFiltersLegacy.from_dict(query_filters_legacy_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

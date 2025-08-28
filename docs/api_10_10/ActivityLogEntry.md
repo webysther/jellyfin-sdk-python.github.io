@@ -34,6 +34,6 @@ activity_log_entry_dict = activity_log_entry_instance.to_dict()
 # create an instance of ActivityLogEntry from a dict
 activity_log_entry_from_dict = ActivityLogEntry.from_dict(activity_log_entry_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

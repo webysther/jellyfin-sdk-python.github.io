@@ -124,6 +124,6 @@ Used to control the data that gets attached to DtoBaseItems.
 
 * `SPECIALFEATURECOUNT` (value: `'SpecialFeatureCount'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

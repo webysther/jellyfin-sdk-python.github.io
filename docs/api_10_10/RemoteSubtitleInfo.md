@@ -39,6 +39,6 @@ remote_subtitle_info_dict = remote_subtitle_info_instance.to_dict()
 # create an instance of RemoteSubtitleInfo from a dict
 remote_subtitle_info_from_dict = RemoteSubtitleInfo.from_dict(remote_subtitle_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

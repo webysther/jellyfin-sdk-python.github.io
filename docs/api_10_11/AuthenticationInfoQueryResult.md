@@ -27,6 +27,6 @@ authentication_info_query_result_dict = authentication_info_query_result_instanc
 # create an instance of AuthenticationInfoQueryResult from a dict
 authentication_info_query_result_from_dict = AuthenticationInfoQueryResult.from_dict(authentication_info_query_result_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

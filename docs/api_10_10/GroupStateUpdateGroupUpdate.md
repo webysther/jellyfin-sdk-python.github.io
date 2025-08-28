@@ -27,6 +27,6 @@ group_state_update_group_update_dict = group_state_update_group_update_instance.
 # create an instance of GroupStateUpdateGroupUpdate from a dict
 group_state_update_group_update_from_dict = GroupStateUpdateGroupUpdate.from_dict(group_state_update_group_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

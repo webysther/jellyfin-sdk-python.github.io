@@ -70,7 +70,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -85,7 +85,7 @@ void (empty response body)
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_bitrate_test_bytes**
 > bytearray get_bitrate_test_bytes(size=size)
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_playback_info**
 > PlaybackInfoResponse get_playback_info(item_id, user_id=user_id)
@@ -229,7 +229,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_posted_playback_info**
 > PlaybackInfoResponse get_posted_playback_info(item_id, user_id=user_id, max_streaming_bitrate=max_streaming_bitrate, start_time_ticks=start_time_ticks, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, max_audio_channels=max_audio_channels, media_source_id=media_source_id, live_stream_id=live_stream_id, auto_open_live_stream=auto_open_live_stream, enable_direct_play=enable_direct_play, enable_direct_stream=enable_direct_stream, enable_transcoding=enable_transcoding, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, playback_info_dto=playback_info_dto)
@@ -343,7 +343,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -359,7 +359,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **open_live_stream**
 > LiveStreamResponse open_live_stream(open_token=open_token, user_id=user_id, play_session_id=play_session_id, max_streaming_bitrate=max_streaming_bitrate, start_time_ticks=start_time_ticks, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, max_audio_channels=max_audio_channels, item_id=item_id, enable_direct_play=enable_direct_play, enable_direct_stream=enable_direct_stream, always_burn_in_subtitle_when_transcoding=always_burn_in_subtitle_when_transcoding, open_live_stream_dto=open_live_stream_dto)
@@ -448,7 +448,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -463,5 +463,5 @@ Name | Type | Description  | Notes
 **401** | Unauthorized |  -  |
 **403** | Forbidden |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

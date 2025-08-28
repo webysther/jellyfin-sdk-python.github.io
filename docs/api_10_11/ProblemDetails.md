@@ -28,6 +28,6 @@ problem_details_dict = problem_details_instance.to_dict()
 # create an instance of ProblemDetails from a dict
 problem_details_from_dict = ProblemDetails.from_dict(problem_details_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

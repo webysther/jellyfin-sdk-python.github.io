@@ -27,6 +27,6 @@ remove_from_playlist_request_dto_dict = remove_from_playlist_request_dto_instanc
 # create an instance of RemoveFromPlaylistRequestDto from a dict
 remove_from_playlist_request_dto_from_dict = RemoveFromPlaylistRequestDto.from_dict(remove_from_playlist_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

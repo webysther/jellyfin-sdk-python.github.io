@@ -29,6 +29,6 @@ folder_storage_dto_dict = folder_storage_dto_instance.to_dict()
 # create an instance of FolderStorageDto from a dict
 folder_storage_dto_from_dict = FolderStorageDto.from_dict(folder_storage_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

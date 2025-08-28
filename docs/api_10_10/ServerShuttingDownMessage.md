@@ -26,6 +26,6 @@ server_shutting_down_message_dict = server_shutting_down_message_instance.to_dic
 # create an instance of ServerShuttingDownMessage from a dict
 server_shutting_down_message_from_dict = ServerShuttingDownMessage.from_dict(server_shutting_down_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

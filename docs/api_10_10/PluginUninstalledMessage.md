@@ -27,6 +27,6 @@ plugin_uninstalled_message_dict = plugin_uninstalled_message_instance.to_dict()
 # create an instance of PluginUninstalledMessage from a dict
 plugin_uninstalled_message_from_dict = PluginUninstalledMessage.from_dict(plugin_uninstalled_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

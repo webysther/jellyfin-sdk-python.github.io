@@ -27,6 +27,6 @@ book_info_remote_search_query_dict = book_info_remote_search_query_instance.to_d
 # create an instance of BookInfoRemoteSearchQuery from a dict
 book_info_remote_search_query_from_dict = BookInfoRemoteSearchQuery.from_dict(book_info_remote_search_query_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

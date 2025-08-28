@@ -26,6 +26,6 @@ inbound_web_socket_message_dict = inbound_web_socket_message_instance.to_dict()
 # create an instance of InboundWebSocketMessage from a dict
 inbound_web_socket_message_from_dict = InboundWebSocketMessage.from_dict(inbound_web_socket_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

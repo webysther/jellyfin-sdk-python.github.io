@@ -37,6 +37,6 @@ transcoding_info_dict = transcoding_info_instance.to_dict()
 # create an instance of TranscodingInfo from a dict
 transcoding_info_from_dict = TranscodingInfo.from_dict(transcoding_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

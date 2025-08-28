@@ -28,6 +28,6 @@ container_profile_dict = container_profile_instance.to_dict()
 # create an instance of ContainerProfile from a dict
 container_profile_from_dict = ContainerProfile.from_dict(container_profile_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

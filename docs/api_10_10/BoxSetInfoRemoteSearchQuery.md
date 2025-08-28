@@ -27,6 +27,6 @@ box_set_info_remote_search_query_dict = box_set_info_remote_search_query_instanc
 # create an instance of BoxSetInfoRemoteSearchQuery from a dict
 box_set_info_remote_search_query_from_dict = BoxSetInfoRemoteSearchQuery.from_dict(box_set_info_remote_search_query_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

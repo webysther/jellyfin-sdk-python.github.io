@@ -34,6 +34,6 @@ box_set_info_dict = box_set_info_instance.to_dict()
 # create an instance of BoxSetInfo from a dict
 box_set_info_from_dict = BoxSetInfo.from_dict(box_set_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

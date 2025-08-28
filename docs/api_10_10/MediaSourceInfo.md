@@ -68,6 +68,6 @@ media_source_info_dict = media_source_info_instance.to_dict()
 # create an instance of MediaSourceInfo from a dict
 media_source_info_from_dict = MediaSourceInfo.from_dict(media_source_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

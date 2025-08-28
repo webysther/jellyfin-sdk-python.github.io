@@ -47,6 +47,6 @@ network_configuration_dict = network_configuration_instance.to_dict()
 # create an instance of NetworkConfiguration from a dict
 network_configuration_from_dict = NetworkConfiguration.from_dict(network_configuration_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

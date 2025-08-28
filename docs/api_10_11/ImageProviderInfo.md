@@ -26,6 +26,6 @@ image_provider_info_dict = image_provider_info_instance.to_dict()
 # create an instance of ImageProviderInfo from a dict
 image_provider_info_from_dict = ImageProviderInfo.from_dict(image_provider_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

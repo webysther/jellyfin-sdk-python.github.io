@@ -27,6 +27,6 @@ log_file_dict = log_file_instance.to_dict()
 # create an instance of LogFile from a dict
 log_file_from_dict = LogFile.from_dict(log_file_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

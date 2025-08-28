@@ -27,6 +27,6 @@ string_group_update_dict = string_group_update_instance.to_dict()
 # create an instance of StringGroupUpdate from a dict
 string_group_update_from_dict = StringGroupUpdate.from_dict(string_group_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

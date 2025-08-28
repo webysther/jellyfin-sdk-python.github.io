@@ -25,6 +25,6 @@ default_directory_browser_info_dto_dict = default_directory_browser_info_dto_ins
 # create an instance of DefaultDirectoryBrowserInfoDto from a dict
 default_directory_browser_info_dto_from_dict = DefaultDirectoryBrowserInfoDto.from_dict(default_directory_browser_info_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

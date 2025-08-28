@@ -40,6 +40,6 @@ user_configuration_dict = user_configuration_instance.to_dict()
 # create an instance of UserConfiguration from a dict
 user_configuration_from_dict = UserConfiguration.from_dict(user_configuration_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -26,6 +26,6 @@ lyric_dto_dict = lyric_dto_instance.to_dict()
 # create an instance of LyricDto from a dict
 lyric_dto_from_dict = LyricDto.from_dict(lyric_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

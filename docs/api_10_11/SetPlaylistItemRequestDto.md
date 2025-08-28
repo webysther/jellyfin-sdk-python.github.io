@@ -25,6 +25,6 @@ set_playlist_item_request_dto_dict = set_playlist_item_request_dto_instance.to_d
 # create an instance of SetPlaylistItemRequestDto from a dict
 set_playlist_item_request_dto_from_dict = SetPlaylistItemRequestDto.from_dict(set_playlist_item_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

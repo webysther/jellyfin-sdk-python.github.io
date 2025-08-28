@@ -25,6 +25,6 @@ name_guid_pair_dict = name_guid_pair_instance.to_dict()
 # create an instance of NameGuidPair from a dict
 name_guid_pair_from_dict = NameGuidPair.from_dict(name_guid_pair_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

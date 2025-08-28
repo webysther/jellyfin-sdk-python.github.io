@@ -26,6 +26,6 @@ sync_play_group_does_not_exist_update_dict = sync_play_group_does_not_exist_upda
 # create an instance of SyncPlayGroupDoesNotExistUpdate from a dict
 sync_play_group_does_not_exist_update_from_dict = SyncPlayGroupDoesNotExistUpdate.from_dict(sync_play_group_does_not_exist_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

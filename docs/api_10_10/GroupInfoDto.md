@@ -29,6 +29,6 @@ group_info_dto_dict = group_info_dto_instance.to_dict()
 # create an instance of GroupInfoDto from a dict
 group_info_dto_from_dict = GroupInfoDto.from_dict(group_info_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

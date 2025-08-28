@@ -27,6 +27,6 @@ database_configuration_options_dict = database_configuration_options_instance.to
 # create an instance of DatabaseConfigurationOptions from a dict
 database_configuration_options_from_dict = DatabaseConfigurationOptions.from_dict(database_configuration_options_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

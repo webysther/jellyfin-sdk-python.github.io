@@ -28,6 +28,6 @@ backup_options_dto_dict = backup_options_dto_instance.to_dict()
 # create an instance of BackupOptionsDto from a dict
 backup_options_dto_from_dict = BackupOptionsDto.from_dict(backup_options_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

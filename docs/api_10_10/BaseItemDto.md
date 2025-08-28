@@ -177,6 +177,6 @@ base_item_dto_dict = base_item_dto_instance.to_dict()
 # create an instance of BaseItemDto from a dict
 base_item_dto_from_dict = BaseItemDto.from_dict(base_item_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

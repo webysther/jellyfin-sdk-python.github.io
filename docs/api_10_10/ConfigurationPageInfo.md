@@ -30,6 +30,6 @@ configuration_page_info_dict = configuration_page_info_instance.to_dict()
 # create an instance of ConfigurationPageInfo from a dict
 configuration_page_info_from_dict = ConfigurationPageInfo.from_dict(configuration_page_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

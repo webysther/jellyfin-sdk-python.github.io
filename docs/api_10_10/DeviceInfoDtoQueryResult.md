@@ -27,6 +27,6 @@ device_info_dto_query_result_dict = device_info_dto_query_result_instance.to_dic
 # create an instance of DeviceInfoDtoQueryResult from a dict
 device_info_dto_query_result_from_dict = DeviceInfoDtoQueryResult.from_dict(device_info_dto_query_result_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

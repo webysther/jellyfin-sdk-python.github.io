@@ -25,6 +25,6 @@ add_virtual_folder_dto_dict = add_virtual_folder_dto_instance.to_dict()
 # create an instance of AddVirtualFolderDto from a dict
 add_virtual_folder_dto_from_dict = AddVirtualFolderDto.from_dict(add_virtual_folder_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

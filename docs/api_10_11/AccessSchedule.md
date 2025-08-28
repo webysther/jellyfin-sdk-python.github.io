@@ -29,6 +29,6 @@ access_schedule_dict = access_schedule_instance.to_dict()
 # create an instance of AccessSchedule from a dict
 access_schedule_from_dict = AccessSchedule.from_dict(access_schedule_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

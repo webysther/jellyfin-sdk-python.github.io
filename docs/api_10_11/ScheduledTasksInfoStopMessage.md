@@ -25,6 +25,6 @@ scheduled_tasks_info_stop_message_dict = scheduled_tasks_info_stop_message_insta
 # create an instance of ScheduledTasksInfoStopMessage from a dict
 scheduled_tasks_info_stop_message_from_dict = ScheduledTasksInfoStopMessage.from_dict(scheduled_tasks_info_stop_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

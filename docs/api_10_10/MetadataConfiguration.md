@@ -24,6 +24,6 @@ metadata_configuration_dict = metadata_configuration_instance.to_dict()
 # create an instance of MetadataConfiguration from a dict
 metadata_configuration_from_dict = MetadataConfiguration.from_dict(metadata_configuration_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

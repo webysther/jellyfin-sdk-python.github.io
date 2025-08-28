@@ -26,6 +26,6 @@ sync_play_not_in_group_update_dict = sync_play_not_in_group_update_instance.to_d
 # create an instance of SyncPlayNotInGroupUpdate from a dict
 sync_play_not_in_group_update_from_dict = SyncPlayNotInGroupUpdate.from_dict(sync_play_not_in_group_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

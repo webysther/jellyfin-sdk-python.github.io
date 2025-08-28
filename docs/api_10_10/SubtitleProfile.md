@@ -29,6 +29,6 @@ subtitle_profile_dict = subtitle_profile_instance.to_dict()
 # create an instance of SubtitleProfile from a dict
 subtitle_profile_from_dict = SubtitleProfile.from_dict(subtitle_profile_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

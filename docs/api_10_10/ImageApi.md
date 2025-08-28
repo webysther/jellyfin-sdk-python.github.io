@@ -98,7 +98,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -113,7 +113,7 @@ void (empty response body)
 **401** | Unauthorized |  -  |
 **403** | User does not have permission to delete splashscreen.. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **delete_item_image**
 > delete_item_image(item_id, image_type, image_index=image_index)
@@ -179,7 +179,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -195,7 +195,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **delete_item_image_by_index**
 > delete_item_image_by_index(item_id, image_type, image_index)
@@ -261,7 +261,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -277,7 +277,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **delete_user_image**
 > delete_user_image(user_id=user_id)
@@ -338,7 +338,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -353,7 +353,7 @@ void (empty response body)
 **401** | Unauthorized |  -  |
 **403** | User does not have permission to delete the image. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_artist_image**
 > bytearray get_artist_image(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -453,7 +453,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_genre_image**
 > bytearray get_genre_image(name, image_type, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -553,7 +553,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_genre_image_by_index**
 > bytearray get_genre_image_by_index(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -653,7 +653,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_item_image**
 > bytearray get_item_image(item_id, image_type, max_width=max_width, max_height=max_height, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, tag=tag, format=format, percent_played=percent_played, unplayed_count=unplayed_count, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -753,7 +753,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_item_image2**
 > bytearray get_item_image2(item_id, image_type, max_width, max_height, tag, format, percent_played, unplayed_count, image_index, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -853,7 +853,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_item_image_by_index**
 > bytearray get_item_image_by_index(item_id, image_type, image_index, max_width=max_width, max_height=max_height, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, tag=tag, format=format, percent_played=percent_played, unplayed_count=unplayed_count, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -953,7 +953,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_item_image_infos**
 > List[ImageInfo] get_item_image_infos(item_id)
@@ -1017,7 +1017,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -1033,7 +1033,7 @@ Name | Type | Description  | Notes
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_music_genre_image**
 > bytearray get_music_genre_image(name, image_type, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -1133,7 +1133,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_music_genre_image_by_index**
 > bytearray get_music_genre_image_by_index(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -1233,7 +1233,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_person_image**
 > bytearray get_person_image(name, image_type, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -1333,7 +1333,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_person_image_by_index**
 > bytearray get_person_image_by_index(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -1433,7 +1433,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_splashscreen**
 > bytearray get_splashscreen(tag=tag, format=format, max_width=max_width, max_height=max_height, width=width, height=height, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, quality=quality)
@@ -1521,7 +1521,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | Splashscreen returned successfully. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_studio_image**
 > bytearray get_studio_image(name, image_type, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -1621,7 +1621,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_studio_image_by_index**
 > bytearray get_studio_image_by_index(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -1721,7 +1721,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **get_user_image**
 > bytearray get_user_image(user_id=user_id, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -1819,7 +1819,7 @@ No authorization required
 **400** | User id not provided. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_artist_image**
 > bytearray head_artist_image(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -1919,7 +1919,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_genre_image**
 > bytearray head_genre_image(name, image_type, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -2019,7 +2019,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_genre_image_by_index**
 > bytearray head_genre_image_by_index(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -2119,7 +2119,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_item_image**
 > bytearray head_item_image(item_id, image_type, max_width=max_width, max_height=max_height, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, tag=tag, format=format, percent_played=percent_played, unplayed_count=unplayed_count, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -2219,7 +2219,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_item_image2**
 > bytearray head_item_image2(item_id, image_type, max_width, max_height, tag, format, percent_played, unplayed_count, image_index, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -2319,7 +2319,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_item_image_by_index**
 > bytearray head_item_image_by_index(item_id, image_type, image_index, max_width=max_width, max_height=max_height, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, tag=tag, format=format, percent_played=percent_played, unplayed_count=unplayed_count, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -2419,7 +2419,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_music_genre_image**
 > bytearray head_music_genre_image(name, image_type, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -2519,7 +2519,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_music_genre_image_by_index**
 > bytearray head_music_genre_image_by_index(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -2619,7 +2619,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_person_image**
 > bytearray head_person_image(name, image_type, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -2719,7 +2719,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_person_image_by_index**
 > bytearray head_person_image_by_index(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -2819,7 +2819,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_studio_image**
 > bytearray head_studio_image(name, image_type, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -2919,7 +2919,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_studio_image_by_index**
 > bytearray head_studio_image_by_index(name, image_type, image_index, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer)
@@ -3019,7 +3019,7 @@ No authorization required
 **200** | Image stream returned. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **head_user_image**
 > bytearray head_user_image(user_id=user_id, tag=tag, format=format, max_width=max_width, max_height=max_height, percent_played=percent_played, unplayed_count=unplayed_count, width=width, height=height, quality=quality, fill_width=fill_width, fill_height=fill_height, blur=blur, background_color=background_color, foreground_layer=foreground_layer, image_index=image_index)
@@ -3117,7 +3117,7 @@ No authorization required
 **400** | User id not provided. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **post_user_image**
 > post_user_image(user_id=user_id, body=body)
@@ -3180,7 +3180,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -3197,7 +3197,7 @@ void (empty response body)
 **403** | User does not have permission to delete the image. |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **set_item_image**
 > set_item_image(item_id, image_type, body=body)
@@ -3263,7 +3263,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -3280,7 +3280,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **set_item_image_by_index**
 > set_item_image_by_index(item_id, image_type, image_index, body=body)
@@ -3348,7 +3348,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -3365,7 +3365,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **update_item_image_index**
 > update_item_image_index(item_id, image_type, image_index, new_index)
@@ -3433,7 +3433,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -3449,7 +3449,7 @@ void (empty response body)
 **403** | Forbidden |  -  |
 **404** | Item not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **upload_custom_splashscreen**
 > upload_custom_splashscreen(body=body)
@@ -3510,7 +3510,7 @@ void (empty response body)
 
 ### Authorization
 
-[CustomAuthentication](../README.md#CustomAuthentication)
+[CustomAuthentication](README.md#CustomAuthentication)
 
 ### HTTP request headers
 
@@ -3526,5 +3526,5 @@ void (empty response body)
 **401** | Unauthorized |  -  |
 **403** | User does not have permission to upload splashscreen.. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+[[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

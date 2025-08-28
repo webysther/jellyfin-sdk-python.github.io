@@ -27,6 +27,6 @@ plugin_installation_cancelled_message_dict = plugin_installation_cancelled_messa
 # create an instance of PluginInstallationCancelledMessage from a dict
 plugin_installation_cancelled_message_from_dict = PluginInstallationCancelledMessage.from_dict(plugin_installation_cancelled_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

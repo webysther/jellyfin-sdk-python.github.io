@@ -26,6 +26,6 @@ search_hint_result_dict = search_hint_result_instance.to_dict()
 # create an instance of SearchHintResult from a dict
 search_hint_result_from_dict = SearchHintResult.from_dict(search_hint_result_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

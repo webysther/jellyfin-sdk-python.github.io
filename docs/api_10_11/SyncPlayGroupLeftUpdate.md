@@ -26,6 +26,6 @@ sync_play_group_left_update_dict = sync_play_group_left_update_instance.to_dict(
 # create an instance of SyncPlayGroupLeftUpdate from a dict
 sync_play_group_left_update_from_dict = SyncPlayGroupLeftUpdate.from_dict(sync_play_group_left_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

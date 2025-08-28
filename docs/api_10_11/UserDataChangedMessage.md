@@ -27,6 +27,6 @@ user_data_changed_message_dict = user_data_changed_message_instance.to_dict()
 # create an instance of UserDataChangedMessage from a dict
 user_data_changed_message_from_dict = UserDataChangedMessage.from_dict(user_data_changed_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

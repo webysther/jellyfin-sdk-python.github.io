@@ -27,6 +27,6 @@ library_changed_message_dict = library_changed_message_instance.to_dict()
 # create an instance of LibraryChangedMessage from a dict
 library_changed_message_from_dict = LibraryChangedMessage.from_dict(library_changed_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

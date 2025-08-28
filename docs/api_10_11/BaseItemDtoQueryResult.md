@@ -27,6 +27,6 @@ base_item_dto_query_result_dict = base_item_dto_query_result_instance.to_dict()
 # create an instance of BaseItemDtoQueryResult from a dict
 base_item_dto_query_result_from_dict = BaseItemDtoQueryResult.from_dict(base_item_dto_query_result_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

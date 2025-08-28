@@ -26,6 +26,6 @@ sync_play_queue_item_dict = sync_play_queue_item_instance.to_dict()
 # create an instance of SyncPlayQueueItem from a dict
 sync_play_queue_item_from_dict = SyncPlayQueueItem.from_dict(sync_play_queue_item_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

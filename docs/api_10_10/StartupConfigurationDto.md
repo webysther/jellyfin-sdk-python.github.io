@@ -27,6 +27,6 @@ startup_configuration_dto_dict = startup_configuration_dto_instance.to_dict()
 # create an instance of StartupConfigurationDto from a dict
 startup_configuration_dto_from_dict = StartupConfigurationDto.from_dict(startup_configuration_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

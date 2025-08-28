@@ -41,6 +41,6 @@ listings_provider_info_dict = listings_provider_info_instance.to_dict()
 # create an instance of ListingsProviderInfo from a dict
 listings_provider_info_from_dict = ListingsProviderInfo.from_dict(listings_provider_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

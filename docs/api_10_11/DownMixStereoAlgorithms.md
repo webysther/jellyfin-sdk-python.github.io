@@ -14,6 +14,6 @@ An enum representing an algorithm to downmix surround sound to stereo.
 
 * `AC4` (value: `'Ac4'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

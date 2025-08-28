@@ -25,6 +25,6 @@ seek_request_dto_dict = seek_request_dto_instance.to_dict()
 # create an instance of SeekRequestDto from a dict
 seek_request_dto_from_dict = SeekRequestDto.from_dict(seek_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

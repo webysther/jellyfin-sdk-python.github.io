@@ -31,6 +31,6 @@ media_attachment_dict = media_attachment_instance.to_dict()
 # create an instance of MediaAttachment from a dict
 media_attachment_from_dict = MediaAttachment.from_dict(media_attachment_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

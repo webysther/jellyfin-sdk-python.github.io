@@ -32,6 +32,6 @@ play_queue_update_dict = play_queue_update_instance.to_dict()
 # create an instance of PlayQueueUpdate from a dict
 play_queue_update_from_dict = PlayQueueUpdate.from_dict(play_queue_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

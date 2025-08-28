@@ -27,6 +27,6 @@ media_segment_dto_query_result_dict = media_segment_dto_query_result_instance.to
 # create an instance of MediaSegmentDtoQueryResult from a dict
 media_segment_dto_query_result_from_dict = MediaSegmentDtoQueryResult.from_dict(media_segment_dto_query_result_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

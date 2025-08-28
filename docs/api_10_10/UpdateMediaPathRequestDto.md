@@ -26,6 +26,6 @@ update_media_path_request_dto_dict = update_media_path_request_dto_instance.to_d
 # create an instance of UpdateMediaPathRequestDto from a dict
 update_media_path_request_dto_from_dict = UpdateMediaPathRequestDto.from_dict(update_media_path_request_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

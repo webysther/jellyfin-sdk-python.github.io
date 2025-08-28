@@ -36,6 +36,6 @@ item_counts_dict = item_counts_instance.to_dict()
 # create an instance of ItemCounts from a dict
 item_counts_from_dict = ItemCounts.from_dict(item_counts_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

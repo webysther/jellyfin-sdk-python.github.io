@@ -28,6 +28,6 @@ font_file_dict = font_file_instance.to_dict()
 # create an instance of FontFile from a dict
 font_file_from_dict = FontFile.from_dict(font_file_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

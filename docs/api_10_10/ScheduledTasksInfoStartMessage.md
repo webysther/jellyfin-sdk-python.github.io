@@ -26,6 +26,6 @@ scheduled_tasks_info_start_message_dict = scheduled_tasks_info_start_message_ins
 # create an instance of ScheduledTasksInfoStartMessage from a dict
 scheduled_tasks_info_start_message_from_dict = ScheduledTasksInfoStartMessage.from_dict(scheduled_tasks_info_start_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -26,6 +26,6 @@ user_data_change_info_dict = user_data_change_info_instance.to_dict()
 # create an instance of UserDataChangeInfo from a dict
 user_data_change_info_from_dict = UserDataChangeInfo.from_dict(user_data_change_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

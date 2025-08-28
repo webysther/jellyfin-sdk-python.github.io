@@ -27,6 +27,6 @@ plugin_installing_message_dict = plugin_installing_message_instance.to_dict()
 # create an instance of PluginInstallingMessage from a dict
 plugin_installing_message_from_dict = PluginInstallingMessage.from_dict(plugin_installing_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

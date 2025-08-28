@@ -26,6 +26,6 @@ parental_rating_score_dict = parental_rating_score_instance.to_dict()
 # create an instance of ParentalRatingScore from a dict
 parental_rating_score_from_dict = ParentalRatingScore.from_dict(parental_rating_score_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -37,6 +37,6 @@ song_info_dict = song_info_instance.to_dict()
 # create an instance of SongInfo from a dict
 song_info_from_dict = SongInfo.from_dict(song_info_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

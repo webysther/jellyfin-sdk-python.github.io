@@ -27,6 +27,6 @@ playlist_dto_dict = playlist_dto_instance.to_dict()
 # create an instance of PlaylistDto from a dict
 playlist_dto_from_dict = PlaylistDto.from_dict(playlist_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

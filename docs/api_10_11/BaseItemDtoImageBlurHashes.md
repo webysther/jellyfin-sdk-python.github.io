@@ -37,6 +37,6 @@ base_item_dto_image_blur_hashes_dict = base_item_dto_image_blur_hashes_instance.
 # create an instance of BaseItemDtoImageBlurHashes from a dict
 base_item_dto_image_blur_hashes_from_dict = BaseItemDtoImageBlurHashes.from_dict(base_item_dto_image_blur_hashes_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

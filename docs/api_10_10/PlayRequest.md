@@ -32,6 +32,6 @@ play_request_dict = play_request_instance.to_dict()
 # create an instance of PlayRequest from a dict
 play_request_from_dict = PlayRequest.from_dict(play_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

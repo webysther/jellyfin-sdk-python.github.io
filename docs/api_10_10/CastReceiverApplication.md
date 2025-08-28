@@ -26,6 +26,6 @@ cast_receiver_application_dict = cast_receiver_application_instance.to_dict()
 # create an instance of CastReceiverApplication from a dict
 cast_receiver_application_from_dict = CastReceiverApplication.from_dict(cast_receiver_application_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

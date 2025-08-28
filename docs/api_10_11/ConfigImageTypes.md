@@ -30,6 +30,6 @@ config_image_types_dict = config_image_types_instance.to_dict()
 # create an instance of ConfigImageTypes from a dict
 config_image_types_from_dict = ConfigImageTypes.from_dict(config_image_types_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

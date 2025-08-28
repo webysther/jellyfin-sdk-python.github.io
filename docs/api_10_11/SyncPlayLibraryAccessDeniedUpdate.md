@@ -26,6 +26,6 @@ sync_play_library_access_denied_update_dict = sync_play_library_access_denied_up
 # create an instance of SyncPlayLibraryAccessDeniedUpdate from a dict
 sync_play_library_access_denied_update_from_dict = SyncPlayLibraryAccessDeniedUpdate.from_dict(sync_play_library_access_denied_update_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

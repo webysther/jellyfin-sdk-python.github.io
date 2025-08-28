@@ -27,6 +27,6 @@ series_timer_info_dto_query_result_dict = series_timer_info_dto_query_result_ins
 # create an instance of SeriesTimerInfoDtoQueryResult from a dict
 series_timer_info_dto_query_result_from_dict = SeriesTimerInfoDtoQueryResult.from_dict(series_timer_info_dto_query_result_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

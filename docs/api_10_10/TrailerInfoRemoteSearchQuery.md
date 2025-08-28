@@ -27,6 +27,6 @@ trailer_info_remote_search_query_dict = trailer_info_remote_search_query_instanc
 # create an instance of TrailerInfoRemoteSearchQuery from a dict
 trailer_info_remote_search_query_from_dict = TrailerInfoRemoteSearchQuery.from_dict(trailer_info_remote_search_query_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

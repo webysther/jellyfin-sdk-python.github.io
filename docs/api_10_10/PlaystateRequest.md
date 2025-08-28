@@ -26,6 +26,6 @@ playstate_request_dict = playstate_request_instance.to_dict()
 # create an instance of PlaystateRequest from a dict
 playstate_request_from_dict = PlaystateRequest.from_dict(playstate_request_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

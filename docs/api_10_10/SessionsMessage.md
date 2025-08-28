@@ -27,6 +27,6 @@ sessions_message_dict = sessions_message_instance.to_dict()
 # create an instance of SessionsMessage from a dict
 sessions_message_from_dict = SessionsMessage.from_dict(sessions_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

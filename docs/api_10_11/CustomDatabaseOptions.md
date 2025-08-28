@@ -28,6 +28,6 @@ custom_database_options_dict = custom_database_options_instance.to_dict()
 # create an instance of CustomDatabaseOptions from a dict
 custom_database_options_from_dict = CustomDatabaseOptions.from_dict(custom_database_options_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -90,6 +90,6 @@ This exists simply to identify a set of known commands.
 
 * `SETPLAYBACKORDER` (value: `'SetPlaybackOrder'`)
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

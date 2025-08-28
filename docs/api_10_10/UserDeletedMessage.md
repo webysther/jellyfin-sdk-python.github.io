@@ -27,6 +27,6 @@ user_deleted_message_dict = user_deleted_message_instance.to_dict()
 # create an instance of UserDeletedMessage from a dict
 user_deleted_message_from_dict = UserDeletedMessage.from_dict(user_deleted_message_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

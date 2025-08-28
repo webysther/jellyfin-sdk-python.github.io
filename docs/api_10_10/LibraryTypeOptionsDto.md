@@ -29,6 +29,6 @@ library_type_options_dto_dict = library_type_options_dto_instance.to_dict()
 # create an instance of LibraryTypeOptionsDto from a dict
 library_type_options_dto_from_dict = LibraryTypeOptionsDto.from_dict(library_type_options_dto_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

@@ -27,6 +27,6 @@ timer_info_dto_query_result_dict = timer_info_dto_query_result_instance.to_dict(
 # create an instance of TimerInfoDtoQueryResult from a dict
 timer_info_dto_query_result_from_dict = TimerInfoDtoQueryResult.from_dict(timer_info_dto_query_result_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 

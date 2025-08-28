@@ -26,6 +26,6 @@ authenticate_user_by_name_dict = authenticate_user_by_name_instance.to_dict()
 # create an instance of AuthenticateUserByName from a dict
 authenticate_user_by_name_from_dict = AuthenticateUserByName.from_dict(authenticate_user_by_name_dict)
 ```
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](README.md#documentation-for-models) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to README]](README.md)
 
 
