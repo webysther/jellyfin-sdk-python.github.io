@@ -9,7 +9,7 @@
 ## Documentation
 
 - [Jellyfin API 10.10](./api_10_10/)
-- [Jellyfin API 10.11](./api_10_10/)
+- [Jellyfin API 10.11](./api_10_11/)
 
 A Python SDK for Jellyfin.
 
