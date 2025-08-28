@@ -1,10 +1,6 @@
-<h1 align="center">jellyfin-sdk-python</h1>
+<h1 align="center"><a href="https://github.com/webysther/jellyfin-sdk-python">jellyfin-sdk-python</a></h1>
 
 ---
-
-<p align="center">
-<img alt="Logo Banner" src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/banner-logo-solid.svg?sanitize=true"/>
-</p>
 
 ## Documentation
 

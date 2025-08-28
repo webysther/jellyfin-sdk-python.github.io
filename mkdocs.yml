@@ -6,6 +6,9 @@ site_description: A Python SDK for interacting with the Jellyfin API.
 nav:
   - About: index.md
 
+extra_css:
+  - css/custom.css
+
 theme:
   name: readthedocs
   highlightjs: true
