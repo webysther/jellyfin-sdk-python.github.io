@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_11/VideosApi/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_11.VideosApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_11.VideosApi";
+        var mkdocs_page_input_path = "api_10_11/VideosApi.md";
+        var mkdocs_page_url = "/api_10_11/VideosApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../index.md">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_11.VideosApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_11videosapi">jellyfin.generated.api_10_11.VideosApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#delete_alternate_sources"><strong>delete_alternate_sources</strong></a></td>
+<td><strong>DELETE</strong> /Videos/{itemId}/AlternateSources</td>
+<td>Removes alternate video sources.</td>
+</tr>
+<tr>
+<td><a href="./#get_additional_part"><strong>get_additional_part</strong></a></td>
+<td><strong>GET</strong> /Videos/{itemId}/AdditionalParts</td>
+<td>Gets additional parts for a video.</td>
+</tr>
+<tr>
+<td><a href="./#get_video_stream"><strong>get_video_stream</strong></a></td>
+<td><strong>GET</strong> /Videos/{itemId}/stream</td>
+<td>Gets a video stream.</td>
+</tr>
+<tr>
+<td><a href="./#get_video_stream_by_container"><strong>get_video_stream_by_container</strong></a></td>
+<td><strong>GET</strong> /Videos/{itemId}/stream.{container}</td>
+<td>Gets a video stream.</td>
+</tr>
+<tr>
+<td><a href="./#head_video_stream"><strong>head_video_stream</strong></a></td>
+<td><strong>HEAD</strong> /Videos/{itemId}/stream</td>
+<td>Gets a video stream.</td>
+</tr>
+<tr>
+<td><a href="./#head_video_stream_by_container"><strong>head_video_stream_by_container</strong></a></td>
+<td><strong>HEAD</strong> /Videos/{itemId}/stream.{container}</td>
+<td>Gets a video stream.</td>
+</tr>
+<tr>
+<td><a href="./#merge_versions"><strong>merge_versions</strong></a></td>
+<td><strong>POST</strong> /Videos/MergeVersions</td>
+<td>Merges videos into a single record.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="delete_alternate_sources"><strong>delete_alternate_sources</strong></h1>
+<blockquote>
+<p>delete_alternate_sources(item_id)</p>
+</blockquote>
+<p>Removes alternate video sources.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.VideosApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+
+    try:
+        # Removes alternate video sources.
+        api_instance.delete_alternate_sources(item_id)
+    except Exception as e:
+        print(&quot;Exception when calling VideosApi-&gt;delete_alternate_sources: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Alternate sources deleted.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Video not found.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_additional_part"><strong>get_additional_part</strong></h1>
+<blockquote>
+<p>BaseItemDtoQueryResult get_additional_part(item_id, user_id=user_id)</p>
+</blockquote>
+<p>Gets additional parts for a video.</p>
+<h3 id="example_1">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.models.base_item_dto_query_result import BaseItemDtoQueryResult
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.VideosApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+    user_id = 'user_id_example' # str | Optional. Filter by user id, and attach user data. (optional)
+
+    try:
+        # Gets additional parts for a video.
+        api_response = api_instance.get_additional_part(item_id, user_id=user_id)
+        print(&quot;The response of VideosApi-&gt;get_additional_part:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling VideosApi-&gt;get_additional_part: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Filter by user id, and attach user data.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p><a href="../BaseItemDtoQueryResult/"><strong>BaseItemDtoQueryResult</strong></a></p>
+<h3 id="authorization_1">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details_1">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Additional parts returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_video_stream"><strong>get_video_stream</strong></h1>
+<blockquote>
+<p>bytearray get_video_stream(item_id, container=container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)</p>
+</blockquote>
+<p>Gets a video stream.</p>
+<h3 id="example_2">Example</h3>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.VideosApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+    container = 'container_example' # str | The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv. (optional)
+    static = True # bool | Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false. (optional)
+    params = 'params_example' # str | The streaming parameters. (optional)
+    tag = 'tag_example' # str | The tag. (optional)
+    device_profile_id = 'device_profile_id_example' # str | Optional. The dlna device profile id to utilize. (optional)
+    play_session_id = 'play_session_id_example' # str | The play session id. (optional)
+    segment_container = 'segment_container_example' # str | The segment container. (optional)
+    segment_length = 56 # int | The segment length. (optional)
+    min_segments = 56 # int | The minimum number of segments. (optional)
+    media_source_id = 'media_source_id_example' # str | The media version id, if playing an alternate version. (optional)
+    device_id = 'device_id_example' # str | The device id of the client requesting. Used to stop encoding processes when needed. (optional)
+    audio_codec = 'audio_codec_example' # str | Optional. Specify an audio codec to encode to, e.g. mp3. If omitted the server will auto-select using the url's extension. (optional)
+    enable_auto_stream_copy = True # bool | Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true. (optional)
+    allow_video_stream_copy = True # bool | Whether or not to allow copying of the video stream url. (optional)
+    allow_audio_stream_copy = True # bool | Whether or not to allow copying of the audio stream url. (optional)
+    break_on_non_key_frames = True # bool | Optional. Whether to break on non key frames. (optional)
+    audio_sample_rate = 56 # int | Optional. Specify a specific audio sample rate, e.g. 44100. (optional)
+    max_audio_bit_depth = 56 # int | Optional. The maximum audio bit depth. (optional)
+    audio_bit_rate = 56 # int | Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults. (optional)
+    audio_channels = 56 # int | Optional. Specify a specific number of audio channels to encode to, e.g. 2. (optional)
+    max_audio_channels = 56 # int | Optional. Specify a maximum number of audio channels to encode to, e.g. 2. (optional)
+    profile = 'profile_example' # str | Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high. (optional)
+    level = 'level_example' # str | Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1. (optional)
+    framerate = 3.4 # float | Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements. (optional)
+    max_framerate = 3.4 # float | Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements. (optional)
+    copy_timestamps = True # bool | Whether or not to copy timestamps when transcoding with an offset. Defaults to false. (optional)
+    start_time_ticks = 56 # int | Optional. Specify a starting offset, in ticks. 1 tick = 10000 ms. (optional)
+    width = 56 # int | Optional. The fixed horizontal resolution of the encoded video. (optional)
+    height = 56 # int | Optional. The fixed vertical resolution of the encoded video. (optional)
+    max_width = 56 # int | Optional. The maximum horizontal resolution of the encoded video. (optional)
+    max_height = 56 # int | Optional. The maximum vertical resolution of the encoded video. (optional)
+    video_bit_rate = 56 # int | Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults. (optional)
+    subtitle_stream_index = 56 # int | Optional. The index of the subtitle stream to use. If omitted no subtitles will be used. (optional)
+    subtitle_method = jellyfin.generated.api_10_11.SubtitleDeliveryMethod() # SubtitleDeliveryMethod | Optional. Specify the subtitle delivery method. (optional)
+    max_ref_frames = 56 # int | Optional. (optional)
+    max_video_bit_depth = 56 # int | Optional. The maximum video bit depth. (optional)
+    require_avc = True # bool | Optional. Whether to require avc. (optional)
+    de_interlace = True # bool | Optional. Whether to deinterlace the video. (optional)
+    require_non_anamorphic = True # bool | Optional. Whether to require a non anamorphic stream. (optional)
+    transcoding_max_audio_channels = 56 # int | Optional. The maximum number of audio channels to transcode. (optional)
+    cpu_core_limit = 56 # int | Optional. The limit of how many cpu cores to use. (optional)
+    live_stream_id = 'live_stream_id_example' # str | The live stream id. (optional)
+    enable_mpegts_m2_ts_mode = True # bool | Optional. Whether to enable the MpegtsM2Ts mode. (optional)
+    video_codec = 'video_codec_example' # str | Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url's extension. (optional)
+    subtitle_codec = 'subtitle_codec_example' # str | Optional. Specify a subtitle codec to encode to. (optional)
+    transcode_reasons = 'transcode_reasons_example' # str | Optional. The transcoding reason. (optional)
+    audio_stream_index = 56 # int | Optional. The index of the audio stream to use. If omitted the first audio stream will be used. (optional)
+    video_stream_index = 56 # int | Optional. The index of the video stream to use. If omitted the first video stream will be used. (optional)
+    context = jellyfin.generated.api_10_11.EncodingContext() # EncodingContext | Optional. The MediaBrowser.Model.Dlna.EncodingContext. (optional)
+    stream_options = {'key': 'stream_options_example'} # Dict[str, Optional[str]] | Optional. The streaming options. (optional)
+    enable_audio_vbr_encoding = True # bool | Optional. Whether to enable Audio Encoding. (optional) (default to True)
+
+    try:
+        # Gets a video stream.
+        api_response = api_instance.get_video_stream(item_id, container=container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)
+        print(&quot;The response of VideosApi-&gt;get_video_stream:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling VideosApi-&gt;get_video_stream: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>container</strong></td>
+<td><strong>str</strong></td>
+<td>The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>static</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>params</strong></td>
+<td><strong>str</strong></td>
+<td>The streaming parameters.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tag</strong></td>
+<td><strong>str</strong></td>
+<td>The tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_profile_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The dlna device profile id to utilize.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The play session id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_container</strong></td>
+<td><strong>str</strong></td>
+<td>The segment container.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_length</strong></td>
+<td><strong>int</strong></td>
+<td>The segment length.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>min_segments</strong></td>
+<td><strong>int</strong></td>
+<td>The minimum number of segments.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>The media version id, if playing an alternate version.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_id</strong></td>
+<td><strong>str</strong></td>
+<td>The device id of the client requesting. Used to stop encoding processes when needed.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify an audio codec to encode to, e.g. mp3. If omitted the server will auto-select using the url&#39;s extension.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_auto_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_video_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow copying of the video stream url.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_audio_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow copying of the audio stream url.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>break_on_non_key_frames</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to break on non key frames.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_sample_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a specific audio sample rate, e.g. 44100.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum audio bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a specific number of audio channels to encode to, e.g. 2.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a maximum number of audio channels to encode to, e.g. 2.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>profile</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>level</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>framerate</strong></td>
+<td><strong>float</strong></td>
+<td>Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_framerate</strong></td>
+<td><strong>float</strong></td>
+<td>Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>copy_timestamps</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to copy timestamps when transcoding with an offset. Defaults to false.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_time_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>width</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The fixed horizontal resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>height</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The fixed vertical resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_width</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum horizontal resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_height</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum vertical resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_method</strong></td>
+<td><strong>SubtitleDeliveryMethod</strong></td>
+<td>Optional. Specify the subtitle delivery method.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_ref_frames</strong></td>
+<td><strong>int</strong></td>
+<td>Optional.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_video_bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum video bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>require_avc</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to require avc.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>de_interlace</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to deinterlace the video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>require_non_anamorphic</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to require a non anamorphic stream.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcoding_max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum number of audio channels to transcode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>cpu_core_limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The limit of how many cpu cores to use.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The live stream id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_mpegts_m2_ts_mode</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to enable the MpegtsM2Ts mode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url&#39;s extension.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a subtitle codec to encode to.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcode_reasons</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The transcoding reason.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the audio stream to use. If omitted the first audio stream will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the video stream to use. If omitted the first video stream will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>context</strong></td>
+<td><strong>EncodingContext</strong></td>
+<td>Optional. The MediaBrowser.Model.Dlna.EncodingContext.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>stream_options</strong></td>
+<td><a href="str.md"><strong>Dict[str, Optional[str]]</strong></a></td>
+<td>Optional. The streaming options.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_audio_vbr_encoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to enable Audio Encoding.</td>
+<td>[optional] [default to True]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_2">Return type</h3>
+<p><strong>bytearray</strong></p>
+<h3 id="authorization_2">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_2">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: video/*, text/html</li>
+</ul>
+<h3 id="http-response-details_2">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Video stream returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_video_stream_by_container"><strong>get_video_stream_by_container</strong></h1>
+<blockquote>
+<p>bytearray get_video_stream_by_container(item_id, container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)</p>
+</blockquote>
+<p>Gets a video stream.</p>
+<h3 id="example_3">Example</h3>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.VideosApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+    container = 'container_example' # str | The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv.
+    static = True # bool | Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false. (optional)
+    params = 'params_example' # str | The streaming parameters. (optional)
+    tag = 'tag_example' # str | The tag. (optional)
+    device_profile_id = 'device_profile_id_example' # str | Optional. The dlna device profile id to utilize. (optional)
+    play_session_id = 'play_session_id_example' # str | The play session id. (optional)
+    segment_container = 'segment_container_example' # str | The segment container. (optional)
+    segment_length = 56 # int | The segment length. (optional)
+    min_segments = 56 # int | The minimum number of segments. (optional)
+    media_source_id = 'media_source_id_example' # str | The media version id, if playing an alternate version. (optional)
+    device_id = 'device_id_example' # str | The device id of the client requesting. Used to stop encoding processes when needed. (optional)
+    audio_codec = 'audio_codec_example' # str | Optional. Specify an audio codec to encode to, e.g. mp3. If omitted the server will auto-select using the url's extension. (optional)
+    enable_auto_stream_copy = True # bool | Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true. (optional)
+    allow_video_stream_copy = True # bool | Whether or not to allow copying of the video stream url. (optional)
+    allow_audio_stream_copy = True # bool | Whether or not to allow copying of the audio stream url. (optional)
+    break_on_non_key_frames = True # bool | Optional. Whether to break on non key frames. (optional)
+    audio_sample_rate = 56 # int | Optional. Specify a specific audio sample rate, e.g. 44100. (optional)
+    max_audio_bit_depth = 56 # int | Optional. The maximum audio bit depth. (optional)
+    audio_bit_rate = 56 # int | Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults. (optional)
+    audio_channels = 56 # int | Optional. Specify a specific number of audio channels to encode to, e.g. 2. (optional)
+    max_audio_channels = 56 # int | Optional. Specify a maximum number of audio channels to encode to, e.g. 2. (optional)
+    profile = 'profile_example' # str | Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high. (optional)
+    level = 'level_example' # str | Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1. (optional)
+    framerate = 3.4 # float | Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements. (optional)
+    max_framerate = 3.4 # float | Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements. (optional)
+    copy_timestamps = True # bool | Whether or not to copy timestamps when transcoding with an offset. Defaults to false. (optional)
+    start_time_ticks = 56 # int | Optional. Specify a starting offset, in ticks. 1 tick = 10000 ms. (optional)
+    width = 56 # int | Optional. The fixed horizontal resolution of the encoded video. (optional)
+    height = 56 # int | Optional. The fixed vertical resolution of the encoded video. (optional)
+    max_width = 56 # int | Optional. The maximum horizontal resolution of the encoded video. (optional)
+    max_height = 56 # int | Optional. The maximum vertical resolution of the encoded video. (optional)
+    video_bit_rate = 56 # int | Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults. (optional)
+    subtitle_stream_index = 56 # int | Optional. The index of the subtitle stream to use. If omitted no subtitles will be used. (optional)
+    subtitle_method = jellyfin.generated.api_10_11.SubtitleDeliveryMethod() # SubtitleDeliveryMethod | Optional. Specify the subtitle delivery method. (optional)
+    max_ref_frames = 56 # int | Optional. (optional)
+    max_video_bit_depth = 56 # int | Optional. The maximum video bit depth. (optional)
+    require_avc = True # bool | Optional. Whether to require avc. (optional)
+    de_interlace = True # bool | Optional. Whether to deinterlace the video. (optional)
+    require_non_anamorphic = True # bool | Optional. Whether to require a non anamorphic stream. (optional)
+    transcoding_max_audio_channels = 56 # int | Optional. The maximum number of audio channels to transcode. (optional)
+    cpu_core_limit = 56 # int | Optional. The limit of how many cpu cores to use. (optional)
+    live_stream_id = 'live_stream_id_example' # str | The live stream id. (optional)
+    enable_mpegts_m2_ts_mode = True # bool | Optional. Whether to enable the MpegtsM2Ts mode. (optional)
+    video_codec = 'video_codec_example' # str | Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url's extension. (optional)
+    subtitle_codec = 'subtitle_codec_example' # str | Optional. Specify a subtitle codec to encode to. (optional)
+    transcode_reasons = 'transcode_reasons_example' # str | Optional. The transcoding reason. (optional)
+    audio_stream_index = 56 # int | Optional. The index of the audio stream to use. If omitted the first audio stream will be used. (optional)
+    video_stream_index = 56 # int | Optional. The index of the video stream to use. If omitted the first video stream will be used. (optional)
+    context = jellyfin.generated.api_10_11.EncodingContext() # EncodingContext | Optional. The MediaBrowser.Model.Dlna.EncodingContext. (optional)
+    stream_options = {'key': 'stream_options_example'} # Dict[str, Optional[str]] | Optional. The streaming options. (optional)
+    enable_audio_vbr_encoding = True # bool | Optional. Whether to enable Audio Encoding. (optional) (default to True)
+
+    try:
+        # Gets a video stream.
+        api_response = api_instance.get_video_stream_by_container(item_id, container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)
+        print(&quot;The response of VideosApi-&gt;get_video_stream_by_container:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling VideosApi-&gt;get_video_stream_by_container: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>container</strong></td>
+<td><strong>str</strong></td>
+<td>The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>static</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>params</strong></td>
+<td><strong>str</strong></td>
+<td>The streaming parameters.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tag</strong></td>
+<td><strong>str</strong></td>
+<td>The tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_profile_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The dlna device profile id to utilize.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The play session id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_container</strong></td>
+<td><strong>str</strong></td>
+<td>The segment container.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_length</strong></td>
+<td><strong>int</strong></td>
+<td>The segment length.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>min_segments</strong></td>
+<td><strong>int</strong></td>
+<td>The minimum number of segments.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>The media version id, if playing an alternate version.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_id</strong></td>
+<td><strong>str</strong></td>
+<td>The device id of the client requesting. Used to stop encoding processes when needed.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify an audio codec to encode to, e.g. mp3. If omitted the server will auto-select using the url&#39;s extension.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_auto_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_video_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow copying of the video stream url.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_audio_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow copying of the audio stream url.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>break_on_non_key_frames</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to break on non key frames.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_sample_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a specific audio sample rate, e.g. 44100.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum audio bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a specific number of audio channels to encode to, e.g. 2.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a maximum number of audio channels to encode to, e.g. 2.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>profile</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>level</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>framerate</strong></td>
+<td><strong>float</strong></td>
+<td>Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_framerate</strong></td>
+<td><strong>float</strong></td>
+<td>Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>copy_timestamps</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to copy timestamps when transcoding with an offset. Defaults to false.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_time_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>width</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The fixed horizontal resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>height</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The fixed vertical resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_width</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum horizontal resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_height</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum vertical resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_method</strong></td>
+<td><strong>SubtitleDeliveryMethod</strong></td>
+<td>Optional. Specify the subtitle delivery method.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_ref_frames</strong></td>
+<td><strong>int</strong></td>
+<td>Optional.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_video_bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum video bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>require_avc</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to require avc.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>de_interlace</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to deinterlace the video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>require_non_anamorphic</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to require a non anamorphic stream.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcoding_max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum number of audio channels to transcode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>cpu_core_limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The limit of how many cpu cores to use.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The live stream id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_mpegts_m2_ts_mode</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to enable the MpegtsM2Ts mode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url&#39;s extension.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a subtitle codec to encode to.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcode_reasons</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The transcoding reason.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the audio stream to use. If omitted the first audio stream will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the video stream to use. If omitted the first video stream will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>context</strong></td>
+<td><strong>EncodingContext</strong></td>
+<td>Optional. The MediaBrowser.Model.Dlna.EncodingContext.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>stream_options</strong></td>
+<td><a href="str.md"><strong>Dict[str, Optional[str]]</strong></a></td>
+<td>Optional. The streaming options.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_audio_vbr_encoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to enable Audio Encoding.</td>
+<td>[optional] [default to True]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_3">Return type</h3>
+<p><strong>bytearray</strong></p>
+<h3 id="authorization_3">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_3">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: video/*, text/html</li>
+</ul>
+<h3 id="http-response-details_3">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Video stream returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="head_video_stream"><strong>head_video_stream</strong></h1>
+<blockquote>
+<p>bytearray head_video_stream(item_id, container=container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)</p>
+</blockquote>
+<p>Gets a video stream.</p>
+<h3 id="example_4">Example</h3>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.VideosApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+    container = 'container_example' # str | The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv. (optional)
+    static = True # bool | Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false. (optional)
+    params = 'params_example' # str | The streaming parameters. (optional)
+    tag = 'tag_example' # str | The tag. (optional)
+    device_profile_id = 'device_profile_id_example' # str | Optional. The dlna device profile id to utilize. (optional)
+    play_session_id = 'play_session_id_example' # str | The play session id. (optional)
+    segment_container = 'segment_container_example' # str | The segment container. (optional)
+    segment_length = 56 # int | The segment length. (optional)
+    min_segments = 56 # int | The minimum number of segments. (optional)
+    media_source_id = 'media_source_id_example' # str | The media version id, if playing an alternate version. (optional)
+    device_id = 'device_id_example' # str | The device id of the client requesting. Used to stop encoding processes when needed. (optional)
+    audio_codec = 'audio_codec_example' # str | Optional. Specify an audio codec to encode to, e.g. mp3. If omitted the server will auto-select using the url's extension. (optional)
+    enable_auto_stream_copy = True # bool | Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true. (optional)
+    allow_video_stream_copy = True # bool | Whether or not to allow copying of the video stream url. (optional)
+    allow_audio_stream_copy = True # bool | Whether or not to allow copying of the audio stream url. (optional)
+    break_on_non_key_frames = True # bool | Optional. Whether to break on non key frames. (optional)
+    audio_sample_rate = 56 # int | Optional. Specify a specific audio sample rate, e.g. 44100. (optional)
+    max_audio_bit_depth = 56 # int | Optional. The maximum audio bit depth. (optional)
+    audio_bit_rate = 56 # int | Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults. (optional)
+    audio_channels = 56 # int | Optional. Specify a specific number of audio channels to encode to, e.g. 2. (optional)
+    max_audio_channels = 56 # int | Optional. Specify a maximum number of audio channels to encode to, e.g. 2. (optional)
+    profile = 'profile_example' # str | Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high. (optional)
+    level = 'level_example' # str | Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1. (optional)
+    framerate = 3.4 # float | Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements. (optional)
+    max_framerate = 3.4 # float | Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements. (optional)
+    copy_timestamps = True # bool | Whether or not to copy timestamps when transcoding with an offset. Defaults to false. (optional)
+    start_time_ticks = 56 # int | Optional. Specify a starting offset, in ticks. 1 tick = 10000 ms. (optional)
+    width = 56 # int | Optional. The fixed horizontal resolution of the encoded video. (optional)
+    height = 56 # int | Optional. The fixed vertical resolution of the encoded video. (optional)
+    max_width = 56 # int | Optional. The maximum horizontal resolution of the encoded video. (optional)
+    max_height = 56 # int | Optional. The maximum vertical resolution of the encoded video. (optional)
+    video_bit_rate = 56 # int | Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults. (optional)
+    subtitle_stream_index = 56 # int | Optional. The index of the subtitle stream to use. If omitted no subtitles will be used. (optional)
+    subtitle_method = jellyfin.generated.api_10_11.SubtitleDeliveryMethod() # SubtitleDeliveryMethod | Optional. Specify the subtitle delivery method. (optional)
+    max_ref_frames = 56 # int | Optional. (optional)
+    max_video_bit_depth = 56 # int | Optional. The maximum video bit depth. (optional)
+    require_avc = True # bool | Optional. Whether to require avc. (optional)
+    de_interlace = True # bool | Optional. Whether to deinterlace the video. (optional)
+    require_non_anamorphic = True # bool | Optional. Whether to require a non anamorphic stream. (optional)
+    transcoding_max_audio_channels = 56 # int | Optional. The maximum number of audio channels to transcode. (optional)
+    cpu_core_limit = 56 # int | Optional. The limit of how many cpu cores to use. (optional)
+    live_stream_id = 'live_stream_id_example' # str | The live stream id. (optional)
+    enable_mpegts_m2_ts_mode = True # bool | Optional. Whether to enable the MpegtsM2Ts mode. (optional)
+    video_codec = 'video_codec_example' # str | Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url's extension. (optional)
+    subtitle_codec = 'subtitle_codec_example' # str | Optional. Specify a subtitle codec to encode to. (optional)
+    transcode_reasons = 'transcode_reasons_example' # str | Optional. The transcoding reason. (optional)
+    audio_stream_index = 56 # int | Optional. The index of the audio stream to use. If omitted the first audio stream will be used. (optional)
+    video_stream_index = 56 # int | Optional. The index of the video stream to use. If omitted the first video stream will be used. (optional)
+    context = jellyfin.generated.api_10_11.EncodingContext() # EncodingContext | Optional. The MediaBrowser.Model.Dlna.EncodingContext. (optional)
+    stream_options = {'key': 'stream_options_example'} # Dict[str, Optional[str]] | Optional. The streaming options. (optional)
+    enable_audio_vbr_encoding = True # bool | Optional. Whether to enable Audio Encoding. (optional) (default to True)
+
+    try:
+        # Gets a video stream.
+        api_response = api_instance.head_video_stream(item_id, container=container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)
+        print(&quot;The response of VideosApi-&gt;head_video_stream:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling VideosApi-&gt;head_video_stream: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>container</strong></td>
+<td><strong>str</strong></td>
+<td>The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>static</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>params</strong></td>
+<td><strong>str</strong></td>
+<td>The streaming parameters.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tag</strong></td>
+<td><strong>str</strong></td>
+<td>The tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_profile_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The dlna device profile id to utilize.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The play session id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_container</strong></td>
+<td><strong>str</strong></td>
+<td>The segment container.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_length</strong></td>
+<td><strong>int</strong></td>
+<td>The segment length.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>min_segments</strong></td>
+<td><strong>int</strong></td>
+<td>The minimum number of segments.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>The media version id, if playing an alternate version.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_id</strong></td>
+<td><strong>str</strong></td>
+<td>The device id of the client requesting. Used to stop encoding processes when needed.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify an audio codec to encode to, e.g. mp3. If omitted the server will auto-select using the url&#39;s extension.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_auto_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_video_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow copying of the video stream url.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_audio_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow copying of the audio stream url.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>break_on_non_key_frames</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to break on non key frames.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_sample_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a specific audio sample rate, e.g. 44100.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum audio bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a specific number of audio channels to encode to, e.g. 2.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a maximum number of audio channels to encode to, e.g. 2.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>profile</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>level</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>framerate</strong></td>
+<td><strong>float</strong></td>
+<td>Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_framerate</strong></td>
+<td><strong>float</strong></td>
+<td>Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>copy_timestamps</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to copy timestamps when transcoding with an offset. Defaults to false.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_time_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>width</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The fixed horizontal resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>height</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The fixed vertical resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_width</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum horizontal resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_height</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum vertical resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_method</strong></td>
+<td><strong>SubtitleDeliveryMethod</strong></td>
+<td>Optional. Specify the subtitle delivery method.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_ref_frames</strong></td>
+<td><strong>int</strong></td>
+<td>Optional.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_video_bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum video bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>require_avc</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to require avc.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>de_interlace</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to deinterlace the video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>require_non_anamorphic</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to require a non anamorphic stream.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcoding_max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum number of audio channels to transcode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>cpu_core_limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The limit of how many cpu cores to use.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The live stream id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_mpegts_m2_ts_mode</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to enable the MpegtsM2Ts mode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url&#39;s extension.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a subtitle codec to encode to.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcode_reasons</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The transcoding reason.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the audio stream to use. If omitted the first audio stream will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the video stream to use. If omitted the first video stream will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>context</strong></td>
+<td><strong>EncodingContext</strong></td>
+<td>Optional. The MediaBrowser.Model.Dlna.EncodingContext.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>stream_options</strong></td>
+<td><a href="str.md"><strong>Dict[str, Optional[str]]</strong></a></td>
+<td>Optional. The streaming options.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_audio_vbr_encoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to enable Audio Encoding.</td>
+<td>[optional] [default to True]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_4">Return type</h3>
+<p><strong>bytearray</strong></p>
+<h3 id="authorization_4">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_4">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: video/*, text/html</li>
+</ul>
+<h3 id="http-response-details_4">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Video stream returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="head_video_stream_by_container"><strong>head_video_stream_by_container</strong></h1>
+<blockquote>
+<p>bytearray head_video_stream_by_container(item_id, container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)</p>
+</blockquote>
+<p>Gets a video stream.</p>
+<h3 id="example_5">Example</h3>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.VideosApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+    container = 'container_example' # str | The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv.
+    static = True # bool | Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false. (optional)
+    params = 'params_example' # str | The streaming parameters. (optional)
+    tag = 'tag_example' # str | The tag. (optional)
+    device_profile_id = 'device_profile_id_example' # str | Optional. The dlna device profile id to utilize. (optional)
+    play_session_id = 'play_session_id_example' # str | The play session id. (optional)
+    segment_container = 'segment_container_example' # str | The segment container. (optional)
+    segment_length = 56 # int | The segment length. (optional)
+    min_segments = 56 # int | The minimum number of segments. (optional)
+    media_source_id = 'media_source_id_example' # str | The media version id, if playing an alternate version. (optional)
+    device_id = 'device_id_example' # str | The device id of the client requesting. Used to stop encoding processes when needed. (optional)
+    audio_codec = 'audio_codec_example' # str | Optional. Specify an audio codec to encode to, e.g. mp3. If omitted the server will auto-select using the url's extension. (optional)
+    enable_auto_stream_copy = True # bool | Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true. (optional)
+    allow_video_stream_copy = True # bool | Whether or not to allow copying of the video stream url. (optional)
+    allow_audio_stream_copy = True # bool | Whether or not to allow copying of the audio stream url. (optional)
+    break_on_non_key_frames = True # bool | Optional. Whether to break on non key frames. (optional)
+    audio_sample_rate = 56 # int | Optional. Specify a specific audio sample rate, e.g. 44100. (optional)
+    max_audio_bit_depth = 56 # int | Optional. The maximum audio bit depth. (optional)
+    audio_bit_rate = 56 # int | Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults. (optional)
+    audio_channels = 56 # int | Optional. Specify a specific number of audio channels to encode to, e.g. 2. (optional)
+    max_audio_channels = 56 # int | Optional. Specify a maximum number of audio channels to encode to, e.g. 2. (optional)
+    profile = 'profile_example' # str | Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high. (optional)
+    level = 'level_example' # str | Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1. (optional)
+    framerate = 3.4 # float | Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements. (optional)
+    max_framerate = 3.4 # float | Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements. (optional)
+    copy_timestamps = True # bool | Whether or not to copy timestamps when transcoding with an offset. Defaults to false. (optional)
+    start_time_ticks = 56 # int | Optional. Specify a starting offset, in ticks. 1 tick = 10000 ms. (optional)
+    width = 56 # int | Optional. The fixed horizontal resolution of the encoded video. (optional)
+    height = 56 # int | Optional. The fixed vertical resolution of the encoded video. (optional)
+    max_width = 56 # int | Optional. The maximum horizontal resolution of the encoded video. (optional)
+    max_height = 56 # int | Optional. The maximum vertical resolution of the encoded video. (optional)
+    video_bit_rate = 56 # int | Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults. (optional)
+    subtitle_stream_index = 56 # int | Optional. The index of the subtitle stream to use. If omitted no subtitles will be used. (optional)
+    subtitle_method = jellyfin.generated.api_10_11.SubtitleDeliveryMethod() # SubtitleDeliveryMethod | Optional. Specify the subtitle delivery method. (optional)
+    max_ref_frames = 56 # int | Optional. (optional)
+    max_video_bit_depth = 56 # int | Optional. The maximum video bit depth. (optional)
+    require_avc = True # bool | Optional. Whether to require avc. (optional)
+    de_interlace = True # bool | Optional. Whether to deinterlace the video. (optional)
+    require_non_anamorphic = True # bool | Optional. Whether to require a non anamorphic stream. (optional)
+    transcoding_max_audio_channels = 56 # int | Optional. The maximum number of audio channels to transcode. (optional)
+    cpu_core_limit = 56 # int | Optional. The limit of how many cpu cores to use. (optional)
+    live_stream_id = 'live_stream_id_example' # str | The live stream id. (optional)
+    enable_mpegts_m2_ts_mode = True # bool | Optional. Whether to enable the MpegtsM2Ts mode. (optional)
+    video_codec = 'video_codec_example' # str | Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url's extension. (optional)
+    subtitle_codec = 'subtitle_codec_example' # str | Optional. Specify a subtitle codec to encode to. (optional)
+    transcode_reasons = 'transcode_reasons_example' # str | Optional. The transcoding reason. (optional)
+    audio_stream_index = 56 # int | Optional. The index of the audio stream to use. If omitted the first audio stream will be used. (optional)
+    video_stream_index = 56 # int | Optional. The index of the video stream to use. If omitted the first video stream will be used. (optional)
+    context = jellyfin.generated.api_10_11.EncodingContext() # EncodingContext | Optional. The MediaBrowser.Model.Dlna.EncodingContext. (optional)
+    stream_options = {'key': 'stream_options_example'} # Dict[str, Optional[str]] | Optional. The streaming options. (optional)
+    enable_audio_vbr_encoding = True # bool | Optional. Whether to enable Audio Encoding. (optional) (default to True)
+
+    try:
+        # Gets a video stream.
+        api_response = api_instance.head_video_stream_by_container(item_id, container, static=static, params=params, tag=tag, device_profile_id=device_profile_id, play_session_id=play_session_id, segment_container=segment_container, segment_length=segment_length, min_segments=min_segments, media_source_id=media_source_id, device_id=device_id, audio_codec=audio_codec, enable_auto_stream_copy=enable_auto_stream_copy, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, break_on_non_key_frames=break_on_non_key_frames, audio_sample_rate=audio_sample_rate, max_audio_bit_depth=max_audio_bit_depth, audio_bit_rate=audio_bit_rate, audio_channels=audio_channels, max_audio_channels=max_audio_channels, profile=profile, level=level, framerate=framerate, max_framerate=max_framerate, copy_timestamps=copy_timestamps, start_time_ticks=start_time_ticks, width=width, height=height, max_width=max_width, max_height=max_height, video_bit_rate=video_bit_rate, subtitle_stream_index=subtitle_stream_index, subtitle_method=subtitle_method, max_ref_frames=max_ref_frames, max_video_bit_depth=max_video_bit_depth, require_avc=require_avc, de_interlace=de_interlace, require_non_anamorphic=require_non_anamorphic, transcoding_max_audio_channels=transcoding_max_audio_channels, cpu_core_limit=cpu_core_limit, live_stream_id=live_stream_id, enable_mpegts_m2_ts_mode=enable_mpegts_m2_ts_mode, video_codec=video_codec, subtitle_codec=subtitle_codec, transcode_reasons=transcode_reasons, audio_stream_index=audio_stream_index, video_stream_index=video_stream_index, context=context, stream_options=stream_options, enable_audio_vbr_encoding=enable_audio_vbr_encoding)
+        print(&quot;The response of VideosApi-&gt;head_video_stream_by_container:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling VideosApi-&gt;head_video_stream_by_container: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_5">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>container</strong></td>
+<td><strong>str</strong></td>
+<td>The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>static</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>params</strong></td>
+<td><strong>str</strong></td>
+<td>The streaming parameters.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tag</strong></td>
+<td><strong>str</strong></td>
+<td>The tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_profile_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The dlna device profile id to utilize.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The play session id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_container</strong></td>
+<td><strong>str</strong></td>
+<td>The segment container.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_length</strong></td>
+<td><strong>int</strong></td>
+<td>The segment length.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>min_segments</strong></td>
+<td><strong>int</strong></td>
+<td>The minimum number of segments.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>The media version id, if playing an alternate version.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_id</strong></td>
+<td><strong>str</strong></td>
+<td>The device id of the client requesting. Used to stop encoding processes when needed.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify an audio codec to encode to, e.g. mp3. If omitted the server will auto-select using the url&#39;s extension.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_auto_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_video_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow copying of the video stream url.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_audio_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to allow copying of the audio stream url.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>break_on_non_key_frames</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to break on non key frames.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_sample_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a specific audio sample rate, e.g. 44100.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum audio bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a specific number of audio channels to encode to, e.g. 2.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a maximum number of audio channels to encode to, e.g. 2.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>profile</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>level</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>framerate</strong></td>
+<td><strong>float</strong></td>
+<td>Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_framerate</strong></td>
+<td><strong>float</strong></td>
+<td>Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>copy_timestamps</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether or not to copy timestamps when transcoding with an offset. Defaults to false.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_time_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>width</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The fixed horizontal resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>height</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The fixed vertical resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_width</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum horizontal resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_height</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum vertical resolution of the encoded video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_method</strong></td>
+<td><strong>SubtitleDeliveryMethod</strong></td>
+<td>Optional. Specify the subtitle delivery method.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_ref_frames</strong></td>
+<td><strong>int</strong></td>
+<td>Optional.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_video_bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum video bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>require_avc</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to require avc.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>de_interlace</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to deinterlace the video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>require_non_anamorphic</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to require a non anamorphic stream.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcoding_max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum number of audio channels to transcode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>cpu_core_limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The limit of how many cpu cores to use.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The live stream id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_mpegts_m2_ts_mode</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to enable the MpegtsM2Ts mode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url&#39;s extension.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_codec</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify a subtitle codec to encode to.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcode_reasons</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The transcoding reason.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the audio stream to use. If omitted the first audio stream will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the video stream to use. If omitted the first video stream will be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>context</strong></td>
+<td><strong>EncodingContext</strong></td>
+<td>Optional. The MediaBrowser.Model.Dlna.EncodingContext.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>stream_options</strong></td>
+<td><a href="str.md"><strong>Dict[str, Optional[str]]</strong></a></td>
+<td>Optional. The streaming options.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_audio_vbr_encoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Whether to enable Audio Encoding.</td>
+<td>[optional] [default to True]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_5">Return type</h3>
+<p><strong>bytearray</strong></p>
+<h3 id="authorization_5">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_5">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: video/*, text/html</li>
+</ul>
+<h3 id="http-response-details_5">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Video stream returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="merge_versions"><strong>merge_versions</strong></h1>
+<blockquote>
+<p>merge_versions(ids)</p>
+</blockquote>
+<p>Merges videos into a single record.</p>
+<h3 id="example_6">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.VideosApi(api_client)
+    ids = ['ids_example'] # List[str] | Item id list. This allows multiple, comma delimited.
+
+    try:
+        # Merges videos into a single record.
+        api_instance.merge_versions(ids)
+    except Exception as e:
+        print(&quot;Exception when calling VideosApi-&gt;merge_versions: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_6">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ids</strong></td>
+<td><a href="str.md"><strong>List[str]</strong></a></td>
+<td>Item id list. This allows multiple, comma delimited.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_6">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_6">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_6">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details_6">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Videos merged.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>400</strong></td>
+<td>Supply at least 2 video ids.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

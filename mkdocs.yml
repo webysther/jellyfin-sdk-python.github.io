@@ -1,0 +1,13 @@
+site_name: A Python SDK for Jellyfin.
+site_url: https://jellyfin-sdk-python.github.io
+site_author: Webysther Sperandio
+site_description: A Python SDK for interacting with the Jellyfin API.
+
+nav:
+  - About: index.md
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml

@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_10/PlaystateApi/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_10.PlaystateApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_10.PlaystateApi";
+        var mkdocs_page_input_path = "api_10_10/PlaystateApi.md";
+        var mkdocs_page_url = "/api_10_10/PlaystateApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../index.md">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_10.PlaystateApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_10playstateapi">jellyfin.generated.api_10_10.PlaystateApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#mark_played_item"><strong>mark_played_item</strong></a></td>
+<td><strong>POST</strong> /UserPlayedItems/{itemId}</td>
+<td>Marks an item as played for user.</td>
+</tr>
+<tr>
+<td><a href="./#mark_unplayed_item"><strong>mark_unplayed_item</strong></a></td>
+<td><strong>DELETE</strong> /UserPlayedItems/{itemId}</td>
+<td>Marks an item as unplayed for user.</td>
+</tr>
+<tr>
+<td><a href="./#on_playback_progress"><strong>on_playback_progress</strong></a></td>
+<td><strong>POST</strong> /PlayingItems/{itemId}/Progress</td>
+<td>Reports a session&#39;s playback progress.</td>
+</tr>
+<tr>
+<td><a href="./#on_playback_start"><strong>on_playback_start</strong></a></td>
+<td><strong>POST</strong> /PlayingItems/{itemId}</td>
+<td>Reports that a session has begun playing an item.</td>
+</tr>
+<tr>
+<td><a href="./#on_playback_stopped"><strong>on_playback_stopped</strong></a></td>
+<td><strong>DELETE</strong> /PlayingItems/{itemId}</td>
+<td>Reports that a session has stopped playing an item.</td>
+</tr>
+<tr>
+<td><a href="./#ping_playback_session"><strong>ping_playback_session</strong></a></td>
+<td><strong>POST</strong> /Sessions/Playing/Ping</td>
+<td>Pings a playback session.</td>
+</tr>
+<tr>
+<td><a href="./#report_playback_progress"><strong>report_playback_progress</strong></a></td>
+<td><strong>POST</strong> /Sessions/Playing/Progress</td>
+<td>Reports playback progress within a session.</td>
+</tr>
+<tr>
+<td><a href="./#report_playback_start"><strong>report_playback_start</strong></a></td>
+<td><strong>POST</strong> /Sessions/Playing</td>
+<td>Reports playback has started within a session.</td>
+</tr>
+<tr>
+<td><a href="./#report_playback_stopped"><strong>report_playback_stopped</strong></a></td>
+<td><strong>POST</strong> /Sessions/Playing/Stopped</td>
+<td>Reports playback has stopped within a session.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="mark_played_item"><strong>mark_played_item</strong></h1>
+<blockquote>
+<p>UserItemDataDto mark_played_item(item_id, user_id=user_id, date_played=date_played)</p>
+</blockquote>
+<p>Marks an item as played for user.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.user_item_data_dto import UserItemDataDto
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    item_id = 'item_id_example' # str | Item id.
+    user_id = 'user_id_example' # str | User id. (optional)
+    date_played = '2013-10-20T19:20:30+01:00' # datetime | Optional. The date the item was played. (optional)
+
+    try:
+        # Marks an item as played for user.
+        api_response = api_instance.mark_played_item(item_id, user_id=user_id, date_played=date_played)
+        print(&quot;The response of PlaystateApi-&gt;mark_played_item:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;mark_played_item: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>User id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>date_played</strong></td>
+<td><strong>datetime</strong></td>
+<td>Optional. The date the item was played.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p><a href="../UserItemDataDto/"><strong>UserItemDataDto</strong></a></p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Item marked as played.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Item not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="mark_unplayed_item"><strong>mark_unplayed_item</strong></h1>
+<blockquote>
+<p>UserItemDataDto mark_unplayed_item(item_id, user_id=user_id)</p>
+</blockquote>
+<p>Marks an item as unplayed for user.</p>
+<h3 id="example_1">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.user_item_data_dto import UserItemDataDto
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    item_id = 'item_id_example' # str | Item id.
+    user_id = 'user_id_example' # str | User id. (optional)
+
+    try:
+        # Marks an item as unplayed for user.
+        api_response = api_instance.mark_unplayed_item(item_id, user_id=user_id)
+        print(&quot;The response of PlaystateApi-&gt;mark_unplayed_item:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;mark_unplayed_item: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>User id.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p><a href="../UserItemDataDto/"><strong>UserItemDataDto</strong></a></p>
+<h3 id="authorization_1">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_1">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Item marked as unplayed.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Item not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="on_playback_progress"><strong>on_playback_progress</strong></h1>
+<blockquote>
+<p>on_playback_progress(item_id, media_source_id=media_source_id, position_ticks=position_ticks, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, volume_level=volume_level, play_method=play_method, live_stream_id=live_stream_id, play_session_id=play_session_id, repeat_mode=repeat_mode, is_paused=is_paused, is_muted=is_muted)</p>
+</blockquote>
+<p>Reports a session's playback progress.</p>
+<h3 id="example_2">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.play_method import PlayMethod
+from jellyfin.generated.api_10_10.models.repeat_mode import RepeatMode
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    item_id = 'item_id_example' # str | Item id.
+    media_source_id = 'media_source_id_example' # str | The id of the MediaSource. (optional)
+    position_ticks = 56 # int | Optional. The current position, in ticks. 1 tick = 10000 ms. (optional)
+    audio_stream_index = 56 # int | The audio stream index. (optional)
+    subtitle_stream_index = 56 # int | The subtitle stream index. (optional)
+    volume_level = 56 # int | Scale of 0-100. (optional)
+    play_method = jellyfin.generated.api_10_10.PlayMethod() # PlayMethod | The play method. (optional)
+    live_stream_id = 'live_stream_id_example' # str | The live stream id. (optional)
+    play_session_id = 'play_session_id_example' # str | The play session id. (optional)
+    repeat_mode = jellyfin.generated.api_10_10.RepeatMode() # RepeatMode | The repeat mode. (optional)
+    is_paused = False # bool | Indicates if the player is paused. (optional) (default to False)
+    is_muted = False # bool | Indicates if the player is muted. (optional) (default to False)
+
+    try:
+        # Reports a session's playback progress.
+        api_instance.on_playback_progress(item_id, media_source_id=media_source_id, position_ticks=position_ticks, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, volume_level=volume_level, play_method=play_method, live_stream_id=live_stream_id, play_session_id=play_session_id, repeat_mode=repeat_mode, is_paused=is_paused, is_muted=is_muted)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;on_playback_progress: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>The id of the MediaSource.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>position_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The current position, in ticks. 1 tick &#x3D; 10000 ms.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>The audio stream index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>The subtitle stream index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>volume_level</strong></td>
+<td><strong>int</strong></td>
+<td>Scale of 0-100.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_method</strong></td>
+<td><a href=".md"><strong>PlayMethod</strong></a></td>
+<td>The play method.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The live stream id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The play session id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>repeat_mode</strong></td>
+<td><a href=".md"><strong>RepeatMode</strong></a></td>
+<td>The repeat mode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_paused</strong></td>
+<td><strong>bool</strong></td>
+<td>Indicates if the player is paused.</td>
+<td>[optional] [default to False]</td>
+</tr>
+<tr>
+<td><strong>is_muted</strong></td>
+<td><strong>bool</strong></td>
+<td>Indicates if the player is muted.</td>
+<td>[optional] [default to False]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_2">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_2">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_2">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_2">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Play progress recorded.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="on_playback_start"><strong>on_playback_start</strong></h1>
+<blockquote>
+<p>on_playback_start(item_id, media_source_id=media_source_id, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, play_method=play_method, live_stream_id=live_stream_id, play_session_id=play_session_id, can_seek=can_seek)</p>
+</blockquote>
+<p>Reports that a session has begun playing an item.</p>
+<h3 id="example_3">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.play_method import PlayMethod
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    item_id = 'item_id_example' # str | Item id.
+    media_source_id = 'media_source_id_example' # str | The id of the MediaSource. (optional)
+    audio_stream_index = 56 # int | The audio stream index. (optional)
+    subtitle_stream_index = 56 # int | The subtitle stream index. (optional)
+    play_method = jellyfin.generated.api_10_10.PlayMethod() # PlayMethod | The play method. (optional)
+    live_stream_id = 'live_stream_id_example' # str | The live stream id. (optional)
+    play_session_id = 'play_session_id_example' # str | The play session id. (optional)
+    can_seek = False # bool | Indicates if the client can seek. (optional) (default to False)
+
+    try:
+        # Reports that a session has begun playing an item.
+        api_instance.on_playback_start(item_id, media_source_id=media_source_id, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, play_method=play_method, live_stream_id=live_stream_id, play_session_id=play_session_id, can_seek=can_seek)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;on_playback_start: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>The id of the MediaSource.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>The audio stream index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>The subtitle stream index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_method</strong></td>
+<td><a href=".md"><strong>PlayMethod</strong></a></td>
+<td>The play method.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The live stream id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The play session id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>can_seek</strong></td>
+<td><strong>bool</strong></td>
+<td>Indicates if the client can seek.</td>
+<td>[optional] [default to False]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_3">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_3">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_3">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_3">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Play start recorded.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="on_playback_stopped"><strong>on_playback_stopped</strong></h1>
+<blockquote>
+<p>on_playback_stopped(item_id, media_source_id=media_source_id, next_media_type=next_media_type, position_ticks=position_ticks, live_stream_id=live_stream_id, play_session_id=play_session_id)</p>
+</blockquote>
+<p>Reports that a session has stopped playing an item.</p>
+<h3 id="example_4">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    item_id = 'item_id_example' # str | Item id.
+    media_source_id = 'media_source_id_example' # str | The id of the MediaSource. (optional)
+    next_media_type = 'next_media_type_example' # str | The next media type that will play. (optional)
+    position_ticks = 56 # int | Optional. The position, in ticks, where playback stopped. 1 tick = 10000 ms. (optional)
+    live_stream_id = 'live_stream_id_example' # str | The live stream id. (optional)
+    play_session_id = 'play_session_id_example' # str | The play session id. (optional)
+
+    try:
+        # Reports that a session has stopped playing an item.
+        api_instance.on_playback_stopped(item_id, media_source_id=media_source_id, next_media_type=next_media_type, position_ticks=position_ticks, live_stream_id=live_stream_id, play_session_id=play_session_id)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;on_playback_stopped: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>The id of the MediaSource.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>next_media_type</strong></td>
+<td><strong>str</strong></td>
+<td>The next media type that will play.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>position_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The position, in ticks, where playback stopped. 1 tick &#x3D; 10000 ms.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The live stream id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The play session id.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_4">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_4">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_4">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_4">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Playback stop recorded.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="ping_playback_session"><strong>ping_playback_session</strong></h1>
+<blockquote>
+<p>ping_playback_session(play_session_id)</p>
+</blockquote>
+<p>Pings a playback session.</p>
+<h3 id="example_5">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    play_session_id = 'play_session_id_example' # str | Playback session id.
+
+    try:
+        # Pings a playback session.
+        api_instance.ping_playback_session(play_session_id)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;ping_playback_session: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_5">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>Playback session id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_5">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_5">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_5">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_5">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Playback session pinged.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="report_playback_progress"><strong>report_playback_progress</strong></h1>
+<blockquote>
+<p>report_playback_progress(playback_progress_info=playback_progress_info)</p>
+</blockquote>
+<p>Reports playback progress within a session.</p>
+<h3 id="example_6">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.playback_progress_info import PlaybackProgressInfo
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    playback_progress_info = jellyfin.generated.api_10_10.PlaybackProgressInfo() # PlaybackProgressInfo | The playback progress info. (optional)
+
+    try:
+        # Reports playback progress within a session.
+        api_instance.report_playback_progress(playback_progress_info=playback_progress_info)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;report_playback_progress: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_6">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playback_progress_info</strong></td>
+<td><a href="../PlaybackProgressInfo/"><strong>PlaybackProgressInfo</strong></a></td>
+<td>The playback progress info.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_6">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_6">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_6">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_6">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Playback progress recorded.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="report_playback_start"><strong>report_playback_start</strong></h1>
+<blockquote>
+<p>report_playback_start(playback_start_info=playback_start_info)</p>
+</blockquote>
+<p>Reports playback has started within a session.</p>
+<h3 id="example_7">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.playback_start_info import PlaybackStartInfo
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    playback_start_info = jellyfin.generated.api_10_10.PlaybackStartInfo() # PlaybackStartInfo | The playback start info. (optional)
+
+    try:
+        # Reports playback has started within a session.
+        api_instance.report_playback_start(playback_start_info=playback_start_info)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;report_playback_start: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_7">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playback_start_info</strong></td>
+<td><a href="../PlaybackStartInfo/"><strong>PlaybackStartInfo</strong></a></td>
+<td>The playback start info.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_7">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_7">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_7">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_7">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Playback start recorded.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="report_playback_stopped"><strong>report_playback_stopped</strong></h1>
+<blockquote>
+<p>report_playback_stopped(playback_stop_info=playback_stop_info)</p>
+</blockquote>
+<p>Reports playback has stopped within a session.</p>
+<h3 id="example_8">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.playback_stop_info import PlaybackStopInfo
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaystateApi(api_client)
+    playback_stop_info = jellyfin.generated.api_10_10.PlaybackStopInfo() # PlaybackStopInfo | The playback stop info. (optional)
+
+    try:
+        # Reports playback has stopped within a session.
+        api_instance.report_playback_stopped(playback_stop_info=playback_stop_info)
+    except Exception as e:
+        print(&quot;Exception when calling PlaystateApi-&gt;report_playback_stopped: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_8">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playback_stop_info</strong></td>
+<td><a href="../PlaybackStopInfo/"><strong>PlaybackStopInfo</strong></a></td>
+<td>The playback stop info.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_8">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_8">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_8">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_8">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Playback stop recorded.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

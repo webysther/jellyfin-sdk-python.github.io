@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_10/SessionApi/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_10.SessionApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_10.SessionApi";
+        var mkdocs_page_input_path = "api_10_10/SessionApi.md";
+        var mkdocs_page_url = "/api_10_10/SessionApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../index.md">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_10.SessionApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_10sessionapi">jellyfin.generated.api_10_10.SessionApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#add_user_to_session"><strong>add_user_to_session</strong></a></td>
+<td><strong>POST</strong> /Sessions/{sessionId}/User/{userId}</td>
+<td>Adds an additional user to a session.</td>
+</tr>
+<tr>
+<td><a href="./#display_content"><strong>display_content</strong></a></td>
+<td><strong>POST</strong> /Sessions/{sessionId}/Viewing</td>
+<td>Instructs a session to browse to an item or view.</td>
+</tr>
+<tr>
+<td><a href="./#get_auth_providers"><strong>get_auth_providers</strong></a></td>
+<td><strong>GET</strong> /Auth/Providers</td>
+<td>Get all auth providers.</td>
+</tr>
+<tr>
+<td><a href="./#get_password_reset_providers"><strong>get_password_reset_providers</strong></a></td>
+<td><strong>GET</strong> /Auth/PasswordResetProviders</td>
+<td>Get all password reset providers.</td>
+</tr>
+<tr>
+<td><a href="./#get_sessions"><strong>get_sessions</strong></a></td>
+<td><strong>GET</strong> /Sessions</td>
+<td>Gets a list of sessions.</td>
+</tr>
+<tr>
+<td><a href="./#play"><strong>play</strong></a></td>
+<td><strong>POST</strong> /Sessions/{sessionId}/Playing</td>
+<td>Instructs a session to play an item.</td>
+</tr>
+<tr>
+<td><a href="./#post_capabilities"><strong>post_capabilities</strong></a></td>
+<td><strong>POST</strong> /Sessions/Capabilities</td>
+<td>Updates capabilities for a device.</td>
+</tr>
+<tr>
+<td><a href="./#post_full_capabilities"><strong>post_full_capabilities</strong></a></td>
+<td><strong>POST</strong> /Sessions/Capabilities/Full</td>
+<td>Updates capabilities for a device.</td>
+</tr>
+<tr>
+<td><a href="./#remove_user_from_session"><strong>remove_user_from_session</strong></a></td>
+<td><strong>DELETE</strong> /Sessions/{sessionId}/User/{userId}</td>
+<td>Removes an additional user from a session.</td>
+</tr>
+<tr>
+<td><a href="./#report_session_ended"><strong>report_session_ended</strong></a></td>
+<td><strong>POST</strong> /Sessions/Logout</td>
+<td>Reports that a session has ended.</td>
+</tr>
+<tr>
+<td><a href="./#report_viewing"><strong>report_viewing</strong></a></td>
+<td><strong>POST</strong> /Sessions/Viewing</td>
+<td>Reports that a session is viewing an item.</td>
+</tr>
+<tr>
+<td><a href="./#send_full_general_command"><strong>send_full_general_command</strong></a></td>
+<td><strong>POST</strong> /Sessions/{sessionId}/Command</td>
+<td>Issues a full general command to a client.</td>
+</tr>
+<tr>
+<td><a href="./#send_general_command"><strong>send_general_command</strong></a></td>
+<td><strong>POST</strong> /Sessions/{sessionId}/Command/{command}</td>
+<td>Issues a general command to a client.</td>
+</tr>
+<tr>
+<td><a href="./#send_message_command"><strong>send_message_command</strong></a></td>
+<td><strong>POST</strong> /Sessions/{sessionId}/Message</td>
+<td>Issues a command to a client to display a message to the user.</td>
+</tr>
+<tr>
+<td><a href="./#send_playstate_command"><strong>send_playstate_command</strong></a></td>
+<td><strong>POST</strong> /Sessions/{sessionId}/Playing/{command}</td>
+<td>Issues a playstate command to a client.</td>
+</tr>
+<tr>
+<td><a href="./#send_system_command"><strong>send_system_command</strong></a></td>
+<td><strong>POST</strong> /Sessions/{sessionId}/System/{command}</td>
+<td>Issues a system command to a client.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="add_user_to_session"><strong>add_user_to_session</strong></h1>
+<blockquote>
+<p>add_user_to_session(session_id, user_id)</p>
+</blockquote>
+<p>Adds an additional user to a session.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session id.
+    user_id = 'user_id_example' # str | The user id.
+
+    try:
+        # Adds an additional user to a session.
+        api_instance.add_user_to_session(session_id, user_id)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;add_user_to_session: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>User added to session.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="display_content"><strong>display_content</strong></h1>
+<blockquote>
+<p>display_content(session_id, item_type, item_id, item_name)</p>
+</blockquote>
+<p>Instructs a session to browse to an item or view.</p>
+<h3 id="example_1">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.base_item_kind import BaseItemKind
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session Id.
+    item_type = jellyfin.generated.api_10_10.BaseItemKind() # BaseItemKind | The type of item to browse to.
+    item_id = 'item_id_example' # str | The Id of the item.
+    item_name = 'item_name_example' # str | The name of the item.
+
+    try:
+        # Instructs a session to browse to an item or view.
+        api_instance.display_content(session_id, item_type, item_id, item_name)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;display_content: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session Id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>item_type</strong></td>
+<td><a href=".md"><strong>BaseItemKind</strong></a></td>
+<td>The type of item to browse to.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The Id of the item.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>item_name</strong></td>
+<td><strong>str</strong></td>
+<td>The name of the item.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_1">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_1">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Instruction sent to session.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_auth_providers"><strong>get_auth_providers</strong></h1>
+<blockquote>
+<p>List[NameIdPair] get_auth_providers()</p>
+</blockquote>
+<p>Get all auth providers.</p>
+<h3 id="example_2">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.name_id_pair import NameIdPair
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+
+    try:
+        # Get all auth providers.
+        api_response = api_instance.get_auth_providers()
+        print(&quot;The response of SessionApi-&gt;get_auth_providers:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;get_auth_providers: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_2">Parameters</h3>
+<p>This endpoint does not need any parameter.</p>
+<h3 id="return-type_2">Return type</h3>
+<p><a href="../NameIdPair/"><strong>List[NameIdPair]</strong></a></p>
+<h3 id="authorization_2">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_2">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_2">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Auth providers retrieved.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_password_reset_providers"><strong>get_password_reset_providers</strong></h1>
+<blockquote>
+<p>List[NameIdPair] get_password_reset_providers()</p>
+</blockquote>
+<p>Get all password reset providers.</p>
+<h3 id="example_3">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.name_id_pair import NameIdPair
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+
+    try:
+        # Get all password reset providers.
+        api_response = api_instance.get_password_reset_providers()
+        print(&quot;The response of SessionApi-&gt;get_password_reset_providers:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;get_password_reset_providers: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_3">Parameters</h3>
+<p>This endpoint does not need any parameter.</p>
+<h3 id="return-type_3">Return type</h3>
+<p><a href="../NameIdPair/"><strong>List[NameIdPair]</strong></a></p>
+<h3 id="authorization_3">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_3">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_3">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Password reset providers retrieved.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_sessions"><strong>get_sessions</strong></h1>
+<blockquote>
+<p>List[SessionInfoDto] get_sessions(controllable_by_user_id=controllable_by_user_id, device_id=device_id, active_within_seconds=active_within_seconds)</p>
+</blockquote>
+<p>Gets a list of sessions.</p>
+<h3 id="example_4">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.session_info_dto import SessionInfoDto
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    controllable_by_user_id = 'controllable_by_user_id_example' # str | Filter by sessions that a given user is allowed to remote control. (optional)
+    device_id = 'device_id_example' # str | Filter by device Id. (optional)
+    active_within_seconds = 56 # int | Optional. Filter by sessions that were active in the last n seconds. (optional)
+
+    try:
+        # Gets a list of sessions.
+        api_response = api_instance.get_sessions(controllable_by_user_id=controllable_by_user_id, device_id=device_id, active_within_seconds=active_within_seconds)
+        print(&quot;The response of SessionApi-&gt;get_sessions:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;get_sessions: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>controllable_by_user_id</strong></td>
+<td><strong>str</strong></td>
+<td>Filter by sessions that a given user is allowed to remote control.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>device_id</strong></td>
+<td><strong>str</strong></td>
+<td>Filter by device Id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>active_within_seconds</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. Filter by sessions that were active in the last n seconds.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_4">Return type</h3>
+<p><a href="../SessionInfoDto/"><strong>List[SessionInfoDto]</strong></a></p>
+<h3 id="authorization_4">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_4">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_4">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>List of sessions returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="play"><strong>play</strong></h1>
+<blockquote>
+<p>play(session_id, play_command, item_ids, start_position_ticks=start_position_ticks, media_source_id=media_source_id, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, start_index=start_index)</p>
+</blockquote>
+<p>Instructs a session to play an item.</p>
+<h3 id="example_5">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.play_command import PlayCommand
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session id.
+    play_command = jellyfin.generated.api_10_10.PlayCommand() # PlayCommand | The type of play command to issue (PlayNow, PlayNext, PlayLast). Clients who have not yet implemented play next and play last may play now.
+    item_ids = ['item_ids_example'] # List[str] | The ids of the items to play, comma delimited.
+    start_position_ticks = 56 # int | The starting position of the first item. (optional)
+    media_source_id = 'media_source_id_example' # str | Optional. The media source id. (optional)
+    audio_stream_index = 56 # int | Optional. The index of the audio stream to play. (optional)
+    subtitle_stream_index = 56 # int | Optional. The index of the subtitle stream to play. (optional)
+    start_index = 56 # int | Optional. The start index. (optional)
+
+    try:
+        # Instructs a session to play an item.
+        api_instance.play(session_id, play_command, item_ids, start_position_ticks=start_position_ticks, media_source_id=media_source_id, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, start_index=start_index)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;play: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_5">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>play_command</strong></td>
+<td><a href=".md"><strong>PlayCommand</strong></a></td>
+<td>The type of play command to issue (PlayNow, PlayNext, PlayLast). Clients who have not yet implemented play next and play last may play now.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>item_ids</strong></td>
+<td><a href="str.md"><strong>List[str]</strong></a></td>
+<td>The ids of the items to play, comma delimited.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>start_position_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>The starting position of the first item.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. The media source id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the audio stream to play.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The index of the subtitle stream to play.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The start index.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_5">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_5">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_5">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_5">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Instruction sent to session.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="post_capabilities"><strong>post_capabilities</strong></h1>
+<blockquote>
+<p>post_capabilities(id=id, playable_media_types=playable_media_types, supported_commands=supported_commands, supports_media_control=supports_media_control, supports_persistent_identifier=supports_persistent_identifier)</p>
+</blockquote>
+<p>Updates capabilities for a device.</p>
+<h3 id="example_6">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.general_command_type import GeneralCommandType
+from jellyfin.generated.api_10_10.models.media_type import MediaType
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    id = 'id_example' # str | The session id. (optional)
+    playable_media_types = [jellyfin.generated.api_10_10.MediaType()] # List[MediaType] | A list of playable media types, comma delimited. Audio, Video, Book, Photo. (optional)
+    supported_commands = [jellyfin.generated.api_10_10.GeneralCommandType()] # List[GeneralCommandType] | A list of supported remote control commands, comma delimited. (optional)
+    supports_media_control = False # bool | Determines whether media can be played remotely.. (optional) (default to False)
+    supports_persistent_identifier = True # bool | Determines whether the device supports a unique identifier. (optional) (default to True)
+
+    try:
+        # Updates capabilities for a device.
+        api_instance.post_capabilities(id=id, playable_media_types=playable_media_types, supported_commands=supported_commands, supports_media_control=supports_media_control, supports_persistent_identifier=supports_persistent_identifier)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;post_capabilities: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_6">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>playable_media_types</strong></td>
+<td><a href="../MediaType/"><strong>List[MediaType]</strong></a></td>
+<td>A list of playable media types, comma delimited. Audio, Video, Book, Photo.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>supported_commands</strong></td>
+<td><a href="../GeneralCommandType/"><strong>List[GeneralCommandType]</strong></a></td>
+<td>A list of supported remote control commands, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>supports_media_control</strong></td>
+<td><strong>bool</strong></td>
+<td>Determines whether media can be played remotely..</td>
+<td>[optional] [default to False]</td>
+</tr>
+<tr>
+<td><strong>supports_persistent_identifier</strong></td>
+<td><strong>bool</strong></td>
+<td>Determines whether the device supports a unique identifier.</td>
+<td>[optional] [default to True]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_6">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_6">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_6">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_6">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Capabilities posted.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="post_full_capabilities"><strong>post_full_capabilities</strong></h1>
+<blockquote>
+<p>post_full_capabilities(client_capabilities_dto, id=id)</p>
+</blockquote>
+<p>Updates capabilities for a device.</p>
+<h3 id="example_7">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.client_capabilities_dto import ClientCapabilitiesDto
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    client_capabilities_dto = jellyfin.generated.api_10_10.ClientCapabilitiesDto() # ClientCapabilitiesDto | The MediaBrowser.Model.Session.ClientCapabilities.
+    id = 'id_example' # str | The session id. (optional)
+
+    try:
+        # Updates capabilities for a device.
+        api_instance.post_full_capabilities(client_capabilities_dto, id=id)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;post_full_capabilities: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_7">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>client_capabilities_dto</strong></td>
+<td><a href="../ClientCapabilitiesDto/"><strong>ClientCapabilitiesDto</strong></a></td>
+<td>The MediaBrowser.Model.Session.ClientCapabilities.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_7">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_7">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_7">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_7">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Capabilities updated.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="remove_user_from_session"><strong>remove_user_from_session</strong></h1>
+<blockquote>
+<p>remove_user_from_session(session_id, user_id)</p>
+</blockquote>
+<p>Removes an additional user from a session.</p>
+<h3 id="example_8">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session id.
+    user_id = 'user_id_example' # str | The user id.
+
+    try:
+        # Removes an additional user from a session.
+        api_instance.remove_user_from_session(session_id, user_id)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;remove_user_from_session: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_8">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_8">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_8">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_8">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_8">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>User removed from session.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="report_session_ended"><strong>report_session_ended</strong></h1>
+<blockquote>
+<p>report_session_ended()</p>
+</blockquote>
+<p>Reports that a session has ended.</p>
+<h3 id="example_9">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+
+    try:
+        # Reports that a session has ended.
+        api_instance.report_session_ended()
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;report_session_ended: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_9">Parameters</h3>
+<p>This endpoint does not need any parameter.</p>
+<h3 id="return-type_9">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_9">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_9">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_9">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Session end reported to server.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="report_viewing"><strong>report_viewing</strong></h1>
+<blockquote>
+<p>report_viewing(item_id, session_id=session_id)</p>
+</blockquote>
+<p>Reports that a session is viewing an item.</p>
+<h3 id="example_10">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+    session_id = 'session_id_example' # str | The session id. (optional)
+
+    try:
+        # Reports that a session is viewing an item.
+        api_instance.report_viewing(item_id, session_id=session_id)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;report_viewing: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_10">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_10">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_10">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_10">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_10">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Session reported to server.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="send_full_general_command"><strong>send_full_general_command</strong></h1>
+<blockquote>
+<p>send_full_general_command(session_id, general_command)</p>
+</blockquote>
+<p>Issues a full general command to a client.</p>
+<h3 id="example_11">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.general_command import GeneralCommand
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session id.
+    general_command = jellyfin.generated.api_10_10.GeneralCommand() # GeneralCommand | The MediaBrowser.Model.Session.GeneralCommand.
+
+    try:
+        # Issues a full general command to a client.
+        api_instance.send_full_general_command(session_id, general_command)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;send_full_general_command: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_11">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>general_command</strong></td>
+<td><a href="../GeneralCommand/"><strong>GeneralCommand</strong></a></td>
+<td>The MediaBrowser.Model.Session.GeneralCommand.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_11">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_11">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_11">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_11">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Full general command sent to session.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="send_general_command"><strong>send_general_command</strong></h1>
+<blockquote>
+<p>send_general_command(session_id, command)</p>
+</blockquote>
+<p>Issues a general command to a client.</p>
+<h3 id="example_12">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.general_command_type import GeneralCommandType
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session id.
+    command = jellyfin.generated.api_10_10.GeneralCommandType() # GeneralCommandType | The command to send.
+
+    try:
+        # Issues a general command to a client.
+        api_instance.send_general_command(session_id, command)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;send_general_command: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_12">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>command</strong></td>
+<td><a href=".md"><strong>GeneralCommandType</strong></a></td>
+<td>The command to send.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_12">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_12">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_12">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_12">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>General command sent to session.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="send_message_command"><strong>send_message_command</strong></h1>
+<blockquote>
+<p>send_message_command(session_id, message_command)</p>
+</blockquote>
+<p>Issues a command to a client to display a message to the user.</p>
+<h3 id="example_13">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.message_command import MessageCommand
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session id.
+    message_command = jellyfin.generated.api_10_10.MessageCommand() # MessageCommand | The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
+
+    try:
+        # Issues a command to a client to display a message to the user.
+        api_instance.send_message_command(session_id, message_command)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;send_message_command: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_13">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>message_command</strong></td>
+<td><a href="../MessageCommand/"><strong>MessageCommand</strong></a></td>
+<td>The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_13">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_13">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_13">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_13">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Message sent.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="send_playstate_command"><strong>send_playstate_command</strong></h1>
+<blockquote>
+<p>send_playstate_command(session_id, command, seek_position_ticks=seek_position_ticks, controlling_user_id=controlling_user_id)</p>
+</blockquote>
+<p>Issues a playstate command to a client.</p>
+<h3 id="example_14">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.playstate_command import PlaystateCommand
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session id.
+    command = jellyfin.generated.api_10_10.PlaystateCommand() # PlaystateCommand | The MediaBrowser.Model.Session.PlaystateCommand.
+    seek_position_ticks = 56 # int | The optional position ticks. (optional)
+    controlling_user_id = 'controlling_user_id_example' # str | The optional controlling user id. (optional)
+
+    try:
+        # Issues a playstate command to a client.
+        api_instance.send_playstate_command(session_id, command, seek_position_ticks=seek_position_ticks, controlling_user_id=controlling_user_id)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;send_playstate_command: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_14">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>command</strong></td>
+<td><a href=".md"><strong>PlaystateCommand</strong></a></td>
+<td>The MediaBrowser.Model.Session.PlaystateCommand.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>seek_position_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>The optional position ticks.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>controlling_user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The optional controlling user id.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_14">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_14">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_14">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_14">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Playstate command sent to session.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="send_system_command"><strong>send_system_command</strong></h1>
+<blockquote>
+<p>send_system_command(session_id, command)</p>
+</blockquote>
+<p>Issues a system command to a client.</p>
+<h3 id="example_15">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.general_command_type import GeneralCommandType
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SessionApi(api_client)
+    session_id = 'session_id_example' # str | The session id.
+    command = jellyfin.generated.api_10_10.GeneralCommandType() # GeneralCommandType | The command to send.
+
+    try:
+        # Issues a system command to a client.
+        api_instance.send_system_command(session_id, command)
+    except Exception as e:
+        print(&quot;Exception when calling SessionApi-&gt;send_system_command: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_15">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The session id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>command</strong></td>
+<td><a href=".md"><strong>GeneralCommandType</strong></a></td>
+<td>The command to send.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_15">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_15">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_15">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details_15">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>System command sent to session.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

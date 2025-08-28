@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_10/FilterApi/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_10.FilterApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_10.FilterApi";
+        var mkdocs_page_input_path = "api_10_10/FilterApi.md";
+        var mkdocs_page_url = "/api_10_10/FilterApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../index.md">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_10.FilterApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_10filterapi">jellyfin.generated.api_10_10.FilterApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#get_query_filters"><strong>get_query_filters</strong></a></td>
+<td><strong>GET</strong> /Items/Filters2</td>
+<td>Gets query filters.</td>
+</tr>
+<tr>
+<td><a href="./#get_query_filters_legacy"><strong>get_query_filters_legacy</strong></a></td>
+<td><strong>GET</strong> /Items/Filters</td>
+<td>Gets legacy query filters.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="get_query_filters"><strong>get_query_filters</strong></h1>
+<blockquote>
+<p>QueryFilters get_query_filters(user_id=user_id, parent_id=parent_id, include_item_types=include_item_types, is_airing=is_airing, is_movie=is_movie, is_sports=is_sports, is_kids=is_kids, is_news=is_news, is_series=is_series, recursive=recursive)</p>
+</blockquote>
+<p>Gets query filters.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.base_item_kind import BaseItemKind
+from jellyfin.generated.api_10_10.models.query_filters import QueryFilters
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.FilterApi(api_client)
+    user_id = 'user_id_example' # str | Optional. User id. (optional)
+    parent_id = 'parent_id_example' # str | Optional. Specify this to localize the search to a specific item or folder. Omit to use the root. (optional)
+    include_item_types = [jellyfin.generated.api_10_10.BaseItemKind()] # List[BaseItemKind] | Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited. (optional)
+    is_airing = True # bool | Optional. Is item airing. (optional)
+    is_movie = True # bool | Optional. Is item movie. (optional)
+    is_sports = True # bool | Optional. Is item sports. (optional)
+    is_kids = True # bool | Optional. Is item kids. (optional)
+    is_news = True # bool | Optional. Is item news. (optional)
+    is_series = True # bool | Optional. Is item series. (optional)
+    recursive = True # bool | Optional. Search recursive. (optional)
+
+    try:
+        # Gets query filters.
+        api_response = api_instance.get_query_filters(user_id=user_id, parent_id=parent_id, include_item_types=include_item_types, is_airing=is_airing, is_movie=is_movie, is_sports=is_sports, is_kids=is_kids, is_news=is_news, is_series=is_series, recursive=recursive)
+        print(&quot;The response of FilterApi-&gt;get_query_filters:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling FilterApi-&gt;get_query_filters: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. User id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Specify this to localize the search to a specific item or folder. Omit to use the root.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>include_item_types</strong></td>
+<td><a href="../BaseItemKind/"><strong>List[BaseItemKind]</strong></a></td>
+<td>Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_airing</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Is item airing.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_movie</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Is item movie.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_sports</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Is item sports.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_kids</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Is item kids.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_news</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Is item news.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_series</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Is item series.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>recursive</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Search recursive.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p><a href="../QueryFilters/"><strong>QueryFilters</strong></a></p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Filters retrieved.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_query_filters_legacy"><strong>get_query_filters_legacy</strong></h1>
+<blockquote>
+<p>QueryFiltersLegacy get_query_filters_legacy(user_id=user_id, parent_id=parent_id, include_item_types=include_item_types, media_types=media_types)</p>
+</blockquote>
+<p>Gets legacy query filters.</p>
+<h3 id="example_1">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10.models.base_item_kind import BaseItemKind
+from jellyfin.generated.api_10_10.models.media_type import MediaType
+from jellyfin.generated.api_10_10.models.query_filters_legacy import QueryFiltersLegacy
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_10.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_10.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.FilterApi(api_client)
+    user_id = 'user_id_example' # str | Optional. User id. (optional)
+    parent_id = 'parent_id_example' # str | Optional. Parent id. (optional)
+    include_item_types = [jellyfin.generated.api_10_10.BaseItemKind()] # List[BaseItemKind] | Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited. (optional)
+    media_types = [jellyfin.generated.api_10_10.MediaType()] # List[MediaType] | Optional. Filter by MediaType. Allows multiple, comma delimited. (optional)
+
+    try:
+        # Gets legacy query filters.
+        api_response = api_instance.get_query_filters_legacy(user_id=user_id, parent_id=parent_id, include_item_types=include_item_types, media_types=media_types)
+        print(&quot;The response of FilterApi-&gt;get_query_filters_legacy:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling FilterApi-&gt;get_query_filters_legacy: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. User id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Parent id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>include_item_types</strong></td>
+<td><a href="../BaseItemKind/"><strong>List[BaseItemKind]</strong></a></td>
+<td>Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_types</strong></td>
+<td><a href="../MediaType/"><strong>List[MediaType]</strong></a></td>
+<td>Optional. Filter by MediaType. Allows multiple, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p><a href="../QueryFiltersLegacy/"><strong>QueryFiltersLegacy</strong></a></p>
+<h3 id="authorization_1">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_1">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Legacy filters retrieved.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
