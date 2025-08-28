@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_11/LocalizationApi/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_11.LocalizationApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_11.LocalizationApi";
+        var mkdocs_page_input_path = "api_10_11/LocalizationApi.md";
+        var mkdocs_page_url = "/api_10_11/LocalizationApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../index.md">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_11.LocalizationApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_11localizationapi">jellyfin.generated.api_10_11.LocalizationApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#get_countries"><strong>get_countries</strong></a></td>
+<td><strong>GET</strong> /Localization/Countries</td>
+<td>Gets known countries.</td>
+</tr>
+<tr>
+<td><a href="./#get_cultures"><strong>get_cultures</strong></a></td>
+<td><strong>GET</strong> /Localization/Cultures</td>
+<td>Gets known cultures.</td>
+</tr>
+<tr>
+<td><a href="./#get_localization_options"><strong>get_localization_options</strong></a></td>
+<td><strong>GET</strong> /Localization/Options</td>
+<td>Gets localization options.</td>
+</tr>
+<tr>
+<td><a href="./#get_parental_ratings"><strong>get_parental_ratings</strong></a></td>
+<td><strong>GET</strong> /Localization/ParentalRatings</td>
+<td>Gets known parental ratings.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="get_countries"><strong>get_countries</strong></h1>
+<blockquote>
+<p>List[CountryInfo] get_countries()</p>
+</blockquote>
+<p>Gets known countries.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.models.country_info import CountryInfo
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.LocalizationApi(api_client)
+
+    try:
+        # Gets known countries.
+        api_response = api_instance.get_countries()
+        print(&quot;The response of LocalizationApi-&gt;get_countries:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling LocalizationApi-&gt;get_countries: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<p>This endpoint does not need any parameter.</p>
+<h3 id="return-type">Return type</h3>
+<p><a href="../CountryInfo/"><strong>List[CountryInfo]</strong></a></p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Known countries returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_cultures"><strong>get_cultures</strong></h1>
+<blockquote>
+<p>List[CultureDto] get_cultures()</p>
+</blockquote>
+<p>Gets known cultures.</p>
+<h3 id="example_1">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.models.culture_dto import CultureDto
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.LocalizationApi(api_client)
+
+    try:
+        # Gets known cultures.
+        api_response = api_instance.get_cultures()
+        print(&quot;The response of LocalizationApi-&gt;get_cultures:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling LocalizationApi-&gt;get_cultures: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_1">Parameters</h3>
+<p>This endpoint does not need any parameter.</p>
+<h3 id="return-type_1">Return type</h3>
+<p><a href="../CultureDto/"><strong>List[CultureDto]</strong></a></p>
+<h3 id="authorization_1">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details_1">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Known cultures returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_localization_options"><strong>get_localization_options</strong></h1>
+<blockquote>
+<p>List[LocalizationOption] get_localization_options()</p>
+</blockquote>
+<p>Gets localization options.</p>
+<h3 id="example_2">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.models.localization_option import LocalizationOption
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.LocalizationApi(api_client)
+
+    try:
+        # Gets localization options.
+        api_response = api_instance.get_localization_options()
+        print(&quot;The response of LocalizationApi-&gt;get_localization_options:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling LocalizationApi-&gt;get_localization_options: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_2">Parameters</h3>
+<p>This endpoint does not need any parameter.</p>
+<h3 id="return-type_2">Return type</h3>
+<p><a href="../LocalizationOption/"><strong>List[LocalizationOption]</strong></a></p>
+<h3 id="authorization_2">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_2">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details_2">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Localization options returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+<h1 id="get_parental_ratings"><strong>get_parental_ratings</strong></h1>
+<blockquote>
+<p>List[ParentalRating] get_parental_ratings()</p>
+</blockquote>
+<p>Gets known parental ratings.</p>
+<h3 id="example_3">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11.models.parental_rating import ParentalRating
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = jellyfin.generated.api_10_11.Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = os.environ[&quot;API_KEY&quot;]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['CustomAuthentication'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with jellyfin.generated.api_10_11.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.LocalizationApi(api_client)
+
+    try:
+        # Gets known parental ratings.
+        api_response = api_instance.get_parental_ratings()
+        print(&quot;The response of LocalizationApi-&gt;get_parental_ratings:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling LocalizationApi-&gt;get_parental_ratings: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_3">Parameters</h3>
+<p>This endpoint does not need any parameter.</p>
+<h3 id="return-type_3">Return type</h3>
+<p><a href="../ParentalRating/"><strong>List[ParentalRating]</strong></a></p>
+<h3 id="authorization_3">Authorization</h3>
+<p><a href="../README.md#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_3">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details_3">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Known parental ratings returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

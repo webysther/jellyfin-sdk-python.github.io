@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_11/ItemFields/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ItemFields - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ItemFields";
+        var mkdocs_page_input_path = "api_10_11/ItemFields.md";
+        var mkdocs_page_url = "/api_10_11/ItemFields/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../../index.md">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">ItemFields</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="itemfields">ItemFields</h1>
+<p>Used to control the data that gets attached to DtoBaseItems.</p>
+<h2 id="enum">Enum</h2>
+<ul>
+<li>
+<p><code>AIRTIME</code> (value: <code>'AirTime'</code>)</p>
+</li>
+<li>
+<p><code>CANDELETE</code> (value: <code>'CanDelete'</code>)</p>
+</li>
+<li>
+<p><code>CANDOWNLOAD</code> (value: <code>'CanDownload'</code>)</p>
+</li>
+<li>
+<p><code>CHANNELINFO</code> (value: <code>'ChannelInfo'</code>)</p>
+</li>
+<li>
+<p><code>CHAPTERS</code> (value: <code>'Chapters'</code>)</p>
+</li>
+<li>
+<p><code>TRICKPLAY</code> (value: <code>'Trickplay'</code>)</p>
+</li>
+<li>
+<p><code>CHILDCOUNT</code> (value: <code>'ChildCount'</code>)</p>
+</li>
+<li>
+<p><code>CUMULATIVERUNTIMETICKS</code> (value: <code>'CumulativeRunTimeTicks'</code>)</p>
+</li>
+<li>
+<p><code>CUSTOMRATING</code> (value: <code>'CustomRating'</code>)</p>
+</li>
+<li>
+<p><code>DATECREATED</code> (value: <code>'DateCreated'</code>)</p>
+</li>
+<li>
+<p><code>DATELASTMEDIAADDED</code> (value: <code>'DateLastMediaAdded'</code>)</p>
+</li>
+<li>
+<p><code>DISPLAYPREFERENCESID</code> (value: <code>'DisplayPreferencesId'</code>)</p>
+</li>
+<li>
+<p><code>ETAG</code> (value: <code>'Etag'</code>)</p>
+</li>
+<li>
+<p><code>EXTERNALURLS</code> (value: <code>'ExternalUrls'</code>)</p>
+</li>
+<li>
+<p><code>GENRES</code> (value: <code>'Genres'</code>)</p>
+</li>
+<li>
+<p><code>ITEMCOUNTS</code> (value: <code>'ItemCounts'</code>)</p>
+</li>
+<li>
+<p><code>MEDIASOURCECOUNT</code> (value: <code>'MediaSourceCount'</code>)</p>
+</li>
+<li>
+<p><code>MEDIASOURCES</code> (value: <code>'MediaSources'</code>)</p>
+</li>
+<li>
+<p><code>ORIGINALTITLE</code> (value: <code>'OriginalTitle'</code>)</p>
+</li>
+<li>
+<p><code>OVERVIEW</code> (value: <code>'Overview'</code>)</p>
+</li>
+<li>
+<p><code>PARENTID</code> (value: <code>'ParentId'</code>)</p>
+</li>
+<li>
+<p><code>PATH</code> (value: <code>'Path'</code>)</p>
+</li>
+<li>
+<p><code>PEOPLE</code> (value: <code>'People'</code>)</p>
+</li>
+<li>
+<p><code>PLAYACCESS</code> (value: <code>'PlayAccess'</code>)</p>
+</li>
+<li>
+<p><code>PRODUCTIONLOCATIONS</code> (value: <code>'ProductionLocations'</code>)</p>
+</li>
+<li>
+<p><code>PROVIDERIDS</code> (value: <code>'ProviderIds'</code>)</p>
+</li>
+<li>
+<p><code>PRIMARYIMAGEASPECTRATIO</code> (value: <code>'PrimaryImageAspectRatio'</code>)</p>
+</li>
+<li>
+<p><code>RECURSIVEITEMCOUNT</code> (value: <code>'RecursiveItemCount'</code>)</p>
+</li>
+<li>
+<p><code>SETTINGS</code> (value: <code>'Settings'</code>)</p>
+</li>
+<li>
+<p><code>SERIESSTUDIO</code> (value: <code>'SeriesStudio'</code>)</p>
+</li>
+<li>
+<p><code>SORTNAME</code> (value: <code>'SortName'</code>)</p>
+</li>
+<li>
+<p><code>SPECIALEPISODENUMBERS</code> (value: <code>'SpecialEpisodeNumbers'</code>)</p>
+</li>
+<li>
+<p><code>STUDIOS</code> (value: <code>'Studios'</code>)</p>
+</li>
+<li>
+<p><code>TAGLINES</code> (value: <code>'Taglines'</code>)</p>
+</li>
+<li>
+<p><code>TAGS</code> (value: <code>'Tags'</code>)</p>
+</li>
+<li>
+<p><code>REMOTETRAILERS</code> (value: <code>'RemoteTrailers'</code>)</p>
+</li>
+<li>
+<p><code>MEDIASTREAMS</code> (value: <code>'MediaStreams'</code>)</p>
+</li>
+<li>
+<p><code>SEASONUSERDATA</code> (value: <code>'SeasonUserData'</code>)</p>
+</li>
+<li>
+<p><code>DATELASTREFRESHED</code> (value: <code>'DateLastRefreshed'</code>)</p>
+</li>
+<li>
+<p><code>DATELASTSAVED</code> (value: <code>'DateLastSaved'</code>)</p>
+</li>
+<li>
+<p><code>REFRESHSTATE</code> (value: <code>'RefreshState'</code>)</p>
+</li>
+<li>
+<p><code>CHANNELIMAGE</code> (value: <code>'ChannelImage'</code>)</p>
+</li>
+<li>
+<p><code>ENABLEMEDIASOURCEDISPLAY</code> (value: <code>'EnableMediaSourceDisplay'</code>)</p>
+</li>
+<li>
+<p><code>WIDTH</code> (value: <code>'Width'</code>)</p>
+</li>
+<li>
+<p><code>HEIGHT</code> (value: <code>'Height'</code>)</p>
+</li>
+<li>
+<p><code>EXTRAIDS</code> (value: <code>'ExtraIds'</code>)</p>
+</li>
+<li>
+<p><code>LOCALTRAILERCOUNT</code> (value: <code>'LocalTrailerCount'</code>)</p>
+</li>
+<li>
+<p><code>ISHD</code> (value: <code>'IsHD'</code>)</p>
+</li>
+<li>
+<p><code>SPECIALFEATURECOUNT</code> (value: <code>'SpecialFeatureCount'</code>)</p>
+</li>
+</ul>
+<p><a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
