@@ -48,6 +48,14 @@
     </ul>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="api_10_11/">API 10.11</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="api_10_10/">API 10.10</a>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
@@ -91,21 +99,43 @@
 </code></pre>
 <h2 id="usage">Usage</h2>
 <h3 id="drop-in-replacement-for-jellyfin-apiclient-python">Drop-in replacement for <a href="https://github.com/jellyfin/jellyfin-apiclient-python">jellyfin-apiclient-python</a></h3>
-<p>This library inject the old legacy (almost not maintained) for help migration:</p>
-<pre><code class="language-python"># from
+<p>This library includes the old legacy client (which is almost unmaintained) to help with migration:</p>
+<pre><code class="language-sh">pip uninstall jellyfin-apiclient-python
+pip install jellyfin-sdk
+</code></pre>
+<pre><code class="language-python"># change from
 from jellyfin_apiclient_python import JellyfinClient
 from jellyfin_apiclient_python.api import API
 
-# to 
+# to this
 from jellyfin.legacy import JellyfinClient
 from jellyfin.legacy.api import API
 </code></pre>
 <h3 id="login">Login</h3>
-<p>Let's start with login, most cases you only need do something simple:</p>
+<p>To get started with login, in most cases you only need to do something simple:</p>
 <pre><code class="language-python">import os
 
 os.environ[&quot;JELLYFIN_URL&quot;] = &quot;https://jellyfin.example.com&quot;
 os.environ[&quot;JELLYFIN_API_KEY&quot;] = &quot;MY_TOKEN&quot;
+</code></pre>
+<h4 id="lean-optimized-access">Lean optimized access</h4>
+<pre><code class="language-python">import jellyfin
+
+api = jellyfin.api(os.getenv(&quot;JELLYFIN_URL&quot;), os.getenv(&quot;JELLYFIN_API_KEY&quot;))
+
+print(api.system.info.version, api.system.info.server_name)
+</code></pre>
+<h4 id="generated-binding-with-openapi-specification">Generated Binding with OpenAPI Specification</h4>
+<pre><code class="language-python">from jellyfin.generated.api_10_10 import Configuration, ApiClient, SystemApi
+
+client = ApiClient(
+    Configuration(host = os.getenv(&quot;JELLYFIN_URL&quot;)), 
+    header_name='X-Emby-Token', 
+    header_value=os.getenv(&quot;JELLYFIN_API_KEY&quot;)
+)
+system_info = SystemApi(client).get_system_info()
+
+print(system_info.version, system_info.server_name)
 </code></pre>
 <h4 id="legacy-jellyfin-apiclient-python">Legacy (<a href="https://github.com/jellyfin/jellyfin-apiclient-python">jellyfin-apiclient-python</a>)</h4>
 <pre><code class="language-python">from jellyfin.legacy import JellyfinClient
@@ -121,24 +151,23 @@ system_info = client.jellyfin.get_system_info()
 
 print(system_info.get(&quot;Version&quot;), system_info.get(&quot;ServerName&quot;))
 </code></pre>
-<h4 id="generated-binding-with-openapi-specification">Generated Binding with OpenAPI Specification</h4>
-<pre><code class="language-python">from jellyfin.generated.api_10_10 import Configuration, ApiClient, SystemApi
+<h3 id="jellyfin-server-api-version">Jellyfin Server API Version</h3>
+<p>This is important because when a new API version is released, breaking changes can affect the entire project. 
+To avoid this, you can set an API target version, similar to how it's done in Android development:</p>
+<pre><code class="language-python">from jellyfin.api import Version
+import jellyfin
 
-client = ApiClient(
-    Configuration(host = os.getenv(&quot;JELLYFIN_URL&quot;)), 
-    header_name='X-Emby-Token', 
-    header_value=os.getenv(&quot;JELLYFIN_API_KEY&quot;)
-)
-system_info = SystemApi(client).get_system_info()
+# this will use the default which is the lastest stable
+jellyfin.api(os.getenv(&quot;JELLYFIN_URL&quot;), os.getenv(&quot;JELLYFIN_API_KEY&quot;))
 
-print(system_info.version, system_info.server_name)
-</code></pre>
-<h4 id="new">New</h4>
-<pre><code class="language-python">import jellyfin
+# now let's test the new API (version 10.11) for breaking changes in same endpoint
+jellyfin.api(os.getenv(&quot;JELLYFIN_URL&quot;), os.getenv(&quot;JELLYFIN_API_KEY&quot;), Version.V10_11)
 
-api = jellyfin.api(os.getenv(&quot;JELLYFIN_URL&quot;), os.getenv(&quot;JELLYFIN_API_KEY&quot;))
+# but keep simple
+jellyfin.api(os.getenv(&quot;JELLYFIN_URL&quot;), os.getenv(&quot;JELLYFIN_API_KEY&quot;), '10.11')
 
-print(api.system.info.version, api.system.info.server_name)
+# let's test a wrong version
+jellyfin.api(os.getenv(&quot;JELLYFIN_URL&quot;), os.getenv(&quot;JELLYFIN_API_KEY&quot;), '99')
 </code></pre>
 <h3 id="supported-jellyfin-versions">Supported Jellyfin Versions</h3>
 <table>
@@ -150,7 +179,7 @@ print(api.system.info.version, api.system.info.server_name)
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">0.1.0</td>
+<td style="text-align: center;">0.1.x</td>
 <td style="text-align: center;">10.10.x-10.11.x</td>
 </tr>
 </tbody>
@@ -158,6 +187,9 @@ print(api.system.info.version, api.system.info.server_name)
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="api_10_11/" class="btn btn-neutral float-right" title="API 10.11">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -180,6 +212,8 @@ print(api.system.info.version, api.system.info.server_name)
     
     
     
+      <span><a href="api_10_11/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
   </span>
 </div>
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -198,5 +232,5 @@ print(api.system.info.version, api.system.info.server_name)
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-08-28 13:38:31.785075+00:00
+Build Date UTC : 2025-08-28 13:42:15.485001+00:00
 -->
