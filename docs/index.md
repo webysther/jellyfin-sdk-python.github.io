@@ -2,6 +2,11 @@
 
 ---
 
+## Documentation
+
+- [Jellyfin API 10.11](./api_10_11/)
+- [Jellyfin API 10.10](./api_10_10/)
+
 A [Possible Official](https://jellyfin.org/docs/general/contributing/branding) Python SDK for Jellyfin.
 
 > Warning: This project is under active development, so API changes may occur.
