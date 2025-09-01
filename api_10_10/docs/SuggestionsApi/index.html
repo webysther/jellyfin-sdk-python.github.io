@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_10/docs/SuggestionsApi/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_10.SuggestionsApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_10.SuggestionsApi";
+        var mkdocs_page_input_path = "api_10_10/docs/SuggestionsApi.md";
+        var mkdocs_page_url = "/api_10_10/docs/SuggestionsApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../api_10_11/">API 10.11</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">API 10.10</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_10.SuggestionsApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_10suggestionsapi">jellyfin.generated.api_10_10.SuggestionsApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#get_suggestions"><strong>get_suggestions</strong></a></td>
+<td><strong>GET</strong> /Items/Suggestions</td>
+<td>Gets suggestions.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="get_suggestions"><strong>get_suggestions</strong></h1>
+<blockquote>
+<p>BaseItemDtoQueryResult get_suggestions(user_id=user_id, media_type=media_type, type=type, start_index=start_index, limit=limit, enable_total_record_count=enable_total_record_count)</p>
+</blockquote>
+<p>Gets suggestions.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.base_item_dto_query_result import BaseItemDtoQueryResult
+from jellyfin.generated.api_10_10.models.base_item_kind import BaseItemKind
+from jellyfin.generated.api_10_10.models.media_type import MediaType
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.SuggestionsApi(api_client)
+    user_id = 'user_id_example' # str | The user id. (optional)
+    media_type = [jellyfin.generated.api_10_10.MediaType()] # List[MediaType] | The media types. (optional)
+    type = [jellyfin.generated.api_10_10.BaseItemKind()] # List[BaseItemKind] | The type. (optional)
+    start_index = 56 # int | Optional. The start index. (optional)
+    limit = 56 # int | Optional. The limit. (optional)
+    enable_total_record_count = False # bool | Whether to enable the total record count. (optional) (default to False)
+
+    try:
+        # Gets suggestions.
+        api_response = api_instance.get_suggestions(user_id=user_id, media_type=media_type, type=type, start_index=start_index, limit=limit, enable_total_record_count=enable_total_record_count)
+        print(&quot;The response of SuggestionsApi-&gt;get_suggestions:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling SuggestionsApi-&gt;get_suggestions: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_type</strong></td>
+<td><a href="../MediaType/"><strong>List[MediaType]</strong></a></td>
+<td>The media types.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>type</strong></td>
+<td><a href="../BaseItemKind/"><strong>List[BaseItemKind]</strong></a></td>
+<td>The type.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The start index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The limit.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_total_record_count</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to enable the total record count.</td>
+<td>[optional] [default to False]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p><a href="../BaseItemDtoQueryResult/"><strong>BaseItemDtoQueryResult</strong></a></p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Suggestions returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

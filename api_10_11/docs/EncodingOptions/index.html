@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_11/docs/EncodingOptions/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>EncodingOptions - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "EncodingOptions";
+        var mkdocs_page_input_path = "api_10_11/docs/EncodingOptions.md";
+        var mkdocs_page_url = "/api_10_11/docs/EncodingOptions/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">API 10.11</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../api_10_10/">API 10.10</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">EncodingOptions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="encodingoptions">EncodingOptions</h1>
+<p>Class EncodingOptions.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>encoding_thread_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the thread count used for encoding.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>transcoding_temp_path</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the temporary transcoding path.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>fallback_font_path</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the path to the fallback font.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_fallback_font</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether to use the fallback font.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_audio_vbr</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether audio VBR is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>down_mix_audio_boost</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the audio boost applied when downmixing audio.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>down_mix_stereo_algorithm</strong></td>
+<td><a href="../DownMixStereoAlgorithms/"><strong>DownMixStereoAlgorithms</strong></a></td>
+<td>Gets or sets the algorithm used for downmixing audio to stereo.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_muxing_queue_size</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the maximum size of the muxing queue.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_throttling</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether throttling is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>throttle_delay_seconds</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the delay after which throttling happens.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_segment_deletion</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether segment deletion is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>segment_keep_seconds</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets seconds for which segments should be kept before being deleted.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>hardware_acceleration_type</strong></td>
+<td><a href="../HardwareAccelerationType/"><strong>HardwareAccelerationType</strong></a></td>
+<td>Gets or sets the hardware acceleration type.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>encoder_app_path</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the FFmpeg path as set by the user via the UI.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>encoder_app_path_display</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the current FFmpeg path being used by the system and displayed on the transcode page.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>vaapi_device</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the VA-API device.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>qsv_device</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the QSV device.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_tonemapping</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether tonemapping is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_vpp_tonemapping</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether VPP tonemapping is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_video_toolbox_tonemapping</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether videotoolbox tonemapping is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tonemapping_algorithm</strong></td>
+<td><a href="../TonemappingAlgorithm/"><strong>TonemappingAlgorithm</strong></a></td>
+<td>Gets or sets the tone-mapping algorithm.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tonemapping_mode</strong></td>
+<td><a href="../TonemappingMode/"><strong>TonemappingMode</strong></a></td>
+<td>Gets or sets the tone-mapping mode.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tonemapping_range</strong></td>
+<td><a href="../TonemappingRange/"><strong>TonemappingRange</strong></a></td>
+<td>Gets or sets the tone-mapping range.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tonemapping_desat</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the tone-mapping desaturation.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tonemapping_peak</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the tone-mapping peak.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tonemapping_param</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the tone-mapping parameters.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>vpp_tonemapping_brightness</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the VPP tone-mapping brightness.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>vpp_tonemapping_contrast</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the VPP tone-mapping contrast.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>h264_crf</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the H264 CRF.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>h265_crf</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the H265 CRF.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>encoder_preset</strong></td>
+<td><a href="../EncoderPreset/"><strong>EncoderPreset</strong></a></td>
+<td>Gets or sets the encoder preset.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>deinterlace_double_rate</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether the framerate is doubled when deinterlacing.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>deinterlace_method</strong></td>
+<td><a href="../DeinterlaceMethod/"><strong>DeinterlaceMethod</strong></a></td>
+<td>Gets or sets the deinterlace method.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_decoding_color_depth10_hevc</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether 10bit HEVC decoding is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_decoding_color_depth10_vp9</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether 10bit VP9 decoding is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_decoding_color_depth10_hevc_rext</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether 8/10bit HEVC RExt decoding is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_decoding_color_depth12_hevc_rext</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether 12bit HEVC RExt decoding is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_enhanced_nvdec_decoder</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether the enhanced NVDEC is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>prefer_system_native_hw_decoder</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether the system native hardware decoder should be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_intel_low_power_h264_hw_encoder</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether the Intel H264 low-power hardware encoder should be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_intel_low_power_hevc_hw_encoder</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether the Intel HEVC low-power hardware encoder should be used.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_hardware_encoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether hardware encoding is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_hevc_encoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether HEVC encoding is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_av1_encoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether AV1 encoding is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_subtitle_extraction</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether subtitle extraction is enabled.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>hardware_decoding_codecs</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the codecs hardware encoding is used for.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_on_demand_metadata_based_keyframe_extraction_for_extensions</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the file extensions on-demand metadata based keyframe extraction is enabled for.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example</h2>
+<pre><code class="language-python">from jellyfin.generated.api_10_11.models.encoding_options import EncodingOptions
+
+# TODO update the JSON string below
+json = &quot;{}&quot;
+# create an instance of EncodingOptions from a JSON string
+encoding_options_instance = EncodingOptions.from_json(json)
+# print the JSON string representation of the object
+print(EncodingOptions.to_json())
+
+# convert the object into a dict
+encoding_options_dict = encoding_options_instance.to_dict()
+# create an instance of EncodingOptions from a dict
+encoding_options_from_dict = EncodingOptions.from_dict(encoding_options_dict)
+</code></pre>
+<p><a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

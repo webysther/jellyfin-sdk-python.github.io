@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaInfoApi/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_10.MediaInfoApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_10.MediaInfoApi";
+        var mkdocs_page_input_path = "api_10_10/docs/MediaInfoApi.md";
+        var mkdocs_page_url = "/api_10_10/docs/MediaInfoApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../api_10_11/">API 10.11</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">API 10.10</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_10.MediaInfoApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_10mediainfoapi">jellyfin.generated.api_10_10.MediaInfoApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#close_live_stream"><strong>close_live_stream</strong></a></td>
+<td><strong>POST</strong> /LiveStreams/Close</td>
+<td>Closes a media source.</td>
+</tr>
+<tr>
+<td><a href="./#get_bitrate_test_bytes"><strong>get_bitrate_test_bytes</strong></a></td>
+<td><strong>GET</strong> /Playback/BitrateTest</td>
+<td>Tests the network with a request with the size of the bitrate.</td>
+</tr>
+<tr>
+<td><a href="./#get_playback_info"><strong>get_playback_info</strong></a></td>
+<td><strong>GET</strong> /Items/{itemId}/PlaybackInfo</td>
+<td>Gets live playback media info for an item.</td>
+</tr>
+<tr>
+<td><a href="./#get_posted_playback_info"><strong>get_posted_playback_info</strong></a></td>
+<td><strong>POST</strong> /Items/{itemId}/PlaybackInfo</td>
+<td>Gets live playback media info for an item.</td>
+</tr>
+<tr>
+<td><a href="./#open_live_stream"><strong>open_live_stream</strong></a></td>
+<td><strong>POST</strong> /LiveStreams/Open</td>
+<td>Opens a media source.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="close_live_stream"><strong>close_live_stream</strong></h1>
+<blockquote>
+<p>close_live_stream(live_stream_id)</p>
+</blockquote>
+<p>Closes a media source.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.MediaInfoApi(api_client)
+    live_stream_id = 'live_stream_id_example' # str | The livestream id.
+
+    try:
+        # Closes a media source.
+        api_instance.close_live_stream(live_stream_id)
+    except Exception as e:
+        print(&quot;Exception when calling MediaInfoApi-&gt;close_live_stream: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The livestream id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: Not defined</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Livestream closed.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="get_bitrate_test_bytes"><strong>get_bitrate_test_bytes</strong></h1>
+<blockquote>
+<p>bytearray get_bitrate_test_bytes(size=size)</p>
+</blockquote>
+<p>Tests the network with a request with the size of the bitrate.</p>
+<h3 id="example_1">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.MediaInfoApi(api_client)
+    size = 102400 # int | The bitrate. Defaults to 102400. (optional) (default to 102400)
+
+    try:
+        # Tests the network with a request with the size of the bitrate.
+        api_response = api_instance.get_bitrate_test_bytes(size=size)
+        print(&quot;The response of MediaInfoApi-&gt;get_bitrate_test_bytes:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling MediaInfoApi-&gt;get_bitrate_test_bytes: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>size</strong></td>
+<td><strong>int</strong></td>
+<td>The bitrate. Defaults to 102400.</td>
+<td>[optional] [default to 102400]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p><strong>bytearray</strong></p>
+<h3 id="authorization_1">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/octet-stream</li>
+</ul>
+<h3 id="http-response-details_1">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Test buffer returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="get_playback_info"><strong>get_playback_info</strong></h1>
+<blockquote>
+<p>PlaybackInfoResponse get_playback_info(item_id, user_id=user_id)</p>
+</blockquote>
+<p>Gets live playback media info for an item.</p>
+<h3 id="example_2">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.playback_info_response import PlaybackInfoResponse
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.MediaInfoApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+    user_id = 'user_id_example' # str | The user id. (optional)
+
+    try:
+        # Gets live playback media info for an item.
+        api_response = api_instance.get_playback_info(item_id, user_id=user_id)
+        print(&quot;The response of MediaInfoApi-&gt;get_playback_info:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling MediaInfoApi-&gt;get_playback_info: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_2">Return type</h3>
+<p><a href="../PlaybackInfoResponse/"><strong>PlaybackInfoResponse</strong></a></p>
+<h3 id="authorization_2">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_2">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_2">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Playback info returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Item not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="get_posted_playback_info"><strong>get_posted_playback_info</strong></h1>
+<blockquote>
+<p>PlaybackInfoResponse get_posted_playback_info(item_id, user_id=user_id, max_streaming_bitrate=max_streaming_bitrate, start_time_ticks=start_time_ticks, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, max_audio_channels=max_audio_channels, media_source_id=media_source_id, live_stream_id=live_stream_id, auto_open_live_stream=auto_open_live_stream, enable_direct_play=enable_direct_play, enable_direct_stream=enable_direct_stream, enable_transcoding=enable_transcoding, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, playback_info_dto=playback_info_dto)</p>
+</blockquote>
+<p>Gets live playback media info for an item.</p>
+<p>For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.
+Query parameters are obsolete.</p>
+<h3 id="example_3">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.playback_info_dto import PlaybackInfoDto
+from jellyfin.generated.api_10_10.models.playback_info_response import PlaybackInfoResponse
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.MediaInfoApi(api_client)
+    item_id = 'item_id_example' # str | The item id.
+    user_id = 'user_id_example' # str | The user id. (optional)
+    max_streaming_bitrate = 56 # int | The maximum streaming bitrate. (optional)
+    start_time_ticks = 56 # int | The start time in ticks. (optional)
+    audio_stream_index = 56 # int | The audio stream index. (optional)
+    subtitle_stream_index = 56 # int | The subtitle stream index. (optional)
+    max_audio_channels = 56 # int | The maximum number of audio channels. (optional)
+    media_source_id = 'media_source_id_example' # str | The media source id. (optional)
+    live_stream_id = 'live_stream_id_example' # str | The livestream id. (optional)
+    auto_open_live_stream = True # bool | Whether to auto open the livestream. (optional)
+    enable_direct_play = True # bool | Whether to enable direct play. Default: true. (optional)
+    enable_direct_stream = True # bool | Whether to enable direct stream. Default: true. (optional)
+    enable_transcoding = True # bool | Whether to enable transcoding. Default: true. (optional)
+    allow_video_stream_copy = True # bool | Whether to allow to copy the video stream. Default: true. (optional)
+    allow_audio_stream_copy = True # bool | Whether to allow to copy the audio stream. Default: true. (optional)
+    playback_info_dto = jellyfin.generated.api_10_10.PlaybackInfoDto() # PlaybackInfoDto | The playback info. (optional)
+
+    try:
+        # Gets live playback media info for an item.
+        api_response = api_instance.get_posted_playback_info(item_id, user_id=user_id, max_streaming_bitrate=max_streaming_bitrate, start_time_ticks=start_time_ticks, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, max_audio_channels=max_audio_channels, media_source_id=media_source_id, live_stream_id=live_stream_id, auto_open_live_stream=auto_open_live_stream, enable_direct_play=enable_direct_play, enable_direct_stream=enable_direct_stream, enable_transcoding=enable_transcoding, allow_video_stream_copy=allow_video_stream_copy, allow_audio_stream_copy=allow_audio_stream_copy, playback_info_dto=playback_info_dto)
+        print(&quot;The response of MediaInfoApi-&gt;get_posted_playback_info:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling MediaInfoApi-&gt;get_posted_playback_info: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_streaming_bitrate</strong></td>
+<td><strong>int</strong></td>
+<td>The maximum streaming bitrate.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_time_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>The start time in ticks.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>The audio stream index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>The subtitle stream index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>The maximum number of audio channels.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_source_id</strong></td>
+<td><strong>str</strong></td>
+<td>The media source id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>live_stream_id</strong></td>
+<td><strong>str</strong></td>
+<td>The livestream id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>auto_open_live_stream</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to auto open the livestream.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_direct_play</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to enable direct play. Default: true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_direct_stream</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to enable direct stream. Default: true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_transcoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to enable transcoding. Default: true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_video_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to allow to copy the video stream. Default: true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>allow_audio_stream_copy</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to allow to copy the audio stream. Default: true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>playback_info_dto</strong></td>
+<td><a href="../PlaybackInfoDto/"><strong>PlaybackInfoDto</strong></a></td>
+<td>The playback info.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_3">Return type</h3>
+<p><a href="../PlaybackInfoResponse/"><strong>PlaybackInfoResponse</strong></a></p>
+<h3 id="authorization_3">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_3">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_3">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Playback info returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Item not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="open_live_stream"><strong>open_live_stream</strong></h1>
+<blockquote>
+<p>LiveStreamResponse open_live_stream(open_token=open_token, user_id=user_id, play_session_id=play_session_id, max_streaming_bitrate=max_streaming_bitrate, start_time_ticks=start_time_ticks, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, max_audio_channels=max_audio_channels, item_id=item_id, enable_direct_play=enable_direct_play, enable_direct_stream=enable_direct_stream, always_burn_in_subtitle_when_transcoding=always_burn_in_subtitle_when_transcoding, open_live_stream_dto=open_live_stream_dto)</p>
+</blockquote>
+<p>Opens a media source.</p>
+<h3 id="example_4">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.live_stream_response import LiveStreamResponse
+from jellyfin.generated.api_10_10.models.open_live_stream_dto import OpenLiveStreamDto
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.MediaInfoApi(api_client)
+    open_token = 'open_token_example' # str | The open token. (optional)
+    user_id = 'user_id_example' # str | The user id. (optional)
+    play_session_id = 'play_session_id_example' # str | The play session id. (optional)
+    max_streaming_bitrate = 56 # int | The maximum streaming bitrate. (optional)
+    start_time_ticks = 56 # int | The start time in ticks. (optional)
+    audio_stream_index = 56 # int | The audio stream index. (optional)
+    subtitle_stream_index = 56 # int | The subtitle stream index. (optional)
+    max_audio_channels = 56 # int | The maximum number of audio channels. (optional)
+    item_id = 'item_id_example' # str | The item id. (optional)
+    enable_direct_play = True # bool | Whether to enable direct play. Default: true. (optional)
+    enable_direct_stream = True # bool | Whether to enable direct stream. Default: true. (optional)
+    always_burn_in_subtitle_when_transcoding = True # bool | Always burn-in subtitle when transcoding. (optional)
+    open_live_stream_dto = jellyfin.generated.api_10_10.OpenLiveStreamDto() # OpenLiveStreamDto | The open live stream dto. (optional)
+
+    try:
+        # Opens a media source.
+        api_response = api_instance.open_live_stream(open_token=open_token, user_id=user_id, play_session_id=play_session_id, max_streaming_bitrate=max_streaming_bitrate, start_time_ticks=start_time_ticks, audio_stream_index=audio_stream_index, subtitle_stream_index=subtitle_stream_index, max_audio_channels=max_audio_channels, item_id=item_id, enable_direct_play=enable_direct_play, enable_direct_stream=enable_direct_stream, always_burn_in_subtitle_when_transcoding=always_burn_in_subtitle_when_transcoding, open_live_stream_dto=open_live_stream_dto)
+        print(&quot;The response of MediaInfoApi-&gt;open_live_stream:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling MediaInfoApi-&gt;open_live_stream: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>open_token</strong></td>
+<td><strong>str</strong></td>
+<td>The open token.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_session_id</strong></td>
+<td><strong>str</strong></td>
+<td>The play session id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_streaming_bitrate</strong></td>
+<td><strong>int</strong></td>
+<td>The maximum streaming bitrate.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_time_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>The start time in ticks.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>The audio stream index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>subtitle_stream_index</strong></td>
+<td><strong>int</strong></td>
+<td>The subtitle stream index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>max_audio_channels</strong></td>
+<td><strong>int</strong></td>
+<td>The maximum number of audio channels.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_direct_play</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to enable direct play. Default: true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_direct_stream</strong></td>
+<td><strong>bool</strong></td>
+<td>Whether to enable direct stream. Default: true.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>always_burn_in_subtitle_when_transcoding</strong></td>
+<td><strong>bool</strong></td>
+<td>Always burn-in subtitle when transcoding.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>open_live_stream_dto</strong></td>
+<td><a href="../OpenLiveStreamDto/"><strong>OpenLiveStreamDto</strong></a></td>
+<td>The open live stream dto.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_4">Return type</h3>
+<p><a href="../LiveStreamResponse/"><strong>LiveStreamResponse</strong></a></p>
+<h3 id="authorization_4">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_4">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_4">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Media source opened.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

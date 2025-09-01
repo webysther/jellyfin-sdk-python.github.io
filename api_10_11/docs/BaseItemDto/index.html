@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_11/docs/BaseItemDto/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>BaseItemDto - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "BaseItemDto";
+        var mkdocs_page_input_path = "api_10_11/docs/BaseItemDto.md";
+        var mkdocs_page_url = "/api_10_11/docs/BaseItemDto/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">API 10.11</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../api_10_10/">API 10.10</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">BaseItemDto</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="baseitemdto">BaseItemDto</h1>
+<p>This is strictly used as a data transfer object from the api layer.  This holds information about a BaseItem in a format that is convenient for the client.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the name.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>original_title</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>server_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the server identifier.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>etag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the etag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>source_type</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the type of the source.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>playlist_item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the playlist item identifier.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>date_created</strong></td>
+<td><strong>datetime</strong></td>
+<td>Gets or sets the date created.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>date_last_media_added</strong></td>
+<td><strong>datetime</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>extra_type</strong></td>
+<td><a href="../ExtraType/"><strong>ExtraType</strong></a></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>airs_before_season_number</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>airs_after_season_number</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>airs_before_episode_number</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>can_delete</strong></td>
+<td><strong>bool</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>can_download</strong></td>
+<td><strong>bool</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>has_lyrics</strong></td>
+<td><strong>bool</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>has_subtitles</strong></td>
+<td><strong>bool</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>preferred_metadata_language</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>preferred_metadata_country_code</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>container</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>sort_name</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the name of the sort.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>forced_sort_name</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video3_d_format</strong></td>
+<td><a href="../Video3DFormat/"><strong>Video3DFormat</strong></a></td>
+<td>Gets or sets the video3 D format.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>premiere_date</strong></td>
+<td><strong>datetime</strong></td>
+<td>Gets or sets the premiere date.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>external_urls</strong></td>
+<td><a href="../ExternalUrl/"><strong>List[ExternalUrl]</strong></a></td>
+<td>Gets or sets the external urls.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_sources</strong></td>
+<td><a href="../MediaSourceInfo/"><strong>List[MediaSourceInfo]</strong></a></td>
+<td>Gets or sets the media versions.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>critic_rating</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the critic rating.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>production_locations</strong></td>
+<td><strong>List[str]</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>path</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the path.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_media_source_display</strong></td>
+<td><strong>bool</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>official_rating</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the official rating.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>custom_rating</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the custom rating.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>channel_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the channel identifier.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>channel_name</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>overview</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the overview.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>taglines</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the taglines.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>genres</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the genres.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>community_rating</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the community rating.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>cumulative_run_time_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the cumulative run time ticks.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>run_time_ticks</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the run time ticks.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>play_access</strong></td>
+<td><a href="../PlayAccess/"><strong>PlayAccess</strong></a></td>
+<td>Gets or sets the play access.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>aspect_ratio</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the aspect ratio.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>production_year</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the production year.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_place_holder</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is place holder.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>number</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the number.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>channel_number</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>index_number</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the index number.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>index_number_end</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the index number end.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_index_number</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the parent index number.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>remote_trailers</strong></td>
+<td><a href="../MediaUrl/"><strong>List[MediaUrl]</strong></a></td>
+<td>Gets or sets the trailer urls.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>provider_ids</strong></td>
+<td><strong>Dict[str, Optional[str]]</strong></td>
+<td>Gets or sets the provider ids.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_hd</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is HD.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_folder</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is folder.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the parent id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>type</strong></td>
+<td><a href="../BaseItemKind/"><strong>BaseItemKind</strong></a></td>
+<td>The base item kind.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>people</strong></td>
+<td><a href="../BaseItemPerson/"><strong>List[BaseItemPerson]</strong></a></td>
+<td>Gets or sets the people.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>studios</strong></td>
+<td><a href="../NameGuidPair/"><strong>List[NameGuidPair]</strong></a></td>
+<td>Gets or sets the studios.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>genre_items</strong></td>
+<td><a href="../NameGuidPair/"><strong>List[NameGuidPair]</strong></a></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_logo_item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets whether the item has a logo, this will hold the Id of the Parent that has one.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_backdrop_item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets whether the item has any backdrops, this will hold the Id of the Parent that has one.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_backdrop_image_tags</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the parent backdrop image tags.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>local_trailer_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the local trailer count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>user_data</strong></td>
+<td><a href="../UserItemDataDto/"><strong>UserItemDataDto</strong></a></td>
+<td>Gets or sets the user data for this item based on the user it&#39;s being requested for.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>recursive_item_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the recursive item count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>child_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the child count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>series_name</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the name of the series.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>series_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the series id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>season_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the season identifier.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>special_feature_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the special feature count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>display_preferences_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the display preferences id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>status</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the status.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>air_time</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the air time.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>air_days</strong></td>
+<td><a href="../DayOfWeek/"><strong>List[DayOfWeek]</strong></a></td>
+<td>Gets or sets the air days.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tags</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the tags.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>primary_image_aspect_ratio</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the primary image aspect ratio, after image enhancements.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>artists</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the artists.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>artist_items</strong></td>
+<td><a href="../NameGuidPair/"><strong>List[NameGuidPair]</strong></a></td>
+<td>Gets or sets the artist items.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>album</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the album.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>collection_type</strong></td>
+<td><a href="../CollectionType/"><strong>CollectionType</strong></a></td>
+<td>Gets or sets the type of the collection.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>display_order</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the display order.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>album_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the album id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>album_primary_image_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the album image tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>series_primary_image_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the series primary image tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>album_artist</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the album artist.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>album_artists</strong></td>
+<td><a href="../NameGuidPair/"><strong>List[NameGuidPair]</strong></a></td>
+<td>Gets or sets the album artists.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>season_name</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the name of the season.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_streams</strong></td>
+<td><a href="../MediaStream/"><strong>List[MediaStream]</strong></a></td>
+<td>Gets or sets the media streams.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_type</strong></td>
+<td><a href="../VideoType/"><strong>VideoType</strong></a></td>
+<td>Gets or sets the type of the video.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>part_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the part count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_source_count</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>image_tags</strong></td>
+<td><strong>Dict[str, str]</strong></td>
+<td>Gets or sets the image tags.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>backdrop_image_tags</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the backdrop image tags.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>screenshot_image_tags</strong></td>
+<td><strong>List[str]</strong></td>
+<td>Gets or sets the screenshot image tags.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_logo_image_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the parent logo image tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_art_item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets whether the item has fan art, this will hold the Id of the Parent that has one.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_art_image_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the parent art image tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>series_thumb_image_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the series thumb image tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>image_blur_hashes</strong></td>
+<td><a href="../BaseItemDtoImageBlurHashes/"><strong>BaseItemDtoImageBlurHashes</strong></a></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>series_studio</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the series studio.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_thumb_item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the parent thumb item id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_thumb_image_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the parent thumb image tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_primary_image_item_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the parent primary image item identifier.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_primary_image_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the parent primary image tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>chapters</strong></td>
+<td><a href="../ChapterInfo/"><strong>List[ChapterInfo]</strong></a></td>
+<td>Gets or sets the chapters.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>trickplay</strong></td>
+<td><strong>Dict[str, Dict[str, TrickplayInfoDto]]</strong></td>
+<td>Gets or sets the trickplay manifest.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>location_type</strong></td>
+<td><a href="../LocationType/"><strong>LocationType</strong></a></td>
+<td>Gets or sets the type of the location.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>iso_type</strong></td>
+<td><a href="../IsoType/"><strong>IsoType</strong></a></td>
+<td>Gets or sets the type of the iso.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_type</strong></td>
+<td><a href="../MediaType/"><strong>MediaType</strong></a></td>
+<td>Media types.</td>
+<td>[optional] [default to MediaType.UNKNOWN]</td>
+</tr>
+<tr>
+<td><strong>end_date</strong></td>
+<td><strong>datetime</strong></td>
+<td>Gets or sets the end date.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>locked_fields</strong></td>
+<td><a href="../MetadataField/"><strong>List[MetadataField]</strong></a></td>
+<td>Gets or sets the locked fields.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>trailer_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the trailer count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>movie_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the movie count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>series_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the series count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>program_count</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>episode_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the episode count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>song_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the song count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>album_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the album count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>artist_count</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>music_video_count</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the music video count.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>lock_data</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether [enable internet providers].</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>width</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>height</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>camera_make</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>camera_model</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>software</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>exposure_time</strong></td>
+<td><strong>float</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>focal_length</strong></td>
+<td><strong>float</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>image_orientation</strong></td>
+<td><a href="../ImageOrientation/"><strong>ImageOrientation</strong></a></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>aperture</strong></td>
+<td><strong>float</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>shutter_speed</strong></td>
+<td><strong>float</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>latitude</strong></td>
+<td><strong>float</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>longitude</strong></td>
+<td><strong>float</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>altitude</strong></td>
+<td><strong>float</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>iso_speed_rating</strong></td>
+<td><strong>int</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>series_timer_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the series timer identifier.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>program_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the program identifier.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>channel_primary_image_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the channel primary image tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_date</strong></td>
+<td><strong>datetime</strong></td>
+<td>Gets or sets the start date of the recording, in UTC.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>completion_percentage</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the completion percentage.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_repeat</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is repeat.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>episode_title</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the episode title.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>channel_type</strong></td>
+<td><a href="../ChannelType/"><strong>ChannelType</strong></a></td>
+<td>Gets or sets the type of the channel.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>audio</strong></td>
+<td><a href="../ProgramAudio/"><strong>ProgramAudio</strong></a></td>
+<td>Gets or sets the audio.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_movie</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is movie.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_sports</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is sports.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_series</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is series.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_live</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is live.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_news</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is news.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_kids</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is kids.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_premiere</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is premiere.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>timer_id</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the timer identifier.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>normalization_gain</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the gain required for audio normalization.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>current_program</strong></td>
+<td><a href="./"><strong>BaseItemDto</strong></a></td>
+<td>Gets or sets the current program.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example</h2>
+<pre><code class="language-python">from jellyfin.generated.api_10_11.models.base_item_dto import BaseItemDto
+
+# TODO update the JSON string below
+json = &quot;{}&quot;
+# create an instance of BaseItemDto from a JSON string
+base_item_dto_instance = BaseItemDto.from_json(json)
+# print the JSON string representation of the object
+print(BaseItemDto.to_json())
+
+# convert the object into a dict
+base_item_dto_dict = base_item_dto_instance.to_dict()
+# create an instance of BaseItemDto from a dict
+base_item_dto_from_dict = BaseItemDto.from_dict(base_item_dto_dict)
+</code></pre>
+<p><a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

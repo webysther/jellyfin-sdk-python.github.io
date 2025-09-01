@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_11/docs/MusicGenresApi/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_11.MusicGenresApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_11.MusicGenresApi";
+        var mkdocs_page_input_path = "api_10_11/docs/MusicGenresApi.md";
+        var mkdocs_page_url = "/api_10_11/docs/MusicGenresApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">API 10.11</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../api_10_10/">API 10.10</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_11.MusicGenresApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_11musicgenresapi">jellyfin.generated.api_10_11.MusicGenresApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#get_music_genre"><strong>get_music_genre</strong></a></td>
+<td><strong>GET</strong> /MusicGenres/{genreName}</td>
+<td>Gets a music genre, by name.</td>
+</tr>
+<tr>
+<td><a href="./#get_music_genres"><strong>get_music_genres</strong></a></td>
+<td><strong>GET</strong> /MusicGenres</td>
+<td>Gets all music genres from a given item, folder, or the entire library.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="get_music_genre"><strong>get_music_genre</strong></h1>
+<blockquote>
+<p>BaseItemDto get_music_genre(genre_name, user_id=user_id)</p>
+</blockquote>
+<p>Gets a music genre, by name.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11 import ApiClient, Configuration
+from jellyfin.generated.api_10_11.models.base_item_dto import BaseItemDto
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.MusicGenresApi(api_client)
+    genre_name = 'genre_name_example' # str | The genre name.
+    user_id = 'user_id_example' # str | Optional. Filter by user id, and attach user data. (optional)
+
+    try:
+        # Gets a music genre, by name.
+        api_response = api_instance.get_music_genre(genre_name, user_id=user_id)
+        print(&quot;The response of MusicGenresApi-&gt;get_music_genre:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling MusicGenresApi-&gt;get_music_genre: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>genre_name</strong></td>
+<td><strong>str</strong></td>
+<td>The genre name.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>Optional. Filter by user id, and attach user data.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p><a href="../BaseItemDto/"><strong>BaseItemDto</strong></a></p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Success</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="get_music_genres"><strong>get_music_genres</strong></h1>
+<blockquote>
+<p>BaseItemDtoQueryResult get_music_genres(start_index=start_index, limit=limit, search_term=search_term, parent_id=parent_id, fields=fields, exclude_item_types=exclude_item_types, include_item_types=include_item_types, is_favorite=is_favorite, image_type_limit=image_type_limit, enable_image_types=enable_image_types, user_id=user_id, name_starts_with_or_greater=name_starts_with_or_greater, name_starts_with=name_starts_with, name_less_than=name_less_than, sort_by=sort_by, sort_order=sort_order, enable_images=enable_images, enable_total_record_count=enable_total_record_count)</p>
+</blockquote>
+<p>Gets all music genres from a given item, folder, or the entire library.</p>
+<h3 id="example_1">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_11
+from jellyfin.generated.api_10_11 import ApiClient, Configuration
+from jellyfin.generated.api_10_11.models.base_item_dto_query_result import BaseItemDtoQueryResult
+from jellyfin.generated.api_10_11.models.base_item_kind import BaseItemKind
+from jellyfin.generated.api_10_11.models.image_type import ImageType
+from jellyfin.generated.api_10_11.models.item_fields import ItemFields
+from jellyfin.generated.api_10_11.models.item_sort_by import ItemSortBy
+from jellyfin.generated.api_10_11.models.sort_order import SortOrder
+from jellyfin.generated.api_10_11.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_11.MusicGenresApi(api_client)
+    start_index = 56 # int | Optional. The record index to start at. All items with a lower index will be dropped from the results. (optional)
+    limit = 56 # int | Optional. The maximum number of records to return. (optional)
+    search_term = 'search_term_example' # str | The search term. (optional)
+    parent_id = 'parent_id_example' # str | Specify this to localize the search to a specific item or folder. Omit to use the root. (optional)
+    fields = [jellyfin.generated.api_10_11.ItemFields()] # List[ItemFields] | Optional. Specify additional fields of information to return in the output. (optional)
+    exclude_item_types = [jellyfin.generated.api_10_11.BaseItemKind()] # List[BaseItemKind] | Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited. (optional)
+    include_item_types = [jellyfin.generated.api_10_11.BaseItemKind()] # List[BaseItemKind] | Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited. (optional)
+    is_favorite = True # bool | Optional filter by items that are marked as favorite, or not. (optional)
+    image_type_limit = 56 # int | Optional, the max number of images to return, per image type. (optional)
+    enable_image_types = [jellyfin.generated.api_10_11.ImageType()] # List[ImageType] | Optional. The image types to include in the output. (optional)
+    user_id = 'user_id_example' # str | User id. (optional)
+    name_starts_with_or_greater = 'name_starts_with_or_greater_example' # str | Optional filter by items whose name is sorted equally or greater than a given input string. (optional)
+    name_starts_with = 'name_starts_with_example' # str | Optional filter by items whose name is sorted equally than a given input string. (optional)
+    name_less_than = 'name_less_than_example' # str | Optional filter by items whose name is equally or lesser than a given input string. (optional)
+    sort_by = [jellyfin.generated.api_10_11.ItemSortBy()] # List[ItemSortBy] | Optional. Specify one or more sort orders, comma delimited. (optional)
+    sort_order = [jellyfin.generated.api_10_11.SortOrder()] # List[SortOrder] | Sort Order - Ascending,Descending. (optional)
+    enable_images = True # bool | Optional, include image information in output. (optional) (default to True)
+    enable_total_record_count = True # bool | Optional. Include total record count. (optional) (default to True)
+
+    try:
+        # Gets all music genres from a given item, folder, or the entire library.
+        api_response = api_instance.get_music_genres(start_index=start_index, limit=limit, search_term=search_term, parent_id=parent_id, fields=fields, exclude_item_types=exclude_item_types, include_item_types=include_item_types, is_favorite=is_favorite, image_type_limit=image_type_limit, enable_image_types=enable_image_types, user_id=user_id, name_starts_with_or_greater=name_starts_with_or_greater, name_starts_with=name_starts_with, name_less_than=name_less_than, sort_by=sort_by, sort_order=sort_order, enable_images=enable_images, enable_total_record_count=enable_total_record_count)
+        print(&quot;The response of MusicGenresApi-&gt;get_music_genres:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling MusicGenresApi-&gt;get_music_genres: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>start_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The record index to start at. All items with a lower index will be dropped from the results.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum number of records to return.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>search_term</strong></td>
+<td><strong>str</strong></td>
+<td>The search term.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>parent_id</strong></td>
+<td><strong>str</strong></td>
+<td>Specify this to localize the search to a specific item or folder. Omit to use the root.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>fields</strong></td>
+<td><a href="../ItemFields/"><strong>List[ItemFields]</strong></a></td>
+<td>Optional. Specify additional fields of information to return in the output.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>exclude_item_types</strong></td>
+<td><a href="../BaseItemKind/"><strong>List[BaseItemKind]</strong></a></td>
+<td>Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>include_item_types</strong></td>
+<td><a href="../BaseItemKind/"><strong>List[BaseItemKind]</strong></a></td>
+<td>Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_favorite</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional filter by items that are marked as favorite, or not.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>image_type_limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional, the max number of images to return, per image type.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_image_types</strong></td>
+<td><a href="../ImageType/"><strong>List[ImageType]</strong></a></td>
+<td>Optional. The image types to include in the output.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>User id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>name_starts_with_or_greater</strong></td>
+<td><strong>str</strong></td>
+<td>Optional filter by items whose name is sorted equally or greater than a given input string.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>name_starts_with</strong></td>
+<td><strong>str</strong></td>
+<td>Optional filter by items whose name is sorted equally than a given input string.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>name_less_than</strong></td>
+<td><strong>str</strong></td>
+<td>Optional filter by items whose name is equally or lesser than a given input string.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>sort_by</strong></td>
+<td><a href="../ItemSortBy/"><strong>List[ItemSortBy]</strong></a></td>
+<td>Optional. Specify one or more sort orders, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>sort_order</strong></td>
+<td><a href="../SortOrder/"><strong>List[SortOrder]</strong></a></td>
+<td>Sort Order - Ascending,Descending.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_images</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional, include image information in output.</td>
+<td>[optional] [default to True]</td>
+</tr>
+<tr>
+<td><strong>enable_total_record_count</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Include total record count.</td>
+<td>[optional] [default to True]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p><a href="../BaseItemDtoQueryResult/"><strong>BaseItemDtoQueryResult</strong></a></p>
+<h3 id="authorization_1">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase", text/html</li>
+</ul>
+<h3 id="http-response-details_1">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Music genres returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>503</strong></td>
+<td>The server is currently starting or is temporarily not available.</td>
+<td>* Retry-After - A hint for when to retry the operation in full seconds. <br>  * Message - A short plain-text reason why the server is not available. <br></td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

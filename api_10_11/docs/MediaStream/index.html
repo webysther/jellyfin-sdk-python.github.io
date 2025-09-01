@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaStream/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>MediaStream - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MediaStream";
+        var mkdocs_page_input_path = "api_10_11/docs/MediaStream.md";
+        var mkdocs_page_url = "/api_10_11/docs/MediaStream/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">API 10.11</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../api_10_10/">API 10.10</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">MediaStream</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mediastream">MediaStream</h1>
+<p>Class MediaStream.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>codec</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the codec.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>codec_tag</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the codec tag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>language</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the language.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>color_range</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the color range.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>color_space</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the color space.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>color_transfer</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the color transfer.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>color_primaries</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the color primaries.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>dv_version_major</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Dolby Vision version major.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>dv_version_minor</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Dolby Vision version minor.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>dv_profile</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Dolby Vision profile.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>dv_level</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Dolby Vision level.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>rpu_present_flag</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Dolby Vision rpu present flag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>el_present_flag</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Dolby Vision el present flag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>bl_present_flag</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Dolby Vision bl present flag.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>dv_bl_signal_compatibility_id</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Dolby Vision bl signal compatibility id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>rotation</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the Rotation in degrees.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>comment</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the comment.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>time_base</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the time base.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>codec_time_base</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the codec time base.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>title</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the title.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>hdr10_plus_present_flag</strong></td>
+<td><strong>bool</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>video_range</strong></td>
+<td><a href="../VideoRange/"><strong>VideoRange</strong></a></td>
+<td>An enum representing video ranges.</td>
+<td>[optional] [readonly] [default to VideoRange.UNKNOWN]</td>
+</tr>
+<tr>
+<td><strong>video_range_type</strong></td>
+<td><a href="../VideoRangeType/"><strong>VideoRangeType</strong></a></td>
+<td>An enum representing types of video ranges.</td>
+<td>[optional] [readonly] [default to VideoRangeType.UNKNOWN]</td>
+</tr>
+<tr>
+<td><strong>video_do_vi_title</strong></td>
+<td><strong>str</strong></td>
+<td>Gets the video dovi title.</td>
+<td>[optional] [readonly]</td>
+</tr>
+<tr>
+<td><strong>audio_spatial_format</strong></td>
+<td><a href="../AudioSpatialFormat/"><strong>AudioSpatialFormat</strong></a></td>
+<td>An enum representing formats of spatial audio.</td>
+<td>[optional] [readonly] [default to AudioSpatialFormat.NONE]</td>
+</tr>
+<tr>
+<td><strong>localized_undefined</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>localized_default</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>localized_forced</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>localized_external</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>localized_hearing_impaired</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>display_title</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional] [readonly]</td>
+</tr>
+<tr>
+<td><strong>nal_length_size</strong></td>
+<td><strong>str</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_interlaced</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is interlaced.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_avc</strong></td>
+<td><strong>bool</strong></td>
+<td></td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>channel_layout</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the channel layout.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>bit_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the bit rate.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>bit_depth</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the bit depth.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>ref_frames</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the reference frames.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>packet_length</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the length of the packet.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>channels</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the channels.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>sample_rate</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the sample rate.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_default</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is default.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_forced</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is forced.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_hearing_impaired</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is for the hearing impaired.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>height</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the height.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>width</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the width.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>average_frame_rate</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the average frame rate.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>real_frame_rate</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the real frame rate.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>reference_frame_rate</strong></td>
+<td><strong>float</strong></td>
+<td>Gets the framerate used as reference.  Prefer AverageFrameRate, if that is null or an unrealistic value  then fallback to RealFrameRate.</td>
+<td>[optional] [readonly]</td>
+</tr>
+<tr>
+<td><strong>profile</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the profile.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>type</strong></td>
+<td><a href="../MediaStreamType/"><strong>MediaStreamType</strong></a></td>
+<td>Gets or sets the type.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>aspect_ratio</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the aspect ratio.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>index</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the index.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>score</strong></td>
+<td><strong>int</strong></td>
+<td>Gets or sets the score.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_external</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is external.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>delivery_method</strong></td>
+<td><a href="../SubtitleDeliveryMethod/"><strong>SubtitleDeliveryMethod</strong></a></td>
+<td>Gets or sets the method.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>delivery_url</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the delivery URL.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_external_url</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether this instance is external URL.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_text_subtitle_stream</strong></td>
+<td><strong>bool</strong></td>
+<td></td>
+<td>[optional] [readonly]</td>
+</tr>
+<tr>
+<td><strong>supports_external_stream</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets a value indicating whether [supports external stream].</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>path</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the filename.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>pixel_format</strong></td>
+<td><strong>str</strong></td>
+<td>Gets or sets the pixel format.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>level</strong></td>
+<td><strong>float</strong></td>
+<td>Gets or sets the level.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>is_anamorphic</strong></td>
+<td><strong>bool</strong></td>
+<td>Gets or sets whether this instance is anamorphic.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example</h2>
+<pre><code class="language-python">from jellyfin.generated.api_10_11.models.media_stream import MediaStream
+
+# TODO update the JSON string below
+json = &quot;{}&quot;
+# create an instance of MediaStream from a JSON string
+media_stream_instance = MediaStream.from_json(json)
+# print the JSON string representation of the object
+print(MediaStream.to_json())
+
+# convert the object into a dict
+media_stream_dict = media_stream_instance.to_dict()
+# create an instance of MediaStream from a dict
+media_stream_from_dict = MediaStream.from_dict(media_stream_dict)
+</code></pre>
+<p><a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

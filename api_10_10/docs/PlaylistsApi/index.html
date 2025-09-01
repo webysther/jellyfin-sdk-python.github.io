@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Webysther Sperandio" /><link rel="canonical" href="https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaylistsApi/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>jellyfin.generated.api_10_10.PlaylistsApi - A Python SDK for Jellyfin.</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "jellyfin.generated.api_10_10.PlaylistsApi";
+        var mkdocs_page_input_path = "api_10_10/docs/PlaylistsApi.md";
+        var mkdocs_page_url = "/api_10_10/docs/PlaylistsApi/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> A Python SDK for Jellyfin.
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">About</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../api_10_11/">API 10.11</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../">API 10.10</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">A Python SDK for Jellyfin.</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">jellyfin.generated.api_10_10.PlaylistsApi</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="jellyfingeneratedapi_10_10playlistsapi">jellyfin.generated.api_10_10.PlaylistsApi</h1>
+<p>All URIs are relative to <em>http://localhost</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#add_item_to_playlist"><strong>add_item_to_playlist</strong></a></td>
+<td><strong>POST</strong> /Playlists/{playlistId}/Items</td>
+<td>Adds items to a playlist.</td>
+</tr>
+<tr>
+<td><a href="./#create_playlist"><strong>create_playlist</strong></a></td>
+<td><strong>POST</strong> /Playlists</td>
+<td>Creates a new playlist.</td>
+</tr>
+<tr>
+<td><a href="./#get_playlist"><strong>get_playlist</strong></a></td>
+<td><strong>GET</strong> /Playlists/{playlistId}</td>
+<td>Get a playlist.</td>
+</tr>
+<tr>
+<td><a href="./#get_playlist_items"><strong>get_playlist_items</strong></a></td>
+<td><strong>GET</strong> /Playlists/{playlistId}/Items</td>
+<td>Gets the original items of a playlist.</td>
+</tr>
+<tr>
+<td><a href="./#get_playlist_user"><strong>get_playlist_user</strong></a></td>
+<td><strong>GET</strong> /Playlists/{playlistId}/Users/{userId}</td>
+<td>Get a playlist user.</td>
+</tr>
+<tr>
+<td><a href="./#get_playlist_users"><strong>get_playlist_users</strong></a></td>
+<td><strong>GET</strong> /Playlists/{playlistId}/Users</td>
+<td>Get a playlist&#39;s users.</td>
+</tr>
+<tr>
+<td><a href="./#move_item"><strong>move_item</strong></a></td>
+<td><strong>POST</strong> /Playlists/{playlistId}/Items/{itemId}/Move/{newIndex}</td>
+<td>Moves a playlist item.</td>
+</tr>
+<tr>
+<td><a href="./#remove_item_from_playlist"><strong>remove_item_from_playlist</strong></a></td>
+<td><strong>DELETE</strong> /Playlists/{playlistId}/Items</td>
+<td>Removes items from a playlist.</td>
+</tr>
+<tr>
+<td><a href="./#remove_user_from_playlist"><strong>remove_user_from_playlist</strong></a></td>
+<td><strong>DELETE</strong> /Playlists/{playlistId}/Users/{userId}</td>
+<td>Remove a user from a playlist&#39;s users.</td>
+</tr>
+<tr>
+<td><a href="./#update_playlist"><strong>update_playlist</strong></a></td>
+<td><strong>POST</strong> /Playlists/{playlistId}</td>
+<td>Updates a playlist.</td>
+</tr>
+<tr>
+<td><a href="./#update_playlist_user"><strong>update_playlist_user</strong></a></td>
+<td><strong>POST</strong> /Playlists/{playlistId}/Users/{userId}</td>
+<td>Modify a user of a playlist&#39;s users.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="add_item_to_playlist"><strong>add_item_to_playlist</strong></h1>
+<blockquote>
+<p>add_item_to_playlist(playlist_id, ids=ids, user_id=user_id)</p>
+</blockquote>
+<p>Adds items to a playlist.</p>
+<h3 id="example">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+    ids = ['ids_example'] # List[str] | Item id, comma delimited. (optional)
+    user_id = 'user_id_example' # str | The userId. (optional)
+
+    try:
+        # Adds items to a playlist.
+        api_instance.add_item_to_playlist(playlist_id, ids=ids, user_id=user_id)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;add_item_to_playlist: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ids</strong></td>
+<td><a href="str.md"><strong>List[str]</strong></a></td>
+<td>Item id, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The userId.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Items added to playlist.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Access forbidden.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="create_playlist"><strong>create_playlist</strong></h1>
+<blockquote>
+<p>PlaylistCreationResult create_playlist(name=name, ids=ids, user_id=user_id, media_type=media_type, create_playlist_dto=create_playlist_dto)</p>
+</blockquote>
+<p>Creates a new playlist.</p>
+<p>For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.
+Query parameters are obsolete.</p>
+<h3 id="example_1">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.create_playlist_dto import CreatePlaylistDto
+from jellyfin.generated.api_10_10.models.media_type import MediaType
+from jellyfin.generated.api_10_10.models.playlist_creation_result import PlaylistCreationResult
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    name = 'name_example' # str | The playlist name. (optional)
+    ids = ['ids_example'] # List[str] | The item ids. (optional)
+    user_id = 'user_id_example' # str | The user id. (optional)
+    media_type = jellyfin.generated.api_10_10.MediaType() # MediaType | The media type. (optional)
+    create_playlist_dto = jellyfin.generated.api_10_10.CreatePlaylistDto() # CreatePlaylistDto | The create playlist payload. (optional)
+
+    try:
+        # Creates a new playlist.
+        api_response = api_instance.create_playlist(name=name, ids=ids, user_id=user_id, media_type=media_type, create_playlist_dto=create_playlist_dto)
+        print(&quot;The response of PlaylistsApi-&gt;create_playlist:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;create_playlist: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>name</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist name.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>ids</strong></td>
+<td><a href="str.md"><strong>List[str]</strong></a></td>
+<td>The item ids.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>media_type</strong></td>
+<td><a href=".md"><strong>MediaType</strong></a></td>
+<td>The media type.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>create_playlist_dto</strong></td>
+<td><a href="../CreatePlaylistDto/"><strong>CreatePlaylistDto</strong></a></td>
+<td>The create playlist payload.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p><a href="../PlaylistCreationResult/"><strong>PlaylistCreationResult</strong></a></p>
+<h3 id="authorization_1">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_1">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Playlist created.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="get_playlist"><strong>get_playlist</strong></h1>
+<blockquote>
+<p>PlaylistDto get_playlist(playlist_id)</p>
+</blockquote>
+<p>Get a playlist.</p>
+<h3 id="example_2">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.playlist_dto import PlaylistDto
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+
+    try:
+        # Get a playlist.
+        api_response = api_instance.get_playlist(playlist_id)
+        print(&quot;The response of PlaylistsApi-&gt;get_playlist:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;get_playlist: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_2">Return type</h3>
+<p><a href="../PlaylistDto/"><strong>PlaylistDto</strong></a></p>
+<h3 id="authorization_2">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_2">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_2">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>The playlist.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="get_playlist_items"><strong>get_playlist_items</strong></h1>
+<blockquote>
+<p>BaseItemDtoQueryResult get_playlist_items(playlist_id, user_id=user_id, start_index=start_index, limit=limit, fields=fields, enable_images=enable_images, enable_user_data=enable_user_data, image_type_limit=image_type_limit, enable_image_types=enable_image_types)</p>
+</blockquote>
+<p>Gets the original items of a playlist.</p>
+<h3 id="example_3">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.base_item_dto_query_result import BaseItemDtoQueryResult
+from jellyfin.generated.api_10_10.models.image_type import ImageType
+from jellyfin.generated.api_10_10.models.item_fields import ItemFields
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+    user_id = 'user_id_example' # str | User id. (optional)
+    start_index = 56 # int | Optional. The record index to start at. All items with a lower index will be dropped from the results. (optional)
+    limit = 56 # int | Optional. The maximum number of records to return. (optional)
+    fields = [jellyfin.generated.api_10_10.ItemFields()] # List[ItemFields] | Optional. Specify additional fields of information to return in the output. (optional)
+    enable_images = True # bool | Optional. Include image information in output. (optional)
+    enable_user_data = True # bool | Optional. Include user data. (optional)
+    image_type_limit = 56 # int | Optional. The max number of images to return, per image type. (optional)
+    enable_image_types = [jellyfin.generated.api_10_10.ImageType()] # List[ImageType] | Optional. The image types to include in the output. (optional)
+
+    try:
+        # Gets the original items of a playlist.
+        api_response = api_instance.get_playlist_items(playlist_id, user_id=user_id, start_index=start_index, limit=limit, fields=fields, enable_images=enable_images, enable_user_data=enable_user_data, image_type_limit=image_type_limit, enable_image_types=enable_image_types)
+        print(&quot;The response of PlaylistsApi-&gt;get_playlist_items:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;get_playlist_items: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>User id.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>start_index</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The record index to start at. All items with a lower index will be dropped from the results.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The maximum number of records to return.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>fields</strong></td>
+<td><a href="../ItemFields/"><strong>List[ItemFields]</strong></a></td>
+<td>Optional. Specify additional fields of information to return in the output.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_images</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Include image information in output.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_user_data</strong></td>
+<td><strong>bool</strong></td>
+<td>Optional. Include user data.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>image_type_limit</strong></td>
+<td><strong>int</strong></td>
+<td>Optional. The max number of images to return, per image type.</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>enable_image_types</strong></td>
+<td><a href="../ImageType/"><strong>List[ImageType]</strong></a></td>
+<td>Optional. The image types to include in the output.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_3">Return type</h3>
+<p><a href="../BaseItemDtoQueryResult/"><strong>BaseItemDtoQueryResult</strong></a></p>
+<h3 id="authorization_3">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_3">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_3">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Original playlist returned.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="get_playlist_user"><strong>get_playlist_user</strong></h1>
+<blockquote>
+<p>PlaylistUserPermissions get_playlist_user(playlist_id, user_id)</p>
+</blockquote>
+<p>Get a playlist user.</p>
+<h3 id="example_4">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.playlist_user_permissions import PlaylistUserPermissions
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+    user_id = 'user_id_example' # str | The user id.
+
+    try:
+        # Get a playlist user.
+        api_response = api_instance.get_playlist_user(playlist_id, user_id)
+        print(&quot;The response of PlaylistsApi-&gt;get_playlist_user:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;get_playlist_user: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_4">Return type</h3>
+<p><a href="../PlaylistUserPermissions/"><strong>PlaylistUserPermissions</strong></a></p>
+<h3 id="authorization_4">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_4">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_4">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>User permission found.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Access forbidden.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="get_playlist_users"><strong>get_playlist_users</strong></h1>
+<blockquote>
+<p>List[PlaylistUserPermissions] get_playlist_users(playlist_id)</p>
+</blockquote>
+<p>Get a playlist's users.</p>
+<h3 id="example_5">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.playlist_user_permissions import PlaylistUserPermissions
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+
+    try:
+        # Get a playlist's users.
+        api_response = api_instance.get_playlist_users(playlist_id)
+        print(&quot;The response of PlaylistsApi-&gt;get_playlist_users:\n&quot;)
+        pprint(api_response)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;get_playlist_users: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_5">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_5">Return type</h3>
+<p><a href="../PlaylistUserPermissions/"><strong>List[PlaylistUserPermissions]</strong></a></p>
+<h3 id="authorization_5">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_5">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_5">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>Found shares.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Access forbidden.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="move_item"><strong>move_item</strong></h1>
+<blockquote>
+<p>move_item(playlist_id, item_id, new_index)</p>
+</blockquote>
+<p>Moves a playlist item.</p>
+<h3 id="example_6">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+    item_id = 'item_id_example' # str | The item id.
+    new_index = 56 # int | The new index.
+
+    try:
+        # Moves a playlist item.
+        api_instance.move_item(playlist_id, item_id, new_index)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;move_item: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_6">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>item_id</strong></td>
+<td><strong>str</strong></td>
+<td>The item id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>new_index</strong></td>
+<td><strong>int</strong></td>
+<td>The new index.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_6">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_6">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_6">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_6">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Item moved to new index.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Access forbidden.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="remove_item_from_playlist"><strong>remove_item_from_playlist</strong></h1>
+<blockquote>
+<p>remove_item_from_playlist(playlist_id, entry_ids=entry_ids)</p>
+</blockquote>
+<p>Removes items from a playlist.</p>
+<h3 id="example_7">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+    entry_ids = ['entry_ids_example'] # List[str] | The item ids, comma delimited. (optional)
+
+    try:
+        # Removes items from a playlist.
+        api_instance.remove_item_from_playlist(playlist_id, entry_ids=entry_ids)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;remove_item_from_playlist: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_7">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>entry_ids</strong></td>
+<td><a href="str.md"><strong>List[str]</strong></a></td>
+<td>The item ids, comma delimited.</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_7">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_7">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_7">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_7">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Items removed.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Access forbidden.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="remove_user_from_playlist"><strong>remove_user_from_playlist</strong></h1>
+<blockquote>
+<p>remove_user_from_playlist(playlist_id, user_id)</p>
+</blockquote>
+<p>Remove a user from a playlist's users.</p>
+<h3 id="example_8">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+    user_id = 'user_id_example' # str | The user id.
+
+    try:
+        # Remove a user from a playlist's users.
+        api_instance.remove_user_from_playlist(playlist_id, user_id)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;remove_user_from_playlist: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_8">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_8">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_8">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_8">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: Not defined</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_8">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>User permissions removed from playlist.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized access.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Forbidden</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>No playlist or user permissions found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="update_playlist"><strong>update_playlist</strong></h1>
+<blockquote>
+<p>update_playlist(playlist_id, update_playlist_dto)</p>
+</blockquote>
+<p>Updates a playlist.</p>
+<h3 id="example_9">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.update_playlist_dto import UpdatePlaylistDto
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+    update_playlist_dto = jellyfin.generated.api_10_10.UpdatePlaylistDto() # UpdatePlaylistDto | The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistDto id.
+
+    try:
+        # Updates a playlist.
+        api_instance.update_playlist(playlist_id, update_playlist_dto)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;update_playlist: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_9">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>update_playlist_dto</strong></td>
+<td><a href="../UpdatePlaylistDto/"><strong>UpdatePlaylistDto</strong></a></td>
+<td>The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistDto id.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_9">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_9">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_9">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_9">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>Playlist updated.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Access forbidden.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+<h1 id="update_playlist_user"><strong>update_playlist_user</strong></h1>
+<blockquote>
+<p>update_playlist_user(playlist_id, user_id, update_playlist_user_dto)</p>
+</blockquote>
+<p>Modify a user of a playlist's users.</p>
+<h3 id="example_10">Example</h3>
+<ul>
+<li>Api Key Authentication (CustomAuthentication):</li>
+</ul>
+<pre><code class="language-python">import jellyfin.generated.api_10_10
+from jellyfin.generated.api_10_10 import ApiClient, Configuration
+from jellyfin.generated.api_10_10.models.update_playlist_user_dto import UpdatePlaylistUserDto
+from jellyfin.generated.api_10_10.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = Configuration(
+    host = &quot;http://localhost&quot;
+)
+
+# Configure API key authorization: CustomAuthentication
+configuration.api_key['CustomAuthentication'] = f'Token=&quot;{os.getenv(&quot;API_KEY&quot;)}&quot;'
+configuration.api_key_prefix['CustomAuthentication'] = &quot;MediaBrowser&quot;
+
+
+# Enter a context with an instance of the API client
+with ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = jellyfin.generated.api_10_10.PlaylistsApi(api_client)
+    playlist_id = 'playlist_id_example' # str | The playlist id.
+    user_id = 'user_id_example' # str | The user id.
+    update_playlist_user_dto = jellyfin.generated.api_10_10.UpdatePlaylistUserDto() # UpdatePlaylistUserDto | The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistUserDto.
+
+    try:
+        # Modify a user of a playlist's users.
+        api_instance.update_playlist_user(playlist_id, user_id, update_playlist_user_dto)
+    except Exception as e:
+        print(&quot;Exception when calling PlaylistsApi-&gt;update_playlist_user: %s\n&quot; % e)
+</code></pre>
+<h3 id="parameters_10">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>playlist_id</strong></td>
+<td><strong>str</strong></td>
+<td>The playlist id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>user_id</strong></td>
+<td><strong>str</strong></td>
+<td>The user id.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>update_playlist_user_dto</strong></td>
+<td><a href="../UpdatePlaylistUserDto/"><strong>UpdatePlaylistUserDto</strong></a></td>
+<td>The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistUserDto.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_10">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_10">Authorization</h3>
+<p><a href="../../#CustomAuthentication">CustomAuthentication</a></p>
+<h3 id="http-request-headers_10">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/json, text/json, application/*+json</li>
+<li><strong>Accept</strong>: application/json, application/json; profile="CamelCase", application/json; profile="PascalCase"</li>
+</ul>
+<h3 id="http-response-details_10">HTTP response details</h3>
+<table>
+<thead>
+<tr>
+<th>Status code</th>
+<th>Description</th>
+<th>Response headers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>204</strong></td>
+<td>User&#39;s permissions modified.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>Unauthorized</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>Access forbidden.</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>Playlist not found.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#">[Back to top]</a> <a href="../../#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../#documentation-for-models">[Back to Model list]</a> <a href="../../">[Back to README]</a></p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
