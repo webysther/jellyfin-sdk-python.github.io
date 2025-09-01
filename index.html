@@ -85,6 +85,14 @@
 
 <hr />
 <p>A High-level Wrapper for OpenAPI Generated Bindings for Jellyfin API.</p>
+<pre><code class="language-sh">pip install jellyfin-sdk
+</code></pre>
+<pre><code class="language-python">import jellyfin
+
+api = jellyfin.api('https://jellyfin.example.com', 'API_TOKEN')
+
+print(api.system.info.version, api.system.info.server_name)
+</code></pre>
 <ul>
 <li><a href="https://github.com/webysther/jellyfin-sdk-python#usage" target="_blank">Usage</a></li>
 <li><a href="https://github.com/webysther/jellyfin-sdk-python#usage">SDK Reference</a></li>
@@ -139,5 +147,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-09-01 10:45:41.574813+00:00
+Build Date UTC : 2025-09-01 10:51:26.966960+00:00
 -->
