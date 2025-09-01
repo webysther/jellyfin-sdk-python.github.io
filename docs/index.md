@@ -1,11 +1,22 @@
-<h1 align="center">jellyfin-sdk-python</h1>
+<h1 align="center">Jellyfin SDK for Python</h1>
 
 ---
 
-A [Possible Official](https://jellyfin.org/docs/general/contributing/branding) Python SDK for Jellyfin.
+A High-level Wrapper for OpenAPI Generated Bindings for Jellyfin API.
 
-## Documentation
+```sh
+pip install jellyfin-sdk
+```
 
-- [Jellyfin SDK](https://github.com/webysther/jellyfin-sdk-python#usage)
-- [Jellyfin API 10.11](./api_10_11/README.md)
-- [Jellyfin API 10.10](./api_10_10/README.md)
+```python
+import jellyfin
+
+api = jellyfin.api('https://jellyfin.example.com', 'API_TOKEN')
+
+print(api.system.info.version, api.system.info.server_name)
+```
+
+- <a href="https://github.com/webysther/jellyfin-sdk-python#usage" target="_blank">Usage</a>
+- [SDK Reference](./sdk.md)
+- [Jellyfin API 10.10](./api_10_10/README.md) (Stable)
+- [Jellyfin API 10.11](./api_10_11/README.md) (Release Candidate)

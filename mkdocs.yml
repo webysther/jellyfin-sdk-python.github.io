@@ -4,9 +4,10 @@ site_author: Webysther Sperandio
 site_description: A Python SDK for interacting with the Jellyfin API.
 
 nav:
-  - About: index.md
-  - API 10.11: api_10_11/README.md
+  - Getting Started: index.md
+  - SDK Reference: sdk.md
   - API 10.10: api_10_10/README.md
+  - API 10.11: api_10_11/README.md
 
 extra_css:
   - css/custom.css
