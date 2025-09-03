@@ -1,4 +1,4 @@
-<h1 align="center">Jellyfin SDK for Python</h1>
+<h1 align="center"><a href="https://github.com/webysther/jellyfin-sdk-python" target="_blank">Jellyfin SDK for Python</a></h1>
 
 ---
 
