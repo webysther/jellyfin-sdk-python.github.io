@@ -49,6 +49,8 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">SDK Reference</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#jellyfinversion">jellyfin.version</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#jellyfinapi">jellyfin.api</a>
     </li>
     </ul>
@@ -88,6 +90,9 @@
                 <p><a id="jellyfin"></a></p>
 <h1 id="jellyfin">jellyfin</h1>
 <p>Entrypoint module for the Jellyfin SDK.</p>
+<p><a id="jellyfin.version"></a></p>
+<h4 id="jellyfinversion">jellyfin.version</h4>
+<p>Now you can use jellyfin.version.V10_11</p>
 <p><a id="jellyfin.api"></a></p>
 <h4 id="jellyfinapi">jellyfin.api</h4>
 <pre><code class="language-python">def api(url: str, api_key: str, version: Version = Version.V10_10) -&gt; Api
@@ -106,29 +111,6 @@
 <p><a id="jellyfin.api"></a></p>
 <h1 id="jellyfinapi_1">jellyfin.api</h1>
 <p>Module <code>api</code> - High-level interface for ApiClient and Configuration.</p>
-<p><a id="jellyfin.api.Version"></a></p>
-<h2 id="jellyfinapiversion-objects">jellyfin.api.Version Objects</h2>
-<pre><code class="language-python">class Version(StrEnum)
-</code></pre>
-<p>Enumeration of supported Jellyfin API versions.</p>
-<p><a id="jellyfin.api.Inject"></a></p>
-<h2 id="jellyfinapiinject-objects">jellyfin.api.Inject Objects</h2>
-<pre><code class="language-python">class Inject()
-</code></pre>
-<p><a id="jellyfin.api.Inject.get"></a></p>
-<h4 id="get">get</h4>
-<pre><code class="language-python">@staticmethod
-def get(version: Version)
-</code></pre>
-<p>Dynamically imports the appropriate API module based on the specified version.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>version</code> <em>Version</em> - The API version to import.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>module</code> - The imported module corresponding to the specified version.</li>
-</ul>
 <p><a id="jellyfin.api.Api"></a></p>
 <h2 id="jellyfinapiapi-objects">jellyfin.api.Api Objects</h2>
 <pre><code class="language-python">class Api()
@@ -152,6 +134,47 @@ def get(version: Version)
 <ul>
 <li><code>Api</code> - An instance of the Api class.</li>
 </ul>
+<p><a id="jellyfin.api.Api.__repr__"></a></p>
+<h4 id="__repr__">__repr__</h4>
+<pre><code class="language-python">def __repr__()
+</code></pre>
+<p>Official string representation of the Api instance.</p>
+<p><a id="jellyfin.api.Api.__str__"></a></p>
+<h4 id="__str__">__str__</h4>
+<pre><code class="language-python">def __str__()
+</code></pre>
+<p>String representation of the Api instance.</p>
+<p><a id="jellyfin.api.Api.configuration"></a></p>
+<h4 id="configuration">configuration</h4>
+<pre><code class="language-python">@property
+def configuration() -&gt; Configuration
+</code></pre>
+<p>Returns the Configuration instance.</p>
+<p><a id="jellyfin.api.Api.client"></a></p>
+<h4 id="client">client</h4>
+<pre><code class="language-python">@property
+def client() -&gt; ApiClient
+</code></pre>
+<p>Returns the ApiClient instance.</p>
+<p><a id="jellyfin.api.Api.register_client"></a></p>
+<h4 id="register_client">register_client</h4>
+<pre><code class="language-python">def register_client(client_name: str = None,
+                    device_name: str = None,
+                    device_id: str = None,
+                    device_version: str = None) -&gt; Self
+</code></pre>
+<p>Just register this as a client with the server.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>client_name</code> <em>str, optional</em> - The name of the client application. Defaults to the hostname if not provided.</li>
+<li><code>device_name</code> <em>str, optional</em> - The name of the device. Defaults to the OS name if not provided.</li>
+<li><code>device_id</code> <em>str, optional</em> - The unique identifier for the device. Defaults to the MAC address if not provided.</li>
+<li><code>device_version</code> <em>str, optional</em> - The version of the client application. Defaults to the OS version if not provided.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>Api</code> - The current instance of the Api class.</li>
+</ul>
 <p><a id="jellyfin.api.Api.system"></a></p>
 <h4 id="system">system</h4>
 <pre><code class="language-python">@property
@@ -172,140 +195,228 @@ def items() -&gt; Items
 <ul>
 <li><code>Items</code> - An instance of the Items API wrapper.</li>
 </ul>
-<p><a id="jellyfin.api.Api.user"></a></p>
-<h4 id="user">user</h4>
+<p><a id="jellyfin.api.Api.libraries"></a></p>
+<h4 id="libraries">libraries</h4>
 <pre><code class="language-python">@property
-def user() -&gt; User
+def libraries() -&gt; Items
+</code></pre>
+<p>Alias for items of type COLLECTIONFOLDER.</p>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>ItemCollection</code> - A collection of all libraries.</li>
+</ul>
+<p><a id="jellyfin.api.Api.users"></a></p>
+<h4 id="users">users</h4>
+<pre><code class="language-python">@property
+def users() -&gt; Users
 </code></pre>
 <p>Lazy load the User API.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
-<li><code>User</code> - An instance of the User API wrapper.</li>
+<li><code>Users</code> - An instance of the User API wrapper.</li>
 </ul>
-<p><a id="jellyfin.user"></a></p>
-<h1 id="jellyfinuser">jellyfin.user</h1>
-<p>Module <code>user</code> - High-level interface for UserApi and UserViewsApi.</p>
-<p><a id="jellyfin.user.User"></a></p>
-<h2 id="jellyfinuseruser-objects">jellyfin.user.User Objects</h2>
-<pre><code class="language-python">class User()
+<p><a id="jellyfin.base"></a></p>
+<h1 id="jellyfinbase">jellyfin.base</h1>
+<p><a id="jellyfin.base.Pagination"></a></p>
+<h2 id="jellyfinbasepagination-objects">jellyfin.base.Pagination Objects</h2>
+<pre><code class="language-python">class Pagination(Protocol)
 </code></pre>
-<p><a id="jellyfin.user.User.__init__"></a></p>
-<h4 id="__init___1">__init__</h4>
-<pre><code class="language-python">def __init__(user_api: object, user_views_api: object)
+<p>Protocol for paginated responses.</p>
+<p><a id="jellyfin.base.Model"></a></p>
+<h2 id="jellyfinbasemodel-objects">jellyfin.base.Model Objects</h2>
+<pre><code class="language-python">class Model()
 </code></pre>
-<p>Initializes the User API wrapper.</p>
+<p><a id="jellyfin.base.Model.model"></a></p>
+<h4 id="model">model</h4>
+<pre><code class="language-python">@property
+def model() -&gt; BaseModel
+</code></pre>
+<p>Returns the generated model</p>
+<p><a id="jellyfin.base.Model.__str__"></a></p>
+<h4 id="__str___1">__str__</h4>
+<pre><code class="language-python">def __str__() -&gt; str
+</code></pre>
+<p>Returns the string representation of the model.</p>
+<p><a id="jellyfin.base.Model.__repr__"></a></p>
+<h4 id="__repr___1">__repr__</h4>
+<pre><code class="language-python">def __repr__() -&gt; str
+</code></pre>
+<p>Returns a detailed string representation of the Item object, with each attribute on a new line.</p>
+<p><a id="jellyfin.base.Model.summary"></a></p>
+<h4 id="summary">summary</h4>
+<pre><code class="language-python">def summary(empty: bool = False, size: int = 80, limit: int = 100) -&gt; None
+</code></pre>
+<p>Prints the simple representation of the model.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
-<li><code>user_api</code> <em>UserApi</em> - An instance of the generated UserApi class.</li>
-<li><code>user_views_api</code> <em>UserViewsApi</em> - An instance of the generated UserViewsApi class.</li>
+<li><code>empty</code> <em>bool</em> - If True, includes all values. If False, omits empty values (None, "", 0, [], {}).</li>
 </ul>
-<p><a id="jellyfin.user.User.of"></a></p>
-<h4 id="of">of</h4>
-<pre><code class="language-python">def of(user_uuid: str | uuid.UUID) -&gt; 'User'
+<p><a id="jellyfin.base.Collection"></a></p>
+<h2 id="jellyfinbasecollection-objects">jellyfin.base.Collection Objects</h2>
+<pre><code class="language-python">class Collection(Sequence)
 </code></pre>
-<p>Set user context</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>user_uuid</code> <em>str | uuid.UUID</em> - The UUID or name of the user.</li>
-</ul>
-<p><strong>Raises</strong>:</p>
-<ul>
-<li><code>ValueError</code> - If the provided user_uuid is not a valid UUID or name.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>User</code> - The current User instance with the user context set.</li>
-</ul>
-<p><a id="jellyfin.user.User.by_id"></a></p>
-<h4 id="by_id">by_id</h4>
-<pre><code class="language-python">def by_id(user_id: uuid.UUID) -&gt; object
+<p><a id="jellyfin.base.Collection.__iter__"></a></p>
+<h4 id="__iter__">__iter__</h4>
+<pre><code class="language-python">def __iter__()
 </code></pre>
-<p>Get user by ID</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>user_id</code> <em>uuid.UUID</em> - The UUID of the user.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>UserDto</code> - The user object if found.</li>
-</ul>
-<p><a id="jellyfin.user.User.by_name"></a></p>
-<h4 id="by_name">by_name</h4>
-<pre><code class="language-python">def by_name(user_name: str, sensitive: bool = False)
-</code></pre>
-<p>Get user by name</p>
-<p><a id="jellyfin.user.User.users"></a></p>
-<h4 id="users">users</h4>
+<p>Returns an iterator for the collection.</p>
+<p>Usage:
+    collection = ItemCollection(...)
+    for item in collection:
+        print(collection.current)  # Always shows the current item</p>
+<p><a id="jellyfin.base.Collection.model"></a></p>
+<h4 id="model_1">model</h4>
 <pre><code class="language-python">@property
-def users() -&gt; object
+def model() -&gt; Model
 </code></pre>
-<p>Get all users.</p>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>UserApi.get_users</code> - A list of all users.</li>
-</ul>
-<p><a id="jellyfin.user.User.all"></a></p>
-<h4 id="all">all</h4>
+<p>Returns the reference model.</p>
+<p><a id="jellyfin.base.Collection.data"></a></p>
+<h4 id="data">data</h4>
 <pre><code class="language-python">@property
-def all() -&gt; object
+def data() -&gt; List[BaseModel]
 </code></pre>
-<p>Get all users. Alias for users</p>
+<p>Returns the reference list of items inside model.</p>
+<p><a id="jellyfin.base.Collection.__len__"></a></p>
+<h4 id="__len__">__len__</h4>
+<pre><code class="language-python">def __len__()
+</code></pre>
+<p>Returns the total number of records in the collection.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
-<li><code>UserApi.get_users</code> - A list of all users.</li>
+<li><code>int</code> - The total number of records.</li>
 </ul>
-<p><a id="jellyfin.user.User.libraries"></a></p>
-<h4 id="libraries">libraries</h4>
-<pre><code class="language-python">@property
-def libraries() -&gt; object
-</code></pre>
-<p>Get libraries. Alias for views</p>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>BaseItemDtoQueryResult</code> - A list of libraries.</li>
-</ul>
-<p><a id="jellyfin.user.User.views"></a></p>
-<h4 id="views">views</h4>
-<pre><code class="language-python">@property
-def views() -&gt; object
-</code></pre>
-<p>Get libraries for the current user context.</p>
-<p><strong>Raises</strong>:</p>
-<ul>
-<li><code>ValueError</code> - If user ID is not set.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>BaseItemDtoQueryResult</code> - A list of libraries.</li>
-</ul>
-<p><a id="jellyfin.user.User.get_libraries"></a></p>
-<h4 id="get_libraries">get_libraries</h4>
-<pre><code class="language-python">def get_libraries(user_id: str | uuid.UUID) -&gt; object
-</code></pre>
-<p>Get libraries for a specific user.</p>
-<p><strong>Arguments</strong>:</p>
-<ul>
-<li><code>user_id</code> <em>str | uuid.UUID</em> - The UUID of the user.</li>
-</ul>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>BaseItemDtoQueryResult</code> - A list of libraries.</li>
-</ul>
-<p><a id="jellyfin.user.User.__getattr__"></a></p>
-<h4 id="__getattr__">__getattr__</h4>
-<pre><code class="language-python">def __getattr__(name)
-</code></pre>
-<p>Delegate attribute access to user_api, user_views_api, or the current user object.</p>
 <p><a id="jellyfin.items"></a></p>
 <h1 id="jellyfinitems">jellyfin.items</h1>
 <p>Module <code>items</code> - High-level interface for ItemsApi.</p>
+<p><a id="jellyfin.items.ItemSearch"></a></p>
+<h2 id="jellyfinitemsitemsearch-objects">jellyfin.items.ItemSearch Objects</h2>
+<pre><code class="language-python">class ItemSearch()
+</code></pre>
+<p>Based on DataFrame Builder pattern</p>
+<p>Usage:
+    search = api.items.search
+    search.is_movie = False
+    search.user_id = "abc"
+    result = search.all()</p>
+<pre><code>api.items.search.add(is_movie=False).all()
+api.items.search.filter({
+    "is_movie": False, 
+    "user_id": "abc"
+}).all()
+</code></pre>
+<p><a id="jellyfin.items.ItemSearch.__setattr__"></a></p>
+<h4 id="__setattr__">__setattr__</h4>
+<pre><code class="language-python">def __setattr__(name, value)
+</code></pre>
+<p>Set a filter using 'search.attr = value'</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>name</code> <em>str</em> - The name of the attribute to set.</li>
+<li><code>value</code> <em>Any</em> - The value to set the attribute to.</li>
+</ul>
+<p><a id="jellyfin.items.ItemSearch.__getattr__"></a></p>
+<h4 id="__getattr__">__getattr__</h4>
+<pre><code class="language-python">def __getattr__(name)
+</code></pre>
+<p>Get a filter using 'search.attr'</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>name</code> <em>str</em> - The name of the attribute to retrieve.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>Any</code> - The value of the specified attribute, or None if not found.</li>
+</ul>
+<p><a id="jellyfin.items.ItemSearch.__delattr__"></a></p>
+<h4 id="__delattr__">__delattr__</h4>
+<pre><code class="language-python">def __delattr__(name)
+</code></pre>
+<p>Remove a filter using 'del search.attr'</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>name</code> <em>str</em> - The name of the attribute to remove.</li>
+</ul>
+<p><a id="jellyfin.items.ItemSearch.add"></a></p>
+<h4 id="add">add</h4>
+<pre><code class="language-python">def add(key: str, value: Any) -&gt; Self
+</code></pre>
+<p>Add multiple filters at once using 'search.add(attr=value, ...)'</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>key</code> <em>str</em> - The name of the attribute to add.</li>
+<li><code>value</code> <em>Any</em> - The value to set the attribute to.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>ItemSearch</code> - The current ItemSearch instance (for chaining).</li>
+</ul>
+<p><a id="jellyfin.items.ItemSearch.remove"></a></p>
+<h4 id="remove">remove</h4>
+<pre><code class="language-python">def remove(key: str) -&gt; Self
+</code></pre>
+<p>Remove multiple filters at once using 'search.remove(attr, ...)'</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>key</code> <em>str</em> - The name of the attribute to remove.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>ItemSearch</code> - The current ItemSearch instance (for chaining).</li>
+</ul>
+<p><a id="jellyfin.items.ItemSearch.next_page"></a></p>
+<h4 id="next_page">next_page</h4>
+<pre><code class="language-python">def next_page() -&gt; ItemCollection
+</code></pre>
+<p>Move to the next page of results based on the current pagination settings.</p>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>ItemCollection</code> - A collection of items for the next page.</li>
+</ul>
+<p><a id="jellyfin.items.ItemSearch.paginate"></a></p>
+<h4 id="paginate">paginate</h4>
+<pre><code class="language-python">def paginate(size: int = 100) -&gt; Self
+</code></pre>
+<p>Enable pagination.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>size</code> <em>int</em> - The maximum number of results to return per page. Defaults to 100. Zero turns off pagination.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>ItemSearch</code> - The current ItemSearch instance (for chaining).</li>
+</ul>
+<p><a id="jellyfin.items.ItemSearch.all"></a></p>
+<h4 id="all">all</h4>
+<pre><code class="language-python">@property
+def all() -&gt; ItemCollection
+</code></pre>
+<p>Execute the search and return all results as an ItemCollection</p>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>ItemCollection</code> - A collection of items matching the search criteria.</li>
+</ul>
+<p><a id="jellyfin.items.ItemSearch.recursive"></a></p>
+<h4 id="recursive">recursive</h4>
+<pre><code class="language-python">def recursive(flag: bool = True) -&gt; Self
+</code></pre>
+<p>Shortcut to enable recursive search</p>
+<p><a id="jellyfin.items.ItemSearch.name_starts_with"></a></p>
+<h4 id="name_starts_with">name_starts_with</h4>
+<pre><code class="language-python">def name_starts_with(prefix: str) -&gt; Self
+</code></pre>
+<p>Shortcut to filter by name prefix</p>
+<p><a id="jellyfin.items.ItemSearch.only_library"></a></p>
+<h4 id="only_library">only_library</h4>
+<pre><code class="language-python">def only_library() -&gt; Self
+</code></pre>
+<p>Shortcut to filter only libraries (collections)</p>
 <p><a id="jellyfin.items.Items"></a></p>
 <h2 id="jellyfinitemsitems-objects">jellyfin.items.Items Objects</h2>
 <pre><code class="language-python">class Items()
 </code></pre>
 <p><a id="jellyfin.items.Items.__init__"></a></p>
-<h4 id="__init___2">__init__</h4>
-<pre><code class="language-python">def __init__(items_api: object)
+<h4 id="__init___1">__init__</h4>
+<pre><code class="language-python">def __init__(items_api: ItemsApi)
 </code></pre>
 <p>Initializes the Items API wrapper.</p>
 <p><strong>Arguments</strong>:</p>
@@ -315,22 +426,22 @@ def views() -&gt; object
 <p><a id="jellyfin.items.Items.all"></a></p>
 <h4 id="all_1">all</h4>
 <pre><code class="language-python">@property
-def all() -&gt; object
+def all() -&gt; ItemCollection
 </code></pre>
-<p>Returns all items.</p>
+<p>Returns all items as an ItemCollection.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
-<li><code>BaseItemDtoQueryResult</code> - A list of all items.</li>
+<li><code>ItemCollection</code> - A collection of all items.</li>
 </ul>
-<p><a id="jellyfin.items.Items.filter"></a></p>
-<h4 id="filter">filter</h4>
+<p><a id="jellyfin.items.Items.search"></a></p>
+<h4 id="search">search</h4>
 <pre><code class="language-python">@property
-def filter() -&gt; object
+def search() -&gt; ItemSearch
 </code></pre>
-<p>Returns a filtered list of items.</p>
+<p>Returns an ItemSearch instance for building search queries.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
-<li><code>ItemsApi.get_items</code> - A filtered list of items.</li>
+<li><code>ItemSearch</code> - An instance of ItemSearch for building search queries.</li>
 </ul>
 <p><a id="jellyfin.system"></a></p>
 <h1 id="jellyfinsystem">jellyfin.system</h1>
@@ -340,8 +451,8 @@ def filter() -&gt; object
 <pre><code class="language-python">class System()
 </code></pre>
 <p><a id="jellyfin.system.System.__init__"></a></p>
-<h4 id="__init___3">__init__</h4>
-<pre><code class="language-python">def __init__(system_api: object)
+<h4 id="__init___2">__init__</h4>
+<pre><code class="language-python">def __init__(system_api: SystemApi)
 </code></pre>
 <p>Initializes the System API wrapper.</p>
 <p><strong>Arguments</strong>:</p>
@@ -351,13 +462,110 @@ def filter() -&gt; object
 <p><a id="jellyfin.system.System.info"></a></p>
 <h4 id="info">info</h4>
 <pre><code class="language-python">@property
-def info()
+def info() -&gt; SystemInfo
 </code></pre>
 <p>Returns system information.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>SystemInfo</code> - System information.</li>
 </ul>
+<p><a id="jellyfin.users"></a></p>
+<h1 id="jellyfinusers">jellyfin.users</h1>
+<p>Module <code>user</code> - High-level interface for UserApi and UserViewsApi.</p>
+<p><a id="jellyfin.users.Users"></a></p>
+<h2 id="jellyfinusersusers-objects">jellyfin.users.Users Objects</h2>
+<pre><code class="language-python">class Users()
+</code></pre>
+<p><a id="jellyfin.users.Users.__init__"></a></p>
+<h4 id="__init___3">__init__</h4>
+<pre><code class="language-python">def __init__(user_api: UserApi, user_views_api: UserViewsApi)
+</code></pre>
+<p>Initializes the User API wrapper.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>user_api</code> <em>UserApi</em> - An instance of the generated UserApi class.</li>
+<li><code>user_views_api</code> <em>UserViewsApi</em> - An instance of the generated UserViewsApi class.</li>
+</ul>
+<p><a id="jellyfin.users.Users.of"></a></p>
+<h4 id="of">of</h4>
+<pre><code class="language-python">def of(user_name_or_uuid: str | uuid.UUID) -&gt; 'User'
+</code></pre>
+<p>Set user context</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>user_name_or_uuid</code> <em>str | uuid.UUID</em> - The UUID or name of the user.</li>
+</ul>
+<p><strong>Raises</strong>:</p>
+<ul>
+<li><code>ValueError</code> - If the provided user_name_or_uuid is not a valid UUID or name.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>User</code> - The current User instance with the user context set.</li>
+</ul>
+<p><a id="jellyfin.users.Users.by_id"></a></p>
+<h4 id="by_id">by_id</h4>
+<pre><code class="language-python">def by_id(user_id: uuid.UUID) -&gt; User
+</code></pre>
+<p>Get user by ID</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>user_id</code> <em>uuid.UUID</em> - The UUID of the user.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>User</code> - The user object if found.</li>
+</ul>
+<p><a id="jellyfin.users.Users.by_name"></a></p>
+<h4 id="by_name">by_name</h4>
+<pre><code class="language-python">def by_name(user_name: str) -&gt; User | None
+</code></pre>
+<p>Get user by name</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>user_name</code> <em>str</em> - The name of the user.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<p>User | None: The user object if found, otherwise None.</p>
+<p><a id="jellyfin.users.Users.all"></a></p>
+<h4 id="all_2">all</h4>
+<pre><code class="language-python">@property
+def all() -&gt; UserCollection
+</code></pre>
+<p>Get all users.</p>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>UserCollection</code> - A list of all users.</li>
+</ul>
+<p><a id="jellyfin.users.Users.libraries"></a></p>
+<h4 id="libraries_1">libraries</h4>
+<pre><code class="language-python">@property
+def libraries() -&gt; ItemCollection
+</code></pre>
+<p>Get libraries for the current user context.</p>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>ItemCollection</code> - A list of libraries.</li>
+</ul>
+<p><a id="jellyfin.users.Users.views"></a></p>
+<h4 id="views">views</h4>
+<pre><code class="language-python">@property
+def views() -&gt; ItemCollection
+</code></pre>
+<p>Get views for the current user context.</p>
+<p><strong>Raises</strong>:</p>
+<ul>
+<li><code>ValueError</code> - If user ID is not set.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>ItemCollection</code> - A list of libraries.</li>
+</ul>
+<p><a id="jellyfin.users.Users.__getattr__"></a></p>
+<h4 id="__getattr___1">__getattr__</h4>
+<pre><code class="language-python">def __getattr__(name)
+</code></pre>
+<p>Delegate attribute access to user_api, user_views_api, or the current user object.</p>
               
             </div>
           </div><footer>

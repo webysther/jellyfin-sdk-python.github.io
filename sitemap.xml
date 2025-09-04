@@ -2,3402 +2,3402 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jellyfin-sdk-python.github.io/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/sdk/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AccessSchedule/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ActivityLogApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ActivityLogEntry/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ActivityLogEntryMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ActivityLogEntryQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ActivityLogEntryStartMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ActivityLogEntryStopMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AddVirtualFolderDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AlbumInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AlbumInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AllThemeMediaResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ApiKeyApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ArtistInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ArtistInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ArtistsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AudioApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AudioSpatialFormat/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AuthenticateUserByName/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AuthenticationInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AuthenticationInfoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/AuthenticationResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BackupApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BackupManifestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BackupOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BackupRestoreRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BaseItemDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BaseItemDtoImageBlurHashes/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BaseItemDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BaseItemKind/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BaseItemPerson/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BaseItemPersonImageBlurHashes/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BookInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BookInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BoxSetInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BoxSetInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BrandingApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BrandingOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BrandingOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/BufferRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CastReceiverApplication/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ChannelFeatures/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ChannelItemSortField/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ChannelMappingOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ChannelMediaContentType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ChannelMediaType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ChannelType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ChannelsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ChapterInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ClientCapabilitiesDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ClientLogApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ClientLogDocumentResponseDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CodecProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CodecType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CollectionApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CollectionCreationResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CollectionType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CollectionTypeOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ConfigImageTypes/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ConfigurationApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ConfigurationPageInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ContainerProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CountryInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CreatePlaylistDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CreateUserByName/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CultureDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CustomDatabaseOption/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/CustomDatabaseOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DashboardApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DatabaseConfigurationOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DatabaseLockingBehaviorTypes/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DayOfWeek/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DayPattern/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DefaultDirectoryBrowserInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DeinterlaceMethod/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DeviceInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DeviceInfoDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DeviceOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DeviceProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DevicesApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DirectPlayProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DisplayPreferencesApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DisplayPreferencesDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DlnaProfileType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DownMixStereoAlgorithms/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DynamicDayOfWeek/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/DynamicHlsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/EmbeddedSubtitleOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/EncoderPreset/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/EncodingContext/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/EncodingOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/EndPointInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/EnvironmentApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ExternalIdInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ExternalIdMediaType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ExternalUrl/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ExtraType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/FileSystemEntryInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/FileSystemEntryType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/FilterApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/FolderStorageDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/FontFile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ForceKeepAliveMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ForgotPasswordAction/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ForgotPasswordDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ForgotPasswordPinDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ForgotPasswordResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GeneralCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GeneralCommandMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GeneralCommandType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GenresApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GetProgramsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupInfoDtoGroupUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupQueueMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupRepeatMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupShuffleMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupStateType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupStateUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupStateUpdateGroupUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GroupUpdateType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/GuideInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/HardwareAccelerationType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/HlsSegmentApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/IPlugin/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/IgnoreWaitRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageFormat/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageOption/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageOrientation/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageProviderInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageResolution/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageSavingConvention/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ImageType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/InboundKeepAliveMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/InboundWebSocketMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/InstallationInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/InstantMixApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/IsoType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ItemCounts/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ItemFields/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ItemFilter/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ItemLookupApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ItemRefreshApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ItemSortBy/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ItemUpdateApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ItemsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/JoinGroupRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/KeepUntil/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryChangedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryOptionInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryOptionsResultDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryStorageDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryStructureApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryTypeOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LibraryUpdateInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ListingsProviderInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LiveStreamResponse/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LiveTvApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LiveTvInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LiveTvOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LiveTvServiceInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LiveTvServiceStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LocalizationApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LocalizationOption/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LocationType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LogFile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LogLevel/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LyricDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LyricLine/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LyricLineCue/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LyricMetadata/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/LyricsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaAttachment/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaInfoApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaPathDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaPathInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaProtocol/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaSegmentDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaSegmentDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaSegmentType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaSegmentsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaSourceInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaSourceType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaStream/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaStreamProtocol/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaStreamType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaUpdateInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaUpdateInfoPathDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MediaUrl/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MessageCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MetadataConfiguration/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MetadataEditorInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MetadataField/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MetadataOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MetadataRefreshMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MovePlaylistItemRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MovieInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MovieInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MoviesApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MusicGenresApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MusicVideoInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/MusicVideoInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/NameGuidPair/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/NameIdPair/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/NameValuePair/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/NetworkConfiguration/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/NewGroupRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/NextItemRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/OpenLiveStreamDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/OutboundKeepAliveMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/OutboundWebSocketMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PackageApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PackageInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ParentalRating/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ParentalRatingScore/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PathSubstitution/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PersonKind/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PersonLookupInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PersonLookupInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PersonsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PinRedeemResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PingRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayAccess/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayMethod/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayQueueUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayQueueUpdateGroupUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayQueueUpdateReason/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayRequest/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaybackErrorCode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaybackInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaybackInfoResponse/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaybackOrder/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaybackProgressInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaybackRequestType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaybackStartInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaybackStopInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlayerStateInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaylistCreationResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaylistDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaylistUserPermissions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaylistsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaystateApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaystateCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaystateMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PlaystateRequest/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PluginInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PluginInstallationCancelledMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PluginInstallationCompletedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PluginInstallationFailedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PluginInstallingMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PluginStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PluginUninstalledMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PluginsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PreviousItemRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ProblemDetails/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ProcessPriorityClass/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ProfileCondition/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ProfileConditionType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ProfileConditionValue/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ProgramAudio/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/PublicSystemInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/QueryFilters/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/QueryFiltersLegacy/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/QueueItem/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/QueueRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/QuickConnectApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/QuickConnectDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/QuickConnectResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RatingType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ReadyRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RecommendationDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RecommendationType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RecordingStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RefreshProgressMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RemoteImageApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RemoteImageInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RemoteImageResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RemoteLyricInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RemoteSearchResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RemoteSubtitleInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RemoveFromPlaylistRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RepeatMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RepositoryInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/RestartRequiredMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ScheduledTaskEndedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ScheduledTasksApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ScheduledTasksInfoMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ScheduledTasksInfoStartMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ScheduledTasksInfoStopMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ScrollDirection/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SearchApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SearchHint/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SearchHintResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SeekRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SendCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SendCommandType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SeriesInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SeriesInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SeriesStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SeriesTimerCancelledMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SeriesTimerCreatedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SeriesTimerInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SeriesTimerInfoDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ServerConfiguration/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ServerDiscoveryInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ServerRestartingMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ServerShuttingDownMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SessionApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SessionInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SessionMessageType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SessionUserInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SessionsMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SessionsStartMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SessionsStopMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SetChannelMappingDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SetPlaylistItemRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SetRepeatModeRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SetShuffleModeRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SongInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SortOrder/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SpecialViewOptionDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/StartupApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/StartupConfigurationDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/StartupRemoteAccessDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/StartupUserDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/StringGroupUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/StudiosApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SubtitleApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SubtitleDeliveryMethod/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SubtitleOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SubtitlePlaybackMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SubtitleProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SuggestionsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayCommandMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayGroupDoesNotExistUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayGroupJoinedUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayGroupLeftUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayGroupUpdateCommandMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayGroupUpdateMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayLibraryAccessDeniedUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayNotInGroupUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayPlayQueueUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayQueueItem/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayStateUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayUserAccessType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayUserJoinedUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SyncPlayUserLeftUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SystemApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SystemInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/SystemStorageDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TaskCompletionStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TaskInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TaskResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TaskState/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TaskTriggerInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TaskTriggerInfoType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ThemeMediaResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TimeSyncApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TimerCancelledMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TimerCreatedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TimerEventInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TimerInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TimerInfoDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TmdbApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TonemappingAlgorithm/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TonemappingMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TonemappingRange/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TrailerInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TrailerInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TrailersApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TranscodeReason/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TranscodeSeekInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TranscodingInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TranscodingProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TransportStreamTimestamp/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TrickplayApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TrickplayInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TrickplayInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TrickplayOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TrickplayScanBehavior/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TunerChannelMapping/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TunerHostInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TvShowsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/TypeOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UniversalAudioApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UnratedItem/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UpdateLibraryOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UpdateMediaPathRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UpdatePlaylistDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UpdatePlaylistUserDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UpdateUserItemDataDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UpdateUserPassword/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UploadSubtitleDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserConfiguration/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserDataChangeInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserDataChangedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserDeletedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserItemDataDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserLibraryApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserPolicy/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserUpdatedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UserViewsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/UtcTimeResponse/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/ValidatePathDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/VersionInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/Video3DFormat/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/VideoAttachmentsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/VideoRange/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/VideoRangeType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/VideoType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/VideosApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/VirtualFolderInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/WakeOnLanInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/WebSocketMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/XbmcMetadataOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_10/docs/YearsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AccessSchedule/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ActivityLogApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ActivityLogEntry/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ActivityLogEntryMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ActivityLogEntryQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ActivityLogEntryStartMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ActivityLogEntryStopMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AddVirtualFolderDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AlbumInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AlbumInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AllThemeMediaResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ApiKeyApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ArtistInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ArtistInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ArtistsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AudioApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AudioSpatialFormat/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AuthenticateUserByName/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AuthenticationInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AuthenticationInfoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/AuthenticationResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BackupApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BackupManifestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BackupOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BackupRestoreRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BaseItemDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BaseItemDtoImageBlurHashes/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BaseItemDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BaseItemKind/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BaseItemPerson/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BaseItemPersonImageBlurHashes/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BookInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BookInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BoxSetInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BoxSetInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BrandingApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BrandingOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/BufferRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CastReceiverApplication/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ChannelFeatures/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ChannelItemSortField/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ChannelMappingOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ChannelMediaContentType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ChannelMediaType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ChannelType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ChannelsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ChapterInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ClientCapabilitiesDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ClientLogApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ClientLogDocumentResponseDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CodecProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CodecType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CollectionApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CollectionCreationResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CollectionType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CollectionTypeOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ConfigImageTypes/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ConfigurationApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ConfigurationPageInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ContainerProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CountryInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CreatePlaylistDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CreateUserByName/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CultureDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CustomDatabaseOption/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/CustomDatabaseOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DashboardApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DatabaseConfigurationOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DatabaseLockingBehaviorTypes/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DayOfWeek/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DayPattern/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DefaultDirectoryBrowserInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DeinterlaceMethod/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DeviceInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DeviceInfoDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DeviceOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DeviceProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DevicesApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DirectPlayProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DisplayPreferencesApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DisplayPreferencesDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DlnaProfileType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DownMixStereoAlgorithms/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DynamicDayOfWeek/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/DynamicHlsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/EmbeddedSubtitleOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/EncoderPreset/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/EncodingContext/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/EncodingOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/EndPointInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/EnvironmentApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ExternalIdInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ExternalIdMediaType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ExternalUrl/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ExtraType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/FileSystemEntryInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/FileSystemEntryType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/FilterApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/FolderStorageDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/FontFile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ForceKeepAliveMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ForgotPasswordAction/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ForgotPasswordDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ForgotPasswordPinDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ForgotPasswordResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GeneralCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GeneralCommandMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GeneralCommandType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GenresApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GetProgramsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GroupInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GroupQueueMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GroupRepeatMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GroupShuffleMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GroupStateType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GroupStateUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GroupUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GroupUpdateType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/GuideInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/HardwareAccelerationType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/HlsSegmentApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/IPlugin/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/IgnoreWaitRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageFormat/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageOption/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageOrientation/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageProviderInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageResolution/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageSavingConvention/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ImageType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/InboundKeepAliveMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/InboundWebSocketMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/InstallationInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/InstantMixApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/IsoType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ItemCounts/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ItemFields/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ItemFilter/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ItemLookupApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ItemRefreshApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ItemSortBy/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ItemUpdateApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ItemsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/JoinGroupRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/KeepUntil/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryChangedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryOptionInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryOptionsResultDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryStorageDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryStructureApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryTypeOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LibraryUpdateInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ListingsProviderInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LiveStreamResponse/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LiveTvApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LiveTvInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LiveTvOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LiveTvServiceInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LiveTvServiceStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LocalizationApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LocalizationOption/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LocationType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LogFile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LogLevel/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LyricDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LyricLine/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LyricLineCue/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LyricMetadata/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/LyricsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaAttachment/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaInfoApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaPathDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaPathInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaProtocol/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaSegmentDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaSegmentDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaSegmentType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaSegmentsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaSourceInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaSourceType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaStream/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaStreamProtocol/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaStreamType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaUpdateInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaUpdateInfoPathDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MediaUrl/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MessageCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MetadataConfiguration/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MetadataEditorInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MetadataField/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MetadataOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MetadataRefreshMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MovePlaylistItemRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MovieInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MovieInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MoviesApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MusicGenresApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MusicVideoInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/MusicVideoInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/NameGuidPair/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/NameIdPair/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/NameValuePair/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/NetworkConfiguration/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/NewGroupRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/NextItemRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/OpenLiveStreamDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/OutboundKeepAliveMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/OutboundWebSocketMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PackageApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PackageInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ParentalRating/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ParentalRatingScore/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PathSubstitution/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PersonKind/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PersonLookupInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PersonLookupInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PersonsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PinRedeemResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PingRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayAccess/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayMethod/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayQueueUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayQueueUpdateReason/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayRequest/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaybackErrorCode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaybackInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaybackInfoResponse/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaybackOrder/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaybackProgressInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaybackRequestType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaybackStartInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaybackStopInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlayerStateInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaylistCreationResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaylistDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaylistUserPermissions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaylistsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaystateApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaystateCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaystateMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PlaystateRequest/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PluginInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PluginInstallationCancelledMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PluginInstallationCompletedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PluginInstallationFailedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PluginInstallingMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PluginStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PluginUninstalledMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PluginsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PreviousItemRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ProblemDetails/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ProcessPriorityClass/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ProfileCondition/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ProfileConditionType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ProfileConditionValue/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ProgramAudio/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/PublicSystemInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/QueryFilters/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/QueryFiltersLegacy/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/QueueItem/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/QueueRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/QuickConnectApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/QuickConnectDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/QuickConnectResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RatingType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ReadyRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RecommendationDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RecommendationType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RecordingStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RefreshProgressMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RemoteImageApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RemoteImageInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RemoteImageResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RemoteLyricInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RemoteSearchResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RemoteSubtitleInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RemoveFromPlaylistRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RepeatMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RepositoryInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/RestartRequiredMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ScheduledTaskEndedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ScheduledTasksApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ScheduledTasksInfoMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ScheduledTasksInfoStartMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ScheduledTasksInfoStopMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ScrollDirection/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SearchApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SearchHint/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SearchHintResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SeekRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SendCommand/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SendCommandType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SeriesInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SeriesInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SeriesStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SeriesTimerCancelledMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SeriesTimerCreatedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SeriesTimerInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SeriesTimerInfoDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ServerConfiguration/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ServerDiscoveryInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ServerRestartingMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ServerShuttingDownMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SessionApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SessionInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SessionMessageType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SessionUserInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SessionsMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SessionsStartMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SessionsStopMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SetChannelMappingDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SetPlaylistItemRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SetRepeatModeRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SetShuffleModeRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SongInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SortOrder/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SpecialViewOptionDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/StartupApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/StartupConfigurationDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/StartupRemoteAccessDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/StartupUserDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/StudiosApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SubtitleApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SubtitleDeliveryMethod/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SubtitleOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SubtitlePlaybackMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SubtitleProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SuggestionsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayCommandMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayGroupDoesNotExistUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayGroupJoinedUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayGroupLeftUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayGroupUpdateMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayLibraryAccessDeniedUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayNotInGroupUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayPlayQueueUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayQueueItem/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayStateUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayUserAccessType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayUserJoinedUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SyncPlayUserLeftUpdate/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SystemApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SystemInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/SystemStorageDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TaskCompletionStatus/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TaskInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TaskResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TaskState/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TaskTriggerInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TaskTriggerInfoType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ThemeMediaResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TimeSyncApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TimerCancelledMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TimerCreatedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TimerEventInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TimerInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TimerInfoDtoQueryResult/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TmdbApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TonemappingAlgorithm/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TonemappingMode/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TonemappingRange/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TrailerInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TrailerInfoRemoteSearchQuery/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TrailersApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TranscodeReason/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TranscodeSeekInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TranscodingInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TranscodingProfile/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TransportStreamTimestamp/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TrickplayApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TrickplayInfoDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TrickplayOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TrickplayScanBehavior/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TunerChannelMapping/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TunerHostInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TvShowsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/TypeOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UniversalAudioApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UnratedItem/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UpdateLibraryOptionsDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UpdateMediaPathRequestDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UpdatePlaylistDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UpdatePlaylistUserDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UpdateUserItemDataDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UpdateUserPassword/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UploadSubtitleDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserConfiguration/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserDataChangeInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserDataChangedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserDeletedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserItemDataDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserLibraryApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserPolicy/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserUpdatedMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UserViewsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/UtcTimeResponse/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/ValidatePathDto/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/VersionInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/Video3DFormat/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/VideoAttachmentsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/VideoRange/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/VideoRangeType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/VideoType/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/VideosApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/VirtualFolderInfo/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/WebSocketMessage/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/XbmcMetadataOptions/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
     <url>
          <loc>https://jellyfin-sdk-python.github.io/api_10_11/docs/YearsApi/</loc>
-         <lastmod>2025-09-01</lastmod>
+         <lastmod>2025-09-04</lastmod>
     </url>
 </urlset>
