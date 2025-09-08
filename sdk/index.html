@@ -144,6 +144,22 @@
 <pre><code class="language-python">def __str__()
 </code></pre>
 <p>String representation of the Api instance.</p>
+<p><a id="jellyfin.api.Api.user"></a></p>
+<h4 id="user">user</h4>
+<pre><code class="language-python">@property
+def user() -&gt; User | None
+</code></pre>
+<p>Returns the user context for the API requests.</p>
+<p><a id="jellyfin.api.Api.user"></a></p>
+<h4 id="user_1">user</h4>
+<pre><code class="language-python">@user.setter
+def user(value: str | uuid.UUID)
+</code></pre>
+<p>Sets the user context for the API requests.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>value</code> <em>str | uuid.UUID</em> - The user to set, either as a username or UUID.</li>
+</ul>
 <p><a id="jellyfin.api.Api.configuration"></a></p>
 <h4 id="configuration">configuration</h4>
 <pre><code class="language-python">@property
@@ -175,45 +191,15 @@ def client() -&gt; ApiClient
 <ul>
 <li><code>Api</code> - The current instance of the Api class.</li>
 </ul>
-<p><a id="jellyfin.api.Api.system"></a></p>
-<h4 id="system">system</h4>
-<pre><code class="language-python">@property
-def system() -&gt; System
-</code></pre>
-<p>Lazy load the System API.</p>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>System</code> - An instance of the System API wrapper.</li>
-</ul>
-<p><a id="jellyfin.api.Api.items"></a></p>
-<h4 id="items">items</h4>
-<pre><code class="language-python">@property
-def items() -&gt; Items
-</code></pre>
-<p>Lazy load the Items API.</p>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>Items</code> - An instance of the Items API wrapper.</li>
-</ul>
 <p><a id="jellyfin.api.Api.libraries"></a></p>
 <h4 id="libraries">libraries</h4>
 <pre><code class="language-python">@property
-def libraries() -&gt; Items
+def libraries() -&gt; ItemCollection
 </code></pre>
 <p>Alias for items of type COLLECTIONFOLDER.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>ItemCollection</code> - A collection of all libraries.</li>
-</ul>
-<p><a id="jellyfin.api.Api.users"></a></p>
-<h4 id="users">users</h4>
-<pre><code class="language-python">@property
-def users() -&gt; Users
-</code></pre>
-<p>Lazy load the User API.</p>
-<p><strong>Returns</strong>:</p>
-<ul>
-<li><code>Users</code> - An instance of the User API wrapper.</li>
 </ul>
 <p><a id="jellyfin.base"></a></p>
 <h1 id="jellyfinbase">jellyfin.base</h1>
@@ -288,6 +274,19 @@ def data() -&gt; List[BaseModel]
 <p><a id="jellyfin.items"></a></p>
 <h1 id="jellyfinitems">jellyfin.items</h1>
 <p>Module <code>items</code> - High-level interface for ItemsApi.</p>
+<p><a id="jellyfin.items.Item"></a></p>
+<h2 id="jellyfinitemsitem-objects">jellyfin.items.Item Objects</h2>
+<pre><code class="language-python">class Item(Model)
+</code></pre>
+<p><a id="jellyfin.items.Item.save"></a></p>
+<h4 id="save">save</h4>
+<pre><code class="language-python">def save() -&gt; Item
+</code></pre>
+<p>Save changes made to the item.</p>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>Item</code> - The updated item.</li>
+</ul>
 <p><a id="jellyfin.items.ItemSearch"></a></p>
 <h2 id="jellyfinitemsitemsearch-objects">jellyfin.items.ItemSearch Objects</h2>
 <pre><code class="language-python">class ItemSearch()
@@ -416,12 +415,12 @@ def all() -&gt; ItemCollection
 </code></pre>
 <p><a id="jellyfin.items.Items.__init__"></a></p>
 <h4 id="__init___1">__init__</h4>
-<pre><code class="language-python">def __init__(items_api: ItemsApi)
+<pre><code class="language-python">def __init__(api: Api)
 </code></pre>
 <p>Initializes the Items API wrapper.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
-<li><code>items_api</code> <em>ItemsApi</em> - An instance of the generated ItemsApi class.</li>
+<li><code>api</code> <em>Api</em> - An instance of the Api class.</li>
 </ul>
 <p><a id="jellyfin.items.Items.all"></a></p>
 <h4 id="all_1">all</h4>
@@ -433,6 +432,29 @@ def all() -&gt; ItemCollection
 <ul>
 <li><code>ItemCollection</code> - A collection of all items.</li>
 </ul>
+<p><a id="jellyfin.items.Items.by_id"></a></p>
+<h4 id="by_id">by_id</h4>
+<pre><code class="language-python">def by_id(item_id: str | UUID) -&gt; Item
+</code></pre>
+<p>Returns an item by its ID.</p>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>Item</code> - The item with the specified ID.</li>
+</ul>
+<p><a id="jellyfin.items.Items.edit"></a></p>
+<h4 id="edit">edit</h4>
+<pre><code class="language-python">def edit(item: Item | str | UUID, user: str | UUID = None) -&gt; Item
+</code></pre>
+<p>Edits an item.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>item</code> <em>Item | str | UUID</em> - The item to edit, either as an Item instance or its ID.</li>
+<li><code>user</code> <em>str | UUID</em> - The user context for the edit, either as a username or UUID.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>Item</code> - The edited item.</li>
+</ul>
 <p><a id="jellyfin.items.Items.search"></a></p>
 <h4 id="search">search</h4>
 <pre><code class="language-python">@property
@@ -443,6 +465,67 @@ def search() -&gt; ItemSearch
 <ul>
 <li><code>ItemSearch</code> - An instance of ItemSearch for building search queries.</li>
 </ul>
+<p><a id="jellyfin.image"></a></p>
+<h1 id="jellyfinimage">jellyfin.image</h1>
+<p>Module <code>image</code> - High-level interface for ImageApi.</p>
+<p><a id="jellyfin.image.Image"></a></p>
+<h2 id="jellyfinimageimage-objects">jellyfin.image.Image Objects</h2>
+<pre><code class="language-python">class Image()
+</code></pre>
+<p><a id="jellyfin.image.Image.__init__"></a></p>
+<h4 id="__init___2">__init__</h4>
+<pre><code class="language-python">def __init__(api: Api)
+</code></pre>
+<p>Initializes the Image API wrapper.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>api</code> <em>Api</em> - An instance of the Api class.</li>
+</ul>
+<p><a id="jellyfin.image.Image.upload_from_url"></a></p>
+<h4 id="upload_from_url">upload_from_url</h4>
+<pre><code class="language-python">def upload_from_url(item: Item | str | uuid.UUID, image_type: ImageType,
+                    uri: str) -&gt; bool
+</code></pre>
+<p>Uploads an image for a given item.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>item</code> <em>Item | str | uuid.UUID</em> - The item to upload the image for.</li>
+<li><code>image_type</code> <em>ImageType</em> - The type of the image (e.g., "Primary", "Backdrop").</li>
+<li><code>uri</code> <em>str</em> - The URI of the image file.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>bool</code> - True if the upload was successful, False otherwise.</li>
+</ul>
+<p><a id="jellyfin.image.Image.upload_from_file"></a></p>
+<h4 id="upload_from_file">upload_from_file</h4>
+<pre><code class="language-python">def upload_from_file(item: Item | str | uuid.UUID, image_type: ImageType,
+                     file_path: str) -&gt; bool
+</code></pre>
+<p>Uploads an image for a given item from a local file.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>item</code> <em>Item | str | uuid.UUID</em> - The item to upload the image for.</li>
+<li><code>image_type</code> <em>ImageType</em> - The type of the image (e.g., "Primary", "Backdrop").</li>
+<li><code>file_path</code> <em>str</em> - The path to the local image file.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>bool</code> - True if the upload was successful, False otherwise.</li>
+</ul>
+<p><a id="jellyfin.image.Image.get_image_tmp"></a></p>
+<h4 id="get_image_tmp">get_image_tmp</h4>
+<pre><code class="language-python">def get_image_tmp(uri: str) -&gt; str
+</code></pre>
+<p>Downloads an image from a URI to a temporary file.</p>
+<p><strong>Arguments</strong>:</p>
+<ul>
+<li><code>uri</code> <em>str</em> - The URI of the image to download.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>str</code> - The path to the temporary file containing the downloaded image.</li>
+</ul>
 <p><a id="jellyfin.system"></a></p>
 <h1 id="jellyfinsystem">jellyfin.system</h1>
 <p>Module <code>system</code> - High-level interface for SystemAPI.</p>
@@ -451,13 +534,13 @@ def search() -&gt; ItemSearch
 <pre><code class="language-python">class System()
 </code></pre>
 <p><a id="jellyfin.system.System.__init__"></a></p>
-<h4 id="__init___2">__init__</h4>
-<pre><code class="language-python">def __init__(system_api: SystemApi)
+<h4 id="__init___3">__init__</h4>
+<pre><code class="language-python">def __init__(api: Api)
 </code></pre>
 <p>Initializes the System API wrapper.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
-<li><code>system_api</code> <em>SystemApi</em> - An instance of the generated SystemApi class.</li>
+<li><code>api</code> <em>Api</em> - An instance of the Api class.</li>
 </ul>
 <p><a id="jellyfin.system.System.info"></a></p>
 <h4 id="info">info</h4>
@@ -477,18 +560,17 @@ def info() -&gt; SystemInfo
 <pre><code class="language-python">class Users()
 </code></pre>
 <p><a id="jellyfin.users.Users.__init__"></a></p>
-<h4 id="__init___3">__init__</h4>
-<pre><code class="language-python">def __init__(user_api: UserApi, user_views_api: UserViewsApi)
+<h4 id="__init___4">__init__</h4>
+<pre><code class="language-python">def __init__(api: Api)
 </code></pre>
 <p>Initializes the User API wrapper.</p>
 <p><strong>Arguments</strong>:</p>
 <ul>
-<li><code>user_api</code> <em>UserApi</em> - An instance of the generated UserApi class.</li>
-<li><code>user_views_api</code> <em>UserViewsApi</em> - An instance of the generated UserViewsApi class.</li>
+<li><code>api</code> <em>Api</em> - An instance of the Api class.</li>
 </ul>
 <p><a id="jellyfin.users.Users.of"></a></p>
 <h4 id="of">of</h4>
-<pre><code class="language-python">def of(user_name_or_uuid: str | uuid.UUID) -&gt; 'User'
+<pre><code class="language-python">def of(user_name_or_uuid: str | uuid.UUID) -&gt; Self
 </code></pre>
 <p>Set user context</p>
 <p><strong>Arguments</strong>:</p>
@@ -504,7 +586,7 @@ def info() -&gt; SystemInfo
 <li><code>User</code> - The current User instance with the user context set.</li>
 </ul>
 <p><a id="jellyfin.users.Users.by_id"></a></p>
-<h4 id="by_id">by_id</h4>
+<h4 id="by_id_1">by_id</h4>
 <pre><code class="language-python">def by_id(user_id: uuid.UUID) -&gt; User
 </code></pre>
 <p>Get user by ID</p>
@@ -561,6 +643,11 @@ def views() -&gt; ItemCollection
 <ul>
 <li><code>ItemCollection</code> - A list of libraries.</li>
 </ul>
+<p><a id="jellyfin.users.Users.__repr__"></a></p>
+<h4 id="__repr___2">__repr__</h4>
+<pre><code class="language-python">def __repr__()
+</code></pre>
+<p>String representation of the Users instance.</p>
 <p><a id="jellyfin.users.Users.__getattr__"></a></p>
 <h4 id="__getattr___1">__getattr__</h4>
 <pre><code class="language-python">def __getattr__(name)
