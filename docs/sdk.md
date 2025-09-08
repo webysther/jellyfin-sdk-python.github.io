@@ -91,6 +91,32 @@ def __str__()
 
 String representation of the Api instance.
 
+<a id="jellyfin.api.Api.user"></a>
+
+#### user
+
+```python
+@property
+def user() -> User | None
+```
+
+Returns the user context for the API requests.
+
+<a id="jellyfin.api.Api.user"></a>
+
+#### user
+
+```python
+@user.setter
+def user(value: str | uuid.UUID)
+```
+
+Sets the user context for the API requests.
+
+**Arguments**:
+
+- `value` _str | uuid.UUID_ - The user to set, either as a username or UUID.
+
 <a id="jellyfin.api.Api.configuration"></a>
 
 #### configuration
@@ -138,43 +164,13 @@ Just register this as a client with the server.
 
 - `Api` - The current instance of the Api class.
 
-<a id="jellyfin.api.Api.system"></a>
-
-#### system
-
-```python
-@property
-def system() -> System
-```
-
-Lazy load the System API.
-
-**Returns**:
-
-- `System` - An instance of the System API wrapper.
-
-<a id="jellyfin.api.Api.items"></a>
-
-#### items
-
-```python
-@property
-def items() -> Items
-```
-
-Lazy load the Items API.
-
-**Returns**:
-
-- `Items` - An instance of the Items API wrapper.
-
 <a id="jellyfin.api.Api.libraries"></a>
 
 #### libraries
 
 ```python
 @property
-def libraries() -> Items
+def libraries() -> ItemCollection
 ```
 
 Alias for items of type COLLECTIONFOLDER.
@@ -182,21 +178,6 @@ Alias for items of type COLLECTIONFOLDER.
 **Returns**:
 
 - `ItemCollection` - A collection of all libraries.
-
-<a id="jellyfin.api.Api.users"></a>
-
-#### users
-
-```python
-@property
-def users() -> Users
-```
-
-Lazy load the User API.
-
-**Returns**:
-
-- `Users` - An instance of the User API wrapper.
 
 <a id="jellyfin.base"></a>
 
@@ -329,6 +310,28 @@ Returns the total number of records in the collection.
 # jellyfin.items
 
 Module `items` - High-level interface for ItemsApi.
+
+<a id="jellyfin.items.Item"></a>
+
+## jellyfin.items.Item Objects
+
+```python
+class Item(Model)
+```
+
+<a id="jellyfin.items.Item.save"></a>
+
+#### save
+
+```python
+def save() -> Item
+```
+
+Save changes made to the item.
+
+**Returns**:
+
+- `Item` - The updated item.
 
 <a id="jellyfin.items.ItemSearch"></a>
 
@@ -530,14 +533,14 @@ class Items()
 #### \_\_init\_\_
 
 ```python
-def __init__(items_api: ItemsApi)
+def __init__(api: Api)
 ```
 
 Initializes the Items API wrapper.
 
 **Arguments**:
 
-- `items_api` _ItemsApi_ - An instance of the generated ItemsApi class.
+- `api` _Api_ - An instance of the Api class.
 
 <a id="jellyfin.items.Items.all"></a>
 
@@ -554,6 +557,40 @@ Returns all items as an ItemCollection.
 
 - `ItemCollection` - A collection of all items.
 
+<a id="jellyfin.items.Items.by_id"></a>
+
+#### by\_id
+
+```python
+def by_id(item_id: str | UUID) -> Item
+```
+
+Returns an item by its ID.
+
+**Returns**:
+
+- `Item` - The item with the specified ID.
+
+<a id="jellyfin.items.Items.edit"></a>
+
+#### edit
+
+```python
+def edit(item: Item | str | UUID, user: str | UUID = None) -> Item
+```
+
+Edits an item.
+
+**Arguments**:
+
+- `item` _Item | str | UUID_ - The item to edit, either as an Item instance or its ID.
+- `user` _str | UUID_ - The user context for the edit, either as a username or UUID.
+  
+
+**Returns**:
+
+- `Item` - The edited item.
+
 <a id="jellyfin.items.Items.search"></a>
 
 #### search
@@ -568,6 +605,97 @@ Returns an ItemSearch instance for building search queries.
 **Returns**:
 
 - `ItemSearch` - An instance of ItemSearch for building search queries.
+
+<a id="jellyfin.image"></a>
+
+# jellyfin.image
+
+Module `image` - High-level interface for ImageApi.
+
+<a id="jellyfin.image.Image"></a>
+
+## jellyfin.image.Image Objects
+
+```python
+class Image()
+```
+
+<a id="jellyfin.image.Image.__init__"></a>
+
+#### \_\_init\_\_
+
+```python
+def __init__(api: Api)
+```
+
+Initializes the Image API wrapper.
+
+**Arguments**:
+
+- `api` _Api_ - An instance of the Api class.
+
+<a id="jellyfin.image.Image.upload_from_url"></a>
+
+#### upload\_from\_url
+
+```python
+def upload_from_url(item: Item | str | uuid.UUID, image_type: ImageType,
+                    uri: str) -> bool
+```
+
+Uploads an image for a given item.
+
+**Arguments**:
+
+- `item` _Item | str | uuid.UUID_ - The item to upload the image for.
+- `image_type` _ImageType_ - The type of the image (e.g., "Primary", "Backdrop").
+- `uri` _str_ - The URI of the image file.
+  
+
+**Returns**:
+
+- `bool` - True if the upload was successful, False otherwise.
+
+<a id="jellyfin.image.Image.upload_from_file"></a>
+
+#### upload\_from\_file
+
+```python
+def upload_from_file(item: Item | str | uuid.UUID, image_type: ImageType,
+                     file_path: str) -> bool
+```
+
+Uploads an image for a given item from a local file.
+
+**Arguments**:
+
+- `item` _Item | str | uuid.UUID_ - The item to upload the image for.
+- `image_type` _ImageType_ - The type of the image (e.g., "Primary", "Backdrop").
+- `file_path` _str_ - The path to the local image file.
+  
+
+**Returns**:
+
+- `bool` - True if the upload was successful, False otherwise.
+
+<a id="jellyfin.image.Image.get_image_tmp"></a>
+
+#### get\_image\_tmp
+
+```python
+def get_image_tmp(uri: str) -> str
+```
+
+Downloads an image from a URI to a temporary file.
+
+**Arguments**:
+
+- `uri` _str_ - The URI of the image to download.
+  
+
+**Returns**:
+
+- `str` - The path to the temporary file containing the downloaded image.
 
 <a id="jellyfin.system"></a>
 
@@ -588,14 +716,14 @@ class System()
 #### \_\_init\_\_
 
 ```python
-def __init__(system_api: SystemApi)
+def __init__(api: Api)
 ```
 
 Initializes the System API wrapper.
 
 **Arguments**:
 
-- `system_api` _SystemApi_ - An instance of the generated SystemApi class.
+- `api` _Api_ - An instance of the Api class.
 
 <a id="jellyfin.system.System.info"></a>
 
@@ -631,22 +759,21 @@ class Users()
 #### \_\_init\_\_
 
 ```python
-def __init__(user_api: UserApi, user_views_api: UserViewsApi)
+def __init__(api: Api)
 ```
 
 Initializes the User API wrapper.
 
 **Arguments**:
 
-- `user_api` _UserApi_ - An instance of the generated UserApi class.
-- `user_views_api` _UserViewsApi_ - An instance of the generated UserViewsApi class.
+- `api` _Api_ - An instance of the Api class.
 
 <a id="jellyfin.users.Users.of"></a>
 
 #### of
 
 ```python
-def of(user_name_or_uuid: str | uuid.UUID) -> 'User'
+def of(user_name_or_uuid: str | uuid.UUID) -> Self
 ```
 
 Set user context
@@ -752,6 +879,16 @@ Get views for the current user context.
 **Returns**:
 
 - `ItemCollection` - A list of libraries.
+
+<a id="jellyfin.users.Users.__repr__"></a>
+
+#### \_\_repr\_\_
+
+```python
+def __repr__()
+```
+
+String representation of the Users instance.
 
 <a id="jellyfin.users.Users.__getattr__"></a>
 
