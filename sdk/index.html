@@ -49,10 +49,6 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">SDK Reference</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#jellyfinversion">jellyfin.version</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#jellyfinapi">jellyfin.api</a>
-    </li>
     </ul>
                 </li>
               </ul>
@@ -87,12 +83,100 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><a id="jellyfin"></a></p>
+                <h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#jellyfin">jellyfin</a><ul>
+<li><a href="#jellyfinapi">jellyfin.api</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinapi-1">jellyfin.api</a></li>
+<li><a href="#jellyfinapiapi-objects">jellyfin.api.Api Objects</a><ul>
+<li><a href="#__init__">__init__</a></li>
+<li><a href="#__repr__">__repr__</a></li>
+<li><a href="#__str__">__str__</a></li>
+<li><a href="#user">user</a></li>
+<li><a href="#user-1">user</a></li>
+<li><a href="#configuration">configuration</a></li>
+<li><a href="#client">client</a></li>
+<li><a href="#register_client">register_client</a></li>
+<li><a href="#libraries">libraries</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinbase">jellyfin.base</a></li>
+<li><a href="#jellyfinbasepagination-objects">jellyfin.base.Pagination Objects</a></li>
+<li><a href="#jellyfinbasemodel-objects">jellyfin.base.Model Objects</a><ul>
+<li><a href="#model">model</a></li>
+<li><a href="#__str__-1">__str__</a></li>
+<li><a href="#__repr__-1">__repr__</a></li>
+<li><a href="#summary">summary</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinbasecollection-objects">jellyfin.base.Collection Objects</a><ul>
+<li><a href="#__iter__">__iter__</a></li>
+<li><a href="#model-1">model</a></li>
+<li><a href="#data">data</a></li>
+<li><a href="#__len__">__len__</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinitems">jellyfin.items</a></li>
+<li><a href="#jellyfinitemsitem-objects">jellyfin.items.Item Objects</a><ul>
+<li><a href="#save">save</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinitemsitemsearch-objects">jellyfin.items.ItemSearch Objects</a><ul>
+<li><a href="#__setattr__">__setattr__</a></li>
+<li><a href="#__getattr__">__getattr__</a></li>
+<li><a href="#__delattr__">__delattr__</a></li>
+<li><a href="#add">add</a></li>
+<li><a href="#remove">remove</a></li>
+<li><a href="#next_page">next_page</a></li>
+<li><a href="#paginate">paginate</a></li>
+<li><a href="#all">all</a></li>
+<li><a href="#recursive">recursive</a></li>
+<li><a href="#name_starts_with">name_starts_with</a></li>
+<li><a href="#only_library">only_library</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinitemsitems-objects">jellyfin.items.Items Objects</a><ul>
+<li><a href="#__init__-1">__init__</a></li>
+<li><a href="#all-1">all</a></li>
+<li><a href="#by_id">by_id</a></li>
+<li><a href="#edit">edit</a></li>
+<li><a href="#search">search</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinimage">jellyfin.image</a></li>
+<li><a href="#jellyfinimageimage-objects">jellyfin.image.Image Objects</a><ul>
+<li><a href="#__init__-2">__init__</a></li>
+<li><a href="#upload_from_url">upload_from_url</a></li>
+<li><a href="#upload_from_file">upload_from_file</a></li>
+<li><a href="#get_image_tmp">get_image_tmp</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinsystem">jellyfin.system</a></li>
+<li><a href="#jellyfinsystemsystem-objects">jellyfin.system.System Objects</a><ul>
+<li><a href="#__init__-3">__init__</a></li>
+<li><a href="#info">info</a></li>
+</ul>
+</li>
+<li><a href="#jellyfinusers">jellyfin.users</a></li>
+<li><a href="#jellyfinusersusers-objects">jellyfin.users.Users Objects</a><ul>
+<li><a href="#__init__-4">__init__</a></li>
+<li><a href="#of">of</a></li>
+<li><a href="#by_id-1">by_id</a></li>
+<li><a href="#by_name">by_name</a></li>
+<li><a href="#all-2">all</a></li>
+<li><a href="#libraries-1">libraries</a></li>
+<li><a href="#views">views</a></li>
+<li><a href="#__repr__-2">__repr__</a></li>
+<li><a href="#__getattr__-1">__getattr__</a></li>
+</ul>
+</li>
+</ul>
+<p><a id="jellyfin"></a></p>
 <h1 id="jellyfin">jellyfin</h1>
 <p>Entrypoint module for the Jellyfin SDK.</p>
-<p><a id="jellyfin.version"></a></p>
-<h4 id="jellyfinversion">jellyfin.version</h4>
-<p>Now you can use jellyfin.version.V10_11</p>
 <p><a id="jellyfin.api"></a></p>
 <h4 id="jellyfinapi">jellyfin.api</h4>
 <pre><code class="language-python">def api(url: str, api_key: str, version: Version = Version.V10_10) -&gt; Api
