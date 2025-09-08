@@ -1,14 +1,79 @@
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [jellyfin](#jellyfin)
+      - [jellyfin.api](#jellyfinapi)
+- [jellyfin.api](#jellyfinapi-1)
+  - [jellyfin.api.Api Objects](#jellyfinapiapi-objects)
+      - [\_\_init\_\_](#__init__)
+      - [\_\_repr\_\_](#__repr__)
+      - [\_\_str\_\_](#__str__)
+      - [user](#user)
+      - [user](#user-1)
+      - [configuration](#configuration)
+      - [client](#client)
+      - [register\_client](#register_client)
+      - [libraries](#libraries)
+- [jellyfin.base](#jellyfinbase)
+  - [jellyfin.base.Pagination Objects](#jellyfinbasepagination-objects)
+  - [jellyfin.base.Model Objects](#jellyfinbasemodel-objects)
+      - [model](#model)
+      - [\_\_str\_\_](#__str__-1)
+      - [\_\_repr\_\_](#__repr__-1)
+      - [summary](#summary)
+  - [jellyfin.base.Collection Objects](#jellyfinbasecollection-objects)
+      - [\_\_iter\_\_](#__iter__)
+      - [model](#model-1)
+      - [data](#data)
+      - [\_\_len\_\_](#__len__)
+- [jellyfin.items](#jellyfinitems)
+  - [jellyfin.items.Item Objects](#jellyfinitemsitem-objects)
+      - [save](#save)
+  - [jellyfin.items.ItemSearch Objects](#jellyfinitemsitemsearch-objects)
+      - [\_\_setattr\_\_](#__setattr__)
+      - [\_\_getattr\_\_](#__getattr__)
+      - [\_\_delattr\_\_](#__delattr__)
+      - [add](#add)
+      - [remove](#remove)
+      - [next\_page](#next_page)
+      - [paginate](#paginate)
+      - [all](#all)
+      - [recursive](#recursive)
+      - [name\_starts\_with](#name_starts_with)
+      - [only\_library](#only_library)
+  - [jellyfin.items.Items Objects](#jellyfinitemsitems-objects)
+      - [\_\_init\_\_](#__init__-1)
+      - [all](#all-1)
+      - [by\_id](#by_id)
+      - [edit](#edit)
+      - [search](#search)
+- [jellyfin.image](#jellyfinimage)
+  - [jellyfin.image.Image Objects](#jellyfinimageimage-objects)
+      - [\_\_init\_\_](#__init__-2)
+      - [upload\_from\_url](#upload_from_url)
+      - [upload\_from\_file](#upload_from_file)
+      - [get\_image\_tmp](#get_image_tmp)
+- [jellyfin.system](#jellyfinsystem)
+  - [jellyfin.system.System Objects](#jellyfinsystemsystem-objects)
+      - [\_\_init\_\_](#__init__-3)
+      - [info](#info)
+- [jellyfin.users](#jellyfinusers)
+  - [jellyfin.users.Users Objects](#jellyfinusersusers-objects)
+      - [\_\_init\_\_](#__init__-4)
+      - [of](#of)
+      - [by\_id](#by_id-1)
+      - [by\_name](#by_name)
+      - [all](#all-2)
+      - [libraries](#libraries-1)
+      - [views](#views)
+      - [\_\_repr\_\_](#__repr__-2)
+      - [\_\_getattr\_\_](#__getattr__-1)
+
 <a id="jellyfin"></a>
 
 # jellyfin
 
 Entrypoint module for the Jellyfin SDK.
-
-<a id="jellyfin.version"></a>
-
-#### jellyfin.version
-
-Now you can use jellyfin.version.V10_11
 
 <a id="jellyfin.api"></a>
 
